@@ -1,26 +1,4 @@
-<div align="center" style="width:100%; white-space:nowrap;">
-
-<br>
-
-<span style="display:inline-block; width:25%; text-align:center;">
-  <img src="./assets/connect.png" width="180" alt="Connect">
-</span><span style="display:inline-block; width:25%; text-align:center;">
-  <a href="mailto:bholushubhankaranokha@gmail.com">
-    <img src="./assets/email.png" width="180" alt="Email">
-  </a>
-</span><span style="display:inline-block; width:25%; text-align:center;">
-  <a href="https://www.linkedin.com/in/bholushubhankaranokha/">
-    <img src="./assets/linkedIn.png" width="180" alt="LinkedIn">
-  </a>
-</span><span style="display:inline-block; width:25%; text-align:center;">
-  <a href="YOUR_PORTFOLIO_URL">
-    <img src="./assets/portfolio.png" width="180" alt="Portfolio">
-  </a>
-</span>
-
-<br>
-
-</div>
+<p align="center"><img src="./assets/connect.png" width="25%" alt="Connect" align="top"><a href="mailto:bholushubhankaranokha@gmail.com"><img src="./assets/email.png" width="25%" alt="Email" align="top"></a><a href="https://www.linkedin.com/in/bholushubhankaranokha/"><img src="./assets/linkedIn.png" width="25%" alt="LinkedIn" align="top"></a><a href="YOUR_PORTFOLIO_URL"><img src="./assets/portfolio.png" width="25%" alt="Portfolio" align="top"></a></p>
 
 <div align="center">
 
