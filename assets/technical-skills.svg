@@ -1,498 +1,223 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="780" viewBox="0 0 1600 780">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="780" viewBox="0 0 1600 780" role="img" aria-label="Technical Skills: AI / ML / Data Science, Programming and Development, Databases and Tools, IoT and Technologies">
+<title>Technical Skills</title>
 <defs>
+<clipPath id="cardClip"><path d="M30.0 112.0Q30 90 45.6 74.4L74.4 45.6Q90 30 112.0 30.0L498.0 30.0Q520 30 535.6 45.6L544.4 54.4Q560 70 582.0 70.0L1018.0 70.0Q1040 70 1055.6 54.4L1064.4 45.6Q1080 30 1102.0 30.0L1488.0 30.0Q1510 30 1525.6 45.6L1554.4 74.4Q1570 90 1570.0 112.0L1570.0 668.0Q1570 690 1554.4 705.6L1525.6 734.4Q1510 750 1488.0 750.0L1102.0 750.0Q1080 750 1064.4 734.4L1055.6 725.6Q1040 710 1018.0 710.0L582.0 710.0Q560 710 544.4 725.6L535.6 734.4Q520 750 498.0 750.0L112.0 750.0Q90 750 74.4 734.4L45.6 705.6Q30 690 30.0 668.0Z"/></clipPath>
 
-  <clipPath id="cardClip">
-    <path d="M30 90 L90 30 L520 30 L560 70 L1040 70 L1080 30 L1510 30 L1570 90 L1570 690 L1510 750 L1080 750 L1040 710 L560 710 L520 750 L90 750 L30 690 Z"/>
-  </clipPath>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="ultraGlow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="16" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 
-  <!-- Blur filters (reduced intensity) -->
-  <filter id="bgBlur" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur stdDeviation="4"/>
-  </filter>
-  <filter id="bgBlurSoft" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur stdDeviation="2"/>
-  </filter>
-  <filter id="redBlurTransition" x="-50%" y="-50%" width="200%" height="200%">
-    <feGaussianBlur stdDeviation="12"/>
-  </filter>
-  <filter id="redBlurSoftTransition" x="-50%" y="-50%" width="200%" height="200%">
-    <feGaussianBlur stdDeviation="7"/>
-  </filter>
-  <filter id="redBlurUltra" x="-80%" y="-80%" width="260%" height="260%">
-    <feGaussianBlur stdDeviation="18"/>
-  </filter>
+<linearGradient id="redFlow" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="800" y2="0" spreadMethod="reflect">
+<stop class="cR0" offset="0"/><stop class="cR2" offset="0.5"/><stop class="cR0" offset="1"/>
+<animate attributeName="x1" values="0;1600" dur="6s" repeatCount="indefinite"/><animate attributeName="x2" values="800;2400" dur="6s" repeatCount="indefinite"/></linearGradient>
 
-  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-    <feGaussianBlur stdDeviation="4" result="blur"/>
-    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
-    <feGaussianBlur stdDeviation="9" result="blur"/>
-    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <filter id="ultraGlow" x="-80%" y="-80%" width="260%" height="260%">
-    <feGaussianBlur stdDeviation="16" result="blur"/>
-    <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
+<linearGradient id="panelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop class="cP1" offset="0%" stop-opacity="0.94"/><stop class="cP2" offset="50%" stop-opacity="0.92"/><stop class="cP3" offset="100%" stop-opacity="0.94"/></linearGradient>
+<linearGradient id="scanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop class="cR0" offset="0%" stop-opacity="0"/><stop class="cR1" offset="25%" stop-opacity="0.5"/><stop class="cR2" offset="50%" stop-opacity="1"/><stop class="cR1" offset="75%" stop-opacity="0.5"/><stop class="cR0" offset="100%" stop-opacity="0"/></linearGradient>
+<radialGradient id="coreGlow" cx="50%" cy="50%" r="50%"><stop class="cR1" offset="0%" stop-opacity="0.5"/><stop class="cR1" offset="50%" stop-opacity="0.15"/><stop class="cR0" offset="100%" stop-opacity="0"/></radialGradient>
+<radialGradient id="redTransition1" cx="50%" cy="50%" r="50%"><stop class="cR0" offset="0%" stop-opacity="0.30"/><stop class="cR1" offset="40%" stop-opacity="0.12"/><stop class="cR0" offset="100%" stop-opacity="0"/></radialGradient>
+<radialGradient id="redTransition2" cx="50%" cy="50%" r="50%"><stop class="cR2" offset="0%" stop-opacity="0.25"/><stop class="cR0" offset="50%" stop-opacity="0.08"/><stop class="cR0" offset="100%" stop-opacity="0"/></radialGradient>
+<linearGradient id="redHorizontalSweep" x1="0%" y1="0%" x2="100%" y2="0%"><stop class="cR0" offset="0%" stop-opacity="0"/><stop class="cR1" offset="50%" stop-opacity="0.22"/><stop class="cR0" offset="100%" stop-opacity="0"/></linearGradient>
+<pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse"><path class="sR0" d="M40 0H0V40" fill="none" stroke-width="0.5" opacity="0.12"/></pattern>
+<pattern id="dotPattern" width="24" height="24" patternUnits="userSpaceOnUse"><circle class="fR0" cx="12" cy="12" r="1" opacity="0.18"/></pattern>
 
-  <linearGradient id="redFlow" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#ff003c"/>
-    <stop offset="50%" stop-color="#ff6680"/>
-    <stop offset="100%" stop-color="#ff003c"/>
-    <animate attributeName="x1" values="0%;100%;0%" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="x2" values="100%;0%;100%" dur="5s" repeatCount="indefinite"/>
-  </linearGradient>
+<style>
+/* ---------- theme (dark default, light via prefers-color-scheme) ---------- */
+.fR0{fill:#ff003c}.sR0{stroke:#ff003c}.cR0{stop-color:#ff003c}
+.fR1{fill:#ff174f}.sR1{stroke:#ff174f}.cR1{stop-color:#ff174f}
+.fR2{fill:#ff6680}.sR2{stroke:#ff6680}.cR2{stop-color:#ff6680}
+.fW{fill:#eeeeee}.sW{stroke:#eeeeee}.fWH{fill:#ffffff}
+.fD1{fill:#05070a}.fD2{fill:#0a0508}.fD3{fill:#11070a}.sD1{stroke:#05070a}
+.cP1{stop-color:#0c0e13}.cP2{stop-color:#050609}.cP3{stop-color:#010204}
+.cardBase{fill:#05070a;fill-opacity:.55}
+.section,.sectionSmall{fill:#ff6680}.skill{fill:#eeeeee}.skillIcon{fill:#ff3159}
+@media (prefers-color-scheme: light){
+.fR0{fill:#d6002f}.sR0{stroke:#d6002f}.cR0{stop-color:#d6002f}
+.fR1{fill:#d6002f}.sR1{stroke:#d6002f}.cR1{stop-color:#d6002f}
+.fR2{fill:#ff4d6d}.sR2{stroke:#ff4d6d}.cR2{stop-color:#ff4d6d}
+.fW{fill:#1f2328}.sW{stroke:#1f2328}.fWH{fill:#ffd6de}
+.fD1{fill:#fff0f3}.fD2{fill:#ffe3e9}.fD3{fill:#ffd9e1}.sD1{stroke:#fff0f3}
+.cP1{stop-color:#fff8f9}.cP2{stop-color:#fff1f4}.cP3{stop-color:#ffe8ed}
+.cardBase{fill:#fff4f6;fill-opacity:.85}
+.section,.sectionSmall{fill:#b3002a}.skill{fill:#1f2328}.skillIcon{fill:#d6002f}
+}
+.title{font-family:Arial,Helvetica,sans-serif;font-size:56px;font-weight:700;letter-spacing:1px}
+.section{font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:700}
+.sectionSmall{font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700}
+.skill{font-family:Arial,Helvetica,sans-serif;font-size:17px;font-weight:500}
+.skillIcon{font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:700}
 
-  <linearGradient id="panelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#0c0e13" stop-opacity="0.98"/>
-    <stop offset="50%" stop-color="#050609" stop-opacity="0.97"/>
-    <stop offset="100%" stop-color="#010204" stop-opacity="0.98"/>
-  </linearGradient>
-
-  <linearGradient id="scanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#ff003c" stop-opacity="0"/>
-    <stop offset="25%" stop-color="#ff174f" stop-opacity="0.5"/>
-    <stop offset="50%" stop-color="#ff6680" stop-opacity="1"/>
-    <stop offset="75%" stop-color="#ff174f" stop-opacity="0.5"/>
-    <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
-  </linearGradient>
-
-  <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-    <stop offset="0%" stop-color="#ff174f" stop-opacity="0.5"/>
-    <stop offset="50%" stop-color="#ff174f" stop-opacity="0.15"/>
-    <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
-  </radialGradient>
-
-  <radialGradient id="redTransition1" cx="20%" cy="30%" r="60%">
-    <stop offset="0%" stop-color="#ff003c" stop-opacity="0.3"/>
-    <stop offset="40%" stop-color="#ff174f" stop-opacity="0.12"/>
-    <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
-    <animate attributeName="cx" values="20%;80%;20%" dur="10s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="30%;70%;30%" dur="10s" repeatCount="indefinite"/>
-  </radialGradient>
-
-  <radialGradient id="redTransition2" cx="80%" cy="70%" r="55%">
-    <stop offset="0%" stop-color="#ff6680" stop-opacity="0.25"/>
-    <stop offset="50%" stop-color="#ff003c" stop-opacity="0.08"/>
-    <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
-    <animate attributeName="cx" values="80%;20%;80%" dur="12s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="70%;30%;70%" dur="12s" repeatCount="indefinite"/>
-  </radialGradient>
-
-  <radialGradient id="redTransition3" cx="50%" cy="50%" r="70%">
-    <stop offset="0%" stop-color="#ff174f" stop-opacity="0.2"/>
-    <stop offset="60%" stop-color="#ff6680" stop-opacity="0.06"/>
-    <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
-    <animate attributeName="r" values="50%;80%;50%" dur="8s" repeatCount="indefinite"/>
-  </radialGradient>
-
-  <linearGradient id="redHorizontalSweep" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#ff003c" stop-opacity="0"/>
-    <stop offset="50%" stop-color="#ff174f" stop-opacity="0.3"/>
-    <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
-    <animate attributeName="x1" values="-100%;100%;-100%" dur="14s" repeatCount="indefinite"/>
-    <animate attributeName="x2" values="0%;200%;0%" dur="14s" repeatCount="indefinite"/>
-  </linearGradient>
-
-  <linearGradient id="redVerticalTransition" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%" stop-color="#ff003c" stop-opacity="0.25"/>
-    <stop offset="50%" stop-color="#ff6680" stop-opacity="0.08"/>
-    <stop offset="100%" stop-color="#ff003c" stop-opacity="0.2"/>
-    <animate attributeName="y1" values="0%;100%;0%" dur="9s" repeatCount="indefinite"/>
-    <animate attributeName="y2" values="100%;0%;100%" dur="9s" repeatCount="indefinite"/>
-  </linearGradient>
-
-  <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
-    <path d="M40 0H0V40" fill="none" stroke="#ff003c" stroke-width="0.5" opacity="0.09"/>
-  </pattern>
-
-  <pattern id="dotPattern" width="24" height="24" patternUnits="userSpaceOnUse">
-    <circle cx="12" cy="12" r="1" fill="#ff003c" opacity="0.15"/>
-  </pattern>
-
-  <style>
-    .title { font-family: Arial, Helvetica, sans-serif; font-size: 56px; font-weight: 700; letter-spacing: 1px; }
-    .section { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 700; fill: #ff6680; }
-    .sectionSmall { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #ff6680; }
-    .skill { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 500; fill: #eeeeee; }
-    .skillIcon { font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; fill: #ff3159; }
-
-    .framePulse { animation: framePulse 4s ease-in-out infinite; }
-    @keyframes framePulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
-
-    .panel1 { animation: panelPulse1 3.2s ease-in-out infinite; }
-    .panel2 { animation: panelPulse2 4s ease-in-out infinite; }
-    .panel3 { animation: panelPulse3 3.6s ease-in-out infinite; }
-    .panel4 { animation: panelPulse4 4.4s ease-in-out infinite; }
-    @keyframes panelPulse1 { 0%,100% { opacity: .65; } 50% { opacity: 1; } }
-    @keyframes panelPulse2 { 0%,100% { opacity: .75; } 50% { opacity: 1; } }
-    @keyframes panelPulse3 { 0%,100% { opacity: .60; } 50% { opacity: 1; } }
-    @keyframes panelPulse4 { 0%,100% { opacity: .70; } 50% { opacity: 1; } }
-
-    .circuitFlow { stroke-dasharray: 90 25; animation: circuitFlow 2.5s linear infinite; }
-    @keyframes circuitFlow { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -345; } }
-
-    .scanAnimation { animation: scanAnimation 4.5s linear infinite; }
-    @keyframes scanAnimation {
-      0% { transform: translateY(-40px); opacity: 0; }
-      15% { opacity: .8; } 50% { opacity: 1; } 85% { opacity: .8; }
-      100% { transform: translateY(600px); opacity: 0; }
-    }
-
-    .titleLogo { transform-box: fill-box; transform-origin: center; animation: titleLogoSpin 12s linear infinite; }
-    @keyframes titleLogoSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    .titleLogoInner { transform-box: fill-box; transform-origin: center; animation: titleLogoSpinReverse 8s linear infinite; }
-    @keyframes titleLogoSpinReverse { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
-
-    .gear { transform-box: fill-box; transform-origin: center; animation: rotateGear 10s linear infinite; }
-    @keyframes rotateGear { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-
-    .node { transform-box: fill-box; transform-origin: center; animation: nodePulse 1.8s ease-in-out infinite; }
-    @keyframes nodePulse {
-      0%,100% { opacity: .3; transform: scale(.7); }
-      50% { opacity: 1; transform: scale(1.25); }
-    }
-
-    .particle1 { animation: particle1 4s ease-in-out infinite; }
-    .particle2 { animation: particle2 5s ease-in-out infinite; }
-    .particle3 { animation: particle3 6s ease-in-out infinite; }
-    @keyframes particle1 { 0%,100% { opacity: .15; transform: translateY(0); } 50% { opacity: .9; transform: translateY(-15px); } }
-    @keyframes particle2 { 0%,100% { opacity: .1; transform: translateY(0); } 50% { opacity: .8; transform: translateY(12px); } }
-    @keyframes particle3 { 0%,100% { opacity: .2; transform: translateY(0); } 50% { opacity: 1; transform: translateY(-20px); } }
-
-    .icons { animation: iconPulse 2.8s ease-in-out infinite; }
-    @keyframes iconPulse { 0%,100% { opacity: .65; } 50% { opacity: 1; } }
-
-    .movingGrid { animation: gridMove 12s linear infinite; }
-    @keyframes gridMove { from { transform: translateX(0); } to { transform: translateX(40px); } }
-
-    .skillRow { animation: skillRowFade 3s ease-in-out infinite; }
-    .skillRow:nth-child(1) { animation-delay: 0s; }
-    .skillRow:nth-child(2) { animation-delay: 0.2s; }
-    .skillRow:nth-child(3) { animation-delay: 0.4s; }
-    .skillRow:nth-child(4) { animation-delay: 0.6s; }
-    .skillRow:nth-child(5) { animation-delay: 0.8s; }
-    .skillRow:nth-child(6) { animation-delay: 1.0s; }
-    .skillRow:nth-child(7) { animation-delay: 1.2s; }
-    .skillRow:nth-child(8) { animation-delay: 1.4s; }
-    .skillRow:nth-child(9) { animation-delay: 1.6s; }
-    .skillRow:nth-child(10) { animation-delay: 1.8s; }
-    @keyframes skillRowFade { 0%, 100% { opacity: 0.75; } 50% { opacity: 1; } }
-
-    .titleGlitch { animation: titleGlitch 4s ease-in-out infinite; }
-    @keyframes titleGlitch {
-      0%, 88%, 100% { transform: translate(0, 0); }
-      90% { transform: translate(-2px, 1px); }
-      92% { transform: translate(2px, -1px); }
-      94% { transform: translate(-1px, -2px); }
-      96% { transform: translate(1px, 2px); }
-    }
-
-    .edgePulse { animation: edgePulse 2s ease-in-out infinite; }
-    @keyframes edgePulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
-
-    .warnBlink { animation: warnBlink 1s step-end infinite; }
-    @keyframes warnBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
-
-    .barLoad { animation: barLoad 3s ease-in-out infinite; }
-    @keyframes barLoad { 0%, 100% { transform: scaleX(0.3); transform-origin: left; } 50% { transform: scaleX(1); transform-origin: left; } }
-
-    .dataStream { animation: dataStream 2s linear infinite; }
-    @keyframes dataStream { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -200; } }
-
-    .cornerSlide { animation: cornerSlide 3s ease-in-out infinite; }
-    @keyframes cornerSlide {
-      0%, 100% { opacity: 0.4; transform: translate(0, 0); }
-      50% { opacity: 1; transform: translate(2px, -2px); }
-    }
-
-    .transitionPulse1 { animation: transitionPulse1 8s ease-in-out infinite; }
-    @keyframes transitionPulse1 { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
-    .transitionPulse2 { animation: transitionPulse2 11s ease-in-out infinite; }
-    @keyframes transitionPulse2 { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.9; } }
-    .transitionPulse3 { animation: transitionPulse3 7s ease-in-out infinite; }
-    @keyframes transitionPulse3 { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
-
-    .transitionDrift { animation: transitionDrift 15s ease-in-out infinite alternate; }
-    @keyframes transitionDrift { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(30px, -20px) scale(1.08); } }
-    .transitionDriftReverse { animation: transitionDriftReverse 18s ease-in-out infinite alternate; }
-    @keyframes transitionDriftReverse { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(-35px, 25px) scale(1.1); } }
-  </style>
-
+/* ---------- animation ---------- */
+.framePulse{animation:framePulse 4s ease-in-out infinite}
+@keyframes framePulse{0%,100%{opacity:.55}50%{opacity:1}}
+.panel1{animation:pp 3.2s ease-in-out infinite}.panel2{animation:pp 4s ease-in-out infinite}.panel3{animation:pp 3.6s ease-in-out infinite}.panel4{animation:pp 4.4s ease-in-out infinite}
+@keyframes pp{0%,100%{opacity:.7}50%{opacity:1}}
+.circuitFlow{stroke-dasharray:90 25;animation:circuitFlow 2.5s linear infinite}
+@keyframes circuitFlow{to{stroke-dashoffset:-345}}
+.scanAnimation{animation:scan 4.5s ease-in-out infinite}
+@keyframes scan{0%{transform:translateY(-40px);opacity:0}15%{opacity:.8}50%{opacity:1}85%{opacity:.8}100%{transform:translateY(400px);opacity:0}}
+.titleLogo,.titleLogoInner,.gear,.node,.drift,.driftR,.barLoad{transform-box:fill-box;transform-origin:center}
+.titleLogo{animation:spin 12s linear infinite}.titleLogoInner{animation:spinR 8s linear infinite}.gear{animation:spin 10s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes spinR{to{transform:rotate(-360deg)}}
+.node{animation:nodePulse 1.8s ease-in-out infinite}
+@keyframes nodePulse{0%,100%{opacity:.3;transform:scale(.7)}50%{opacity:1;transform:scale(1.25)}}
+.particle1{animation:p1 4s ease-in-out infinite}.particle2{animation:p2 5s ease-in-out infinite}.particle3{animation:p3 6s ease-in-out infinite}
+@keyframes p1{0%,100%{opacity:.15;transform:translateY(0)}50%{opacity:.9;transform:translateY(-15px)}}
+@keyframes p2{0%,100%{opacity:.1;transform:translateY(0)}50%{opacity:.8;transform:translateY(12px)}}
+@keyframes p3{0%,100%{opacity:.2;transform:translateY(0)}50%{opacity:1;transform:translateY(-20px)}}
+.icons{animation:iconPulse 2.8s ease-in-out infinite}
+@keyframes iconPulse{0%,100%{opacity:.8}50%{opacity:1}}
+.movingGrid{animation:gridMove 12s linear infinite}
+@keyframes gridMove{to{transform:translateX(40px)}}
+.skillRow{animation:rowFade 3s ease-in-out infinite}
+.skillRow:nth-child(2){animation-delay:.2s}.skillRow:nth-child(3){animation-delay:.4s}.skillRow:nth-child(4){animation-delay:.6s}.skillRow:nth-child(5){animation-delay:.8s}
+.skillRow:nth-child(6){animation-delay:1s}.skillRow:nth-child(7){animation-delay:1.2s}.skillRow:nth-child(8){animation-delay:1.4s}.skillRow:nth-child(9){animation-delay:1.6s}.skillRow:nth-child(10){animation-delay:1.8s}
+@keyframes rowFade{0%,100%{opacity:.78}50%{opacity:1}}
+.titleGlitch{animation:glitch 4s ease-in-out infinite}
+@keyframes glitch{0%,88%,100%{transform:translate(0,0)}90%{transform:translate(-2px,1px)}92%{transform:translate(2px,-1px)}94%{transform:translate(-1px,-2px)}96%{transform:translate(1px,2px)}}
+.edgePulse{animation:edgePulse 2s ease-in-out infinite}
+@keyframes edgePulse{0%,100%{opacity:.5}50%{opacity:1}}
+.warnBlink{animation:blink 1s step-end infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.barLoad{transform-origin:left center;animation:barLoad 3s ease-in-out infinite}
+@keyframes barLoad{0%,100%{transform:scaleX(.3)}50%{transform:scaleX(1)}}
+.dataStream{stroke-dasharray:15 30;animation:ds 2s linear infinite}
+@keyframes ds{to{stroke-dashoffset:-180}}
+.cornerSlide{animation:cs 3s ease-in-out infinite}
+@keyframes cs{0%,100%{opacity:.4;transform:translate(0,0)}50%{opacity:1;transform:translate(2px,-2px)}}
+.tp1{animation:tp1 8s ease-in-out infinite}.tp2{animation:tp2 11s ease-in-out infinite}.tp3{animation:tp3 7s ease-in-out infinite}
+@keyframes tp1{0%,100%{opacity:.5}50%{opacity:1}}@keyframes tp2{0%,100%{opacity:.35}50%{opacity:.9}}@keyframes tp3{0%,100%{opacity:.6}50%{opacity:1}}
+.drift{animation:drift 15s ease-in-out infinite alternate}.driftR{animation:driftR 18s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(30px,-20px) scale(1.08)}}
+@keyframes driftR{from{transform:translate(0,0) scale(1)}to{transform:translate(-35px,25px) scale(1.1)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
 </defs>
-<rect width="1600" height="780" fill="#020408"/>
 
-<g filter="url(#bgBlur)">
-  <circle cx="200" cy="200" r="250" fill="#ff003c" opacity="0.06"/>
-  <circle cx="800" cy="500" r="300" fill="#ff174f" opacity="0.04"/>
-  <circle cx="1400" cy="300" r="220" fill="#ff003c" opacity="0.05"/>
-  <circle cx="600" cy="700" r="180" fill="#ff6680" opacity="0.03"/>
-  <circle cx="1200" cy="150" r="160" fill="#ff174f" opacity="0.04"/>
-</g>
-
-<g filter="url(#bgBlurSoft)" opacity="0.5">
-  <rect class="movingGrid" x="-40" y="-40" width="1700" height="860" fill="url(#gridPattern)"/>
-</g>
-
-<rect x="0" y="0" width="1600" height="780" fill="url(#dotPattern)" opacity="0.6"/>
-
-<!-- Blurry red gradient transition layers -->
-<g filter="url(#redBlurUltra)">
-  <ellipse class="transitionPulse1 transitionDrift" cx="300" cy="200" rx="450" ry="280" fill="url(#redTransition1)"/>
-</g>
-<g filter="url(#redBlurUltra)">
-  <ellipse class="transitionPulse2 transitionDriftReverse" cx="1300" cy="580" rx="500" ry="300" fill="url(#redTransition2)"/>
-</g>
-<g filter="url(#redBlurTransition)">
-  <ellipse class="transitionPulse3 transitionDrift" cx="800" cy="390" rx="600" ry="320" fill="url(#redTransition3)"/>
-</g>
-<g filter="url(#redBlurSoftTransition)">
-  <rect class="transitionPulse1" x="0" y="280" width="1600" height="200" fill="url(#redHorizontalSweep)"/>
-</g>
-<g filter="url(#redBlurTransition)">
-  <rect class="transitionPulse2" x="0" y="0" width="1600" height="780" fill="url(#redVerticalTransition)" opacity="0.5"/>
-</g>
-<g filter="url(#redBlurTransition)">
-  <circle class="transitionPulse3 transitionDriftReverse" cx="500" cy="600" r="180" fill="#ff003c" opacity="0.06"/>
-</g>
-<g filter="url(#redBlurTransition)">
-  <circle class="transitionPulse1 transitionDrift" cx="1100" cy="250" r="200" fill="#ff174f" opacity="0.05"/>
-</g>
+<!-- translucent card base: same feel as the About Me header (no solid page-colour rectangle) -->
+<path class="cardBase" d="M30.0 112.0Q30 90 45.6 74.4L74.4 45.6Q90 30 112.0 30.0L498.0 30.0Q520 30 535.6 45.6L544.4 54.4Q560 70 582.0 70.0L1018.0 70.0Q1040 70 1055.6 54.4L1064.4 45.6Q1080 30 1102.0 30.0L1488.0 30.0Q1510 30 1525.6 45.6L1554.4 74.4Q1570 90 1570.0 112.0L1570.0 668.0Q1570 690 1554.4 705.6L1525.6 734.4Q1510 750 1488.0 750.0L1102.0 750.0Q1080 750 1064.4 734.4L1055.6 725.6Q1040 710 1018.0 710.0L582.0 710.0Q560 710 544.4 725.6L535.6 734.4Q520 750 498.0 750.0L112.0 750.0Q90 750 74.4 734.4L45.6 705.6Q30 690 30.0 668.0Z"/>
 <g clip-path="url(#cardClip)">
 <rect class="movingGrid" x="-40" y="0" width="1680" height="780" fill="url(#gridPattern)"/>
-<rect x="30" y="30" width="1540" height="720" fill="none" stroke="#ff003c" stroke-width="35" opacity="0.025" filter="url(#strongGlow)"/>
-<g filter="url(#redBlurUltra)" opacity="0.6"><ellipse class="transitionPulse1 transitionDrift" cx="300" cy="250" rx="400" ry="250" fill="url(#redTransition1)"/></g>
-<g filter="url(#redBlurTransition)" opacity="0.4"><ellipse class="transitionPulse2 transitionDriftReverse" cx="1300" cy="500" rx="450" ry="280" fill="url(#redTransition2)"/></g>
-<g filter="url(#redBlurSoftTransition)" opacity="0.35"><rect class="transitionPulse3" x="0" y="350" width="1600" height="150" fill="url(#redHorizontalSweep)"/></g>
-<path d="M30 90 L90 30 L520 30 L560 70 L1040 70 L1080 30 L1510 30 L1570 90 L1570 160 L1080 160 L1040 195 L560 195 L520 160 L30 160 Z"
-      fill="#05070a" stroke="url(#redFlow)" stroke-width="4" filter="url(#glow)"/>
+<rect width="1600" height="780" fill="url(#dotPattern)" opacity="0.6"/>
+<g class="tp1"><ellipse class="drift" cx="300" cy="230" rx="480" ry="280" fill="url(#redTransition1)"/></g>
+<g class="tp2"><ellipse class="driftR" cx="1300" cy="540" rx="520" ry="300" fill="url(#redTransition2)"/></g>
+<g class="tp3"><rect x="0" y="330" width="1600" height="160" fill="url(#redHorizontalSweep)"/></g>
+
+<path class="fD1" d="M30.0 112.0Q30 90 45.6 74.4L74.4 45.6Q90 30 112.0 30.0L498.0 30.0Q520 30 535.6 45.6L544.4 54.4Q560 70 582.0 70.0L1018.0 70.0Q1040 70 1055.6 54.4L1064.4 45.6Q1080 30 1102.0 30.0L1488.0 30.0Q1510 30 1525.6 45.6L1554.4 74.4Q1570 90 1570.0 112.0L1570.0 138.0Q1570 160 1548.0 160.0L1102.0 160.0Q1080 160 1063.4 174.5L1056.6 180.5Q1040 195 1018.0 195.0L582.0 195.0Q560 195 543.4 180.5L536.6 174.5Q520 160 498.0 160.0L52.0 160.0Q30 160 30.0 138.0Z" stroke="url(#redFlow)" stroke-width="4" filter="url(#glow)"/>
 
 <g transform="translate(115, 95)">
-  <g class="titleLogo">
-    <polygon points="0,-48 42,-24 42,24 0,48 -42,24 -42,-24" fill="none" stroke="#ff174f" stroke-width="2.5" stroke-dasharray="18 8" opacity="0.8" filter="url(#glow)"/>
-  </g>
-  <g class="titleLogoInner">
-    <polygon points="0,-36 31,-18 31,18 0,36 -31,18 -31,-18" fill="none" stroke="#ff6680" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6" filter="url(#glow)"/>
-  </g>
-  <circle cx="0" cy="0" r="26" fill="url(#coreGlow)" filter="url(#ultraGlow)"/>
-  <g class="gear">
-    <circle cx="0" cy="0" r="18" fill="none" stroke="#ff365e" stroke-width="6"/>
-    <circle cx="0" cy="0" r="7" fill="#ff365e"/>
-    <path d="M0 -24V-11 M0 11V24 M-24 0H-11 M11 0H24 M-17 -17L-8 -8 M8 8L17 17 M17 -17L8 -8 M-8 8L-17 17" stroke="#ff365e" stroke-width="5" stroke-linecap="round"/>
-  </g>
-  <circle r="3" fill="#ff174f" filter="url(#glow)">
-    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="cx" values="55;0;-55;0;55" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="0;55;0;-55;0" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="2.5" fill="#ff6680" filter="url(#glow)">
-    <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="cx" values="70;0;-70;0;70" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="0;70;0;-70;0" dur="6s" repeatCount="indefinite"/>
-  </circle>
+<g class="titleLogo"><polygon class="sR1" points="0,-48 42,-24 42,24 0,48 -42,24 -42,-24" fill="none" stroke-width="2.5" stroke-dasharray="18 8" opacity="0.8" filter="url(#glow)"/></g>
+<g class="titleLogoInner"><polygon class="sR2" points="0,-36 31,-18 31,18 0,36 -31,18 -31,-18" fill="none" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6" filter="url(#glow)"/></g>
+<circle cx="0" cy="0" r="26" fill="url(#coreGlow)" filter="url(#ultraGlow)"/>
+<g class="gear"><circle class="sR1" cx="0" cy="0" r="18" fill="none" stroke-width="6"/><circle class="fR1" cx="0" cy="0" r="7"/>
+<path class="sR1" d="M0 -24V-11 M0 11V24 M-24 0H-11 M11 0H24 M-17 -17L-8 -8 M8 8L17 17 M17 -17L8 -8 M-8 8L-17 17" stroke-width="5" stroke-linecap="round"/></g>
+<circle class="fR1" r="3" filter="url(#glow)"><animateMotion dur="4s" repeatCount="indefinite" path="M55 0 A55 55 0 1 1 -55 0 A55 55 0 1 1 55 0"/></circle>
+<circle class="fR2" r="2.5" filter="url(#glow)"><animateMotion dur="6s" repeatCount="indefinite" path="M70 0 A70 70 0 1 0 -70 0 A70 70 0 1 0 70 0"/></circle>
 </g>
 
-<g class="titleGlitch">
-  <text x="185" y="130" class="title" fill="#eeeeee">Technical</text>
-  <text x="460" y="130" class="title" fill="#ff174f">Skills</text>
+<g class="titleGlitch"><text x="185" y="130" class="title"><tspan class="fW">Technical </tspan><tspan class="fR1">Skills</tspan></text></g>
+
+<path class="sR1 circuitFlow" d="M620 125 H820" fill="none" stroke-width="4" filter="url(#glow)"/>
+<path class="sR1 circuitFlow" d="M880 125 H1180" fill="none" stroke-width="4" filter="url(#glow)"/>
+<path class="sR1 circuitFlow" d="M1240 125 H1500" fill="none" stroke-width="4" filter="url(#glow)"/>
+<g><polygon class="fD1 sR1" points="850,125 870,110 890,125 870,140" stroke-width="3" filter="url(#glow)"/><circle class="fR1 node" cx="870" cy="125" r="5"/></g>
+<g><polygon class="fD1 sR1" points="1210,125 1230,110 1250,125 1230,140" stroke-width="3" filter="url(#glow)"/><circle class="fR1 node" cx="1230" cy="125" r="5"/></g>
+<circle class="fD1 sR1" cx="1500" cy="125" r="18" stroke-width="4"/>
+<circle class="fR1 node" cx="1500" cy="125" r="7" filter="url(#glow)"/>
+
+<g class="panel1"><path class="sR0" d="M40.0 234.0Q40 220 54.0 220.0L76.0 220.0Q90 220 99.9 210.1L100.1 209.9Q110 200 124.0 200.0L376.0 200.0Q390 200 399.9 209.9L400.1 210.1Q410 220 410.0 234.0L410.0 686.0Q410 700 396.0 700.0L54.0 700.0Q40 700 40.0 686.0Z" fill="url(#panelGradient)" stroke-width="4" filter="url(#glow)"/>
+<path class="fD3 sR1" d="M40.0 230.0Q40 220 50.0 220.0L80.0 220.0Q90 220 97.1 212.9L102.9 207.1Q110 200 120.0 200.0L380.0 200.0Q390 200 397.1 207.1L402.9 212.9Q410 220 410.0 230.0L410.0 275.0Q410 285 400.0 285.0L120.0 285.0Q110 285 102.9 277.9L97.1 272.1Q90 265 80.0 265.0L50.0 265.0Q40 265 40.0 255.0Z" stroke-width="3"/></g>
+<circle class="sR1" cx="72" cy="249" r="8" fill="none" stroke-width="2.5"/><circle class="fR1" cx="72" cy="249" r="3.5"/>
+<text x="115" y="255" class="section">AI / ML / Data Science</text>
+<g class="icons"><g class="skillRow"><g transform="translate(70, 312)"><line class="sR1" x1="-7" y1="-6" x2="0" y2="-6" stroke-width="0.8" opacity="0.7"/><line class="sR1" x1="-7" y1="6" x2="0" y2="6" stroke-width="0.8" opacity="0.7"/><line class="sR1" x1="0" y1="-6" x2="7" y2="-6" stroke-width="0.8" opacity="0.7"/><line class="sR1" x1="0" y1="6" x2="7" y2="6" stroke-width="0.8" opacity="0.7"/><line class="sR1" x1="-7" y1="-6" x2="0" y2="6" stroke-width="0.8" opacity="0.7"/><line class="sR1" x1="-7" y1="6" x2="0" y2="-6" stroke-width="0.8" opacity="0.7"/><line class="sR1" x1="0" y1="-6" x2="7" y2="6" stroke-width="0.8" opacity="0.7"/><line class="sR1" x1="0" y1="6" x2="7" y2="-6" stroke-width="0.8" opacity="0.7"/><circle class="fR1" cx="-7" cy="-6" r="2"/><circle class="fR1" cx="-7" cy="6" r="2"/><circle class="fR1" cx="0" cy="-6" r="2"/><circle class="fR1" cx="0" cy="6" r="2"/><circle class="fR1" cx="7" cy="-6" r="2"/><circle class="fR1" cx="7" cy="6" r="2"/></g><text x="100" y="318" class="skill">Artificial Intelligence</text></g>
+<g class="skillRow"><g transform="translate(70, 352)"><path class="sR1" d="M-9 7 L-3 -3 L3 3 L9 -7" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle class="fR1" cx="-9" cy="7" r="2"/><circle class="fR1" cx="9" cy="-7" r="2"/><circle class="fR1" cx="-3" cy="-3" r="1.5" opacity="0.7"/><circle class="fR1" cx="3" cy="3" r="1.5" opacity="0.7"/></g><text x="100" y="358" class="skill">Machine Learning</text></g>
+<g class="skillRow"><g transform="translate(70, 392)"><circle class="fR1" cx="-8" cy="-6" r="1.8"/><circle class="fR1" cx="-8" cy="0" r="1.8"/><circle class="fR1" cx="-8" cy="6" r="1.8"/><circle class="fR1" cx="0" cy="-6" r="1.8"/><circle class="fR1" cx="0" cy="0" r="1.8"/><circle class="fR1" cx="0" cy="6" r="1.8"/><circle class="fR1" cx="8" cy="-3" r="1.8"/><circle class="fR1" cx="8" cy="3" r="1.8"/><g class="sR1" stroke-width="0.5" opacity="0.5"><line x1="-8" y1="-6" x2="0" y2="-6"/><line x1="-8" y1="-6" x2="0" y2="0"/><line x1="-8" y1="-6" x2="0" y2="6"/><line x1="-8" y1="0" x2="0" y2="-6"/><line x1="-8" y1="0" x2="0" y2="0"/><line x1="-8" y1="0" x2="0" y2="6"/><line x1="-8" y1="6" x2="0" y2="-6"/><line x1="-8" y1="6" x2="0" y2="0"/><line x1="-8" y1="6" x2="0" y2="6"/><line x1="0" y1="-6" x2="8" y2="-3"/><line x1="0" y1="-6" x2="8" y2="3"/><line x1="0" y1="0" x2="8" y2="-3"/><line x1="0" y1="0" x2="8" y2="3"/><line x1="0" y1="6" x2="8" y2="-3"/><line x1="0" y1="6" x2="8" y2="3"/></g></g><text x="100" y="398" class="skill">Deep Learning</text></g>
+<g class="skillRow"><g transform="translate(70, 432)"><path class="sR1" d="M-10 0 Q-5 -7 0 -7 Q5 -7 10 0 Q5 7 0 7 Q-5 7 -10 0 Z" fill="none" stroke-width="1.8"/><circle class="fR1" cx="0" cy="0" r="3"/><circle class="fWH" cx="0" cy="0" r="1" opacity="0.8"/></g><text x="100" y="438" class="skill">Computer Vision</text></g>
+<g class="skillRow"><g transform="translate(70, 472)"><rect class="fR1" x="-8" y="2" width="3" height="6" opacity="0.5"/><rect class="fR1" x="-3" y="-2" width="3" height="10" opacity="0.7"/><rect class="fR1" x="2" y="-5" width="3" height="13"/><rect class="fR1" x="7" y="0" width="3" height="8" opacity="0.6"/><path class="sR1" d="M-9 8 L10 8" stroke-width="1" opacity="0.5"/></g><text x="100" y="478" class="skill">Data Science</text></g>
+<g class="skillRow"><g transform="translate(70, 512)"><rect class="sR1" x="-9" y="-7" width="18" height="12" rx="4" fill="none" stroke-width="1.8"/><path class="sR1" d="M-4 5 L-2 9 L2 5" fill="none" stroke-width="1.8"/><path class="sR1" d="M-5 -1 L-3 -1 M-1 -1 L1 -1 M3 -1 L5 -1" stroke-width="1.5" stroke-linecap="round"/></g><text x="100" y="518" class="skill">NLP &amp; Generative AI</text></g>
+<g class="skillRow"><g transform="translate(70, 552)"><path class="sR1" d="M-8 -7 L0 -11 L8 -7 L8 3 L0 7 L-8 3 Z" fill="none" stroke-width="1.8" stroke-linejoin="round"/><path class="sR1" d="M0 -11 L0 7" stroke-width="1.2"/><path class="sR1" d="M-8 -7 L0 -3 L8 -7" stroke-width="1.2" fill="none"/><path class="sR1" d="M-4 -5 L-4 5 M4 -5 L4 5" stroke-width="1.2" opacity="0.6"/></g><text x="100" y="558" class="skill">TensorFlow / Keras</text></g>
+<g class="skillRow"><g transform="translate(70, 592)"><path class="fR1" d="M0 -9 C-2 -6 -5 -2 -5 2 C-5 6 -2 9 0 9 C2 9 5 6 5 2 C5 -2 2 -6 0 -9 Z" opacity="0.3"/><path class="sR1" d="M0 -9 C-2 -6 -5 -2 -5 2 C-5 6 -2 9 0 9 C2 9 5 6 5 2 C5 -2 2 -6 0 -9 Z" fill="none" stroke-width="1.8"/><circle class="fR1" cx="0" cy="3" r="2.5"/><circle class="fWH" cx="0" cy="3" r="1" opacity="0.6"/></g><text x="100" y="598" class="skill">PyTorch / Scikit-learn</text></g>
+<g class="skillRow"><g transform="translate(70, 632)"><circle class="sR1" cx="0" cy="0" r="9" fill="none" stroke-width="1.8"/><circle class="sR1" cx="0" cy="0" r="4" fill="none" stroke-width="1.5"/><path class="sR1" d="M0 -9 L0 -4 M0 4 L0 9 M-9 0 L-4 0 M4 0 L9 0" stroke-width="1.5"/><path class="sR1" d="M-6 -6 L-3 -3 M6 -6 L3 -3 M-6 6 L-3 3 M6 6 L3 3" stroke-width="1.2" opacity="0.7"/></g><text x="100" y="638" class="skill">OpenCV / YOLO / SAHI</text></g>
+<g class="skillRow"><g transform="translate(70, 672)"><rect class="sR1" x="-7" y="-7" width="14" height="14" rx="3" fill="none" stroke-width="1.8"/><circle class="fR1" cx="-3" cy="-3" r="1.5"/><circle class="fR1" cx="3" cy="-3" r="1.5"/><circle class="fR1" cx="-3" cy="3" r="1.5"/><circle class="fR1" cx="3" cy="3" r="1.5"/><path class="sR1" d="M-3 -3 L3 -3 M-3 3 L3 3 M-3 -3 L-3 3 M3 -3 L3 3" stroke-width="0.8" opacity="0.6"/><path class="sR1" d="M-7 -4 L-10 -4 M-7 0 L-10 0 M-7 4 L-10 4 M7 -4 L10 -4 M7 0 L10 0 M7 4 L10 4" stroke-width="1.2"/></g><text x="100" y="678" class="skill">LLMs / RAG / AI Agents</text></g>
 </g>
-
-<path class="circuitFlow" d="M620 125 H820" fill="none" stroke="#ff174f" stroke-width="4" filter="url(#glow)"/>
-<path class="circuitFlow" d="M880 125 H1180" fill="none" stroke="#ff174f" stroke-width="4" filter="url(#glow)"/>
-<path class="circuitFlow" d="M1240 125 H1500" fill="none" stroke="#ff174f" stroke-width="4" filter="url(#glow)"/>
-
-<g>
-  <polygon points="850,125 870,110 890,125 870,140" fill="#05070a" stroke="#ff174f" stroke-width="3" filter="url(#glow)"/>
-  <circle class="node" cx="870" cy="125" r="5" fill="#ff174f"/>
-</g>
-<g>
-  <polygon points="1210,125 1230,110 1250,125 1230,140" fill="#05070a" stroke="#ff174f" stroke-width="3" filter="url(#glow)"/>
-  <circle class="node" cx="1230" cy="125" r="5" fill="#ff174f"/>
-</g>
-
-<circle cx="1500" cy="125" r="18" fill="#05070a" stroke="#ff174f" stroke-width="4"/>
-<circle class="node" cx="1500" cy="125" r="7" fill="#ff174f" filter="url(#glow)"/>
-<g class="panel1">
-  <path d="M40 220 L90 220 L110 200 L390 200 L410 220 L410 700 L40 700 Z"
-        fill="url(#panelGradient)" stroke="#ff003c" stroke-width="4" filter="url(#glow)"/>
-  <path d="M40 220 L90 220 L110 200 L390 200 L410 220 L410 285 L110 285 L90 265 L40 265 Z"
-        fill="#11070a" stroke="#ff174f" stroke-width="3"/>
-  <polygon points="390,200 410,220 410,285 390,285" fill="#0a0508" opacity="0.5"/>
-</g>
-
-<text x="65" y="255" class="skillIcon">◉</text>
-<text x="105" y="255" class="section">AI / ML / Data Science</text>
-
-<g class="icons">
-<g class="skillRow"><g transform="translate(70, 312)"><line x1="-7" y1="-6" x2="0" y2="-6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="-7" y1="6" x2="0" y2="6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="0" y1="-6" x2="7" y2="-6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="0" y1="6" x2="7" y2="6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="-7" y1="-6" x2="0" y2="6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="-7" y1="6" x2="0" y2="-6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="0" y1="-6" x2="7" y2="6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="0" y1="6" x2="7" y2="-6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><circle cx="-7" cy="-6" r="2" fill="#ff174f"/><circle cx="-7" cy="6" r="2" fill="#ff174f"/><circle cx="0" cy="-6" r="2" fill="#ff174f"/><circle cx="0" cy="6" r="2" fill="#ff174f"/><circle cx="7" cy="-6" r="2" fill="#ff174f"/><circle cx="7" cy="6" r="2" fill="#ff174f"/></g><text x="100" y="318" class="skill">Artificial Intelligence</text></g>
-<g class="skillRow"><g transform="translate(70, 352)"><path d="M-9 7 L-3 -3 L3 3 L9 -7" stroke="#ff174f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="-9" cy="7" r="2" fill="#ff174f"/><circle cx="9" cy="-7" r="2" fill="#ff174f"/><circle cx="-3" cy="-3" r="1.5" fill="#ff174f" opacity="0.7"/><circle cx="3" cy="3" r="1.5" fill="#ff174f" opacity="0.7"/></g><text x="100" y="358" class="skill">Machine Learning</text></g>
-<g class="skillRow"><g transform="translate(70, 392)"><circle cx="-8" cy="-6" r="1.8" fill="#ff174f"/><circle cx="-8" cy="0" r="1.8" fill="#ff174f"/><circle cx="-8" cy="6" r="1.8" fill="#ff174f"/><circle cx="0" cy="-6" r="1.8" fill="#ff174f"/><circle cx="0" cy="0" r="1.8" fill="#ff174f"/><circle cx="0" cy="6" r="1.8" fill="#ff174f"/><circle cx="8" cy="-3" r="1.8" fill="#ff174f"/><circle cx="8" cy="3" r="1.8" fill="#ff174f"/><line x1="-8" y1="-6" x2="0" y2="-6" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="-6" x2="0" y2="0" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="-6" x2="0" y2="6" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="0" x2="0" y2="-6" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="0" x2="0" y2="0" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="0" x2="0" y2="6" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="6" x2="0" y2="-6" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="6" x2="0" y2="0" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="6" x2="0" y2="6" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="0" y1="-6" x2="8" y2="-3" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="0" y1="-6" x2="8" y2="3" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="0" y1="0" x2="8" y2="-3" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="0" y1="0" x2="8" y2="3" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="0" y1="6" x2="8" y2="-3" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="0" y1="6" x2="8" y2="3" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/></g><text x="100" y="398" class="skill">Deep Learning</text></g>
-<g class="skillRow"><g transform="translate(70, 432)"><path d="M-10 0 Q-5 -7 0 -7 Q5 -7 10 0 Q5 7 0 7 Q-5 7 -10 0 Z" fill="none" stroke="#ff174f" stroke-width="1.8"/><circle cx="0" cy="0" r="3" fill="#ff174f"/><circle cx="0" cy="0" r="1" fill="#ffffff" opacity="0.8"/></g><text x="100" y="438" class="skill">Computer Vision</text></g>
-<g class="skillRow"><g transform="translate(70, 472)"><rect x="-8" y="2" width="3" height="6" fill="#ff174f" opacity="0.5"/><rect x="-3" y="-2" width="3" height="10" fill="#ff174f" opacity="0.7"/><rect x="2" y="-5" width="3" height="13" fill="#ff174f"/><rect x="7" y="0" width="3" height="8" fill="#ff174f" opacity="0.6"/><path d="M-9 8 L10 8" stroke="#ff174f" stroke-width="1" opacity="0.5"/></g><text x="100" y="478" class="skill">Data Science</text></g>
-<g class="skillRow"><g transform="translate(70, 512)"><rect x="-9" y="-7" width="18" height="12" rx="4" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-4 5 L-2 9 L2 5" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-5 -1 L-3 -1 M-1 -1 L1 -1 M3 -1 L5 -1" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/></g><text x="100" y="518" class="skill">NLP &amp; Generative AI</text></g>
-<g class="skillRow"><g transform="translate(70, 552)"><path d="M-8 -7 L0 -11 L8 -7 L8 3 L0 7 L-8 3 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/><path d="M0 -11 L0 7" stroke="#ff174f" stroke-width="1.2"/><path d="M-8 -7 L0 -3 L8 -7" stroke="#ff174f" stroke-width="1.2"/><path d="M-4 -5 L-4 5 M4 -5 L4 5" stroke="#ff174f" stroke-width="1.2" opacity="0.6"/></g><text x="100" y="558" class="skill">TensorFlow / Keras</text></g>
-<g class="skillRow"><g transform="translate(70, 592)"><path d="M0 -9 C-2 -6 -5 -2 -5 2 C-5 6 -2 9 0 9 C2 9 5 6 5 2 C5 -2 2 -6 0 -9 Z" fill="#ff174f" opacity="0.3"/><path d="M0 -9 C-2 -6 -5 -2 -5 2 C-5 6 -2 9 0 9 C2 9 5 6 5 2 C5 -2 2 -6 0 -9 Z" fill="none" stroke="#ff174f" stroke-width="1.8"/><circle cx="0" cy="3" r="2.5" fill="#ff174f"/><circle cx="0" cy="3" r="1" fill="#ffffff" opacity="0.6"/></g><text x="100" y="598" class="skill">PyTorch / Scikit-learn</text></g>
-<g class="skillRow"><g transform="translate(70, 632)"><circle cx="0" cy="0" r="9" fill="none" stroke="#ff174f" stroke-width="1.8"/><circle cx="0" cy="0" r="4" fill="none" stroke="#ff174f" stroke-width="1.5"/><path d="M0 -9 L0 -4 M0 4 L0 9 M-9 0 L-4 0 M4 0 L9 0" stroke="#ff174f" stroke-width="1.5"/><path d="M-6 -6 L-3 -3 M6 -6 L3 -3 M-6 6 L-3 3 M6 6 L3 3" stroke="#ff174f" stroke-width="1.2" opacity="0.7"/></g><text x="100" y="638" class="skill">OpenCV / YOLO / SAHI</text></g>
-<g class="skillRow"><g transform="translate(70, 672)"><rect x="-7" y="-7" width="14" height="14" rx="3" fill="none" stroke="#ff174f" stroke-width="1.8"/><circle cx="-3" cy="-3" r="1.5" fill="#ff174f"/><circle cx="3" cy="-3" r="1.5" fill="#ff174f"/><circle cx="-3" cy="3" r="1.5" fill="#ff174f"/><circle cx="3" cy="3" r="1.5" fill="#ff174f"/><path d="M-3 -3 L3 -3 M-3 3 L3 3 M-3 -3 L-3 3 M3 -3 L3 3" stroke="#ff174f" stroke-width="0.8" opacity="0.6"/><path d="M-7 -4 L-10 -4 M-7 0 L-10 0 M-7 4 L-10 4 M7 -4 L10 -4 M7 0 L10 0 M7 4 L10 4" stroke="#ff174f" stroke-width="1.2"/></g><text x="100" y="678" class="skill">LLMs / RAG / AI Agents</text></g>
-</g>
-
-<path d="M40 690 H410" stroke="#ff003c" stroke-width="2" opacity="0.4"/>
-<g class="panel2">
-  <path d="M430 200 L710 200 L730 220 L760 220 L760 700 L430 700 Z"
-        fill="url(#panelGradient)" stroke="#ff003c" stroke-width="4" filter="url(#glow)"/>
-  <path d="M430 200 L710 200 L730 220 L760 220 L760 290 L430 290 Z"
-        fill="#11070a" stroke="#ff174f" stroke-width="3"/>
-  <polygon points="710,200 730,220 760,220 760,290 710,290" fill="#0a0508" opacity="0.5"/>
-</g>
-
+<path class="sR0" d="M40 690 H410" stroke-width="2" opacity="0.4"/>
+<g class="panel2"><path class="sR0" d="M430.0 214.0Q430 200 444.0 200.0L696.0 200.0Q710 200 719.9 209.9L720.1 210.1Q730 220 744.0 220.0L746.0 220.0Q760 220 760.0 234.0L760.0 686.0Q760 700 746.0 700.0L444.0 700.0Q430 700 430.0 686.0Z" fill="url(#panelGradient)" stroke-width="4" filter="url(#glow)"/>
+<path class="fD3 sR1" d="M430.0 210.0Q430 200 440.0 200.0L700.0 200.0Q710 200 717.1 207.1L722.9 212.9Q730 220 740.0 220.0L750.0 220.0Q760 220 760.0 230.0L760.0 275.0Q760 285 750.0 285.0L440.0 285.0Q430 285 430.0 275.0Z" stroke-width="3"/></g>
 <text x="455" y="255" class="skillIcon">&lt;/&gt;</text>
 <text x="510" y="255" class="sectionSmall">Programming &amp; Development</text>
-
-<g class="icons">
-<g class="skillRow"><g transform="translate(460, 312)"><circle cx="0" cy="0" r="9" fill="none" stroke="#ff174f" stroke-width="2"/><path d="M3 -4 A5.5 5.5 0 1 0 3 4" fill="none" stroke="#ff174f" stroke-width="2.2" stroke-linecap="round"/></g><text x="490" y="318" class="skill">C / C++</text></g>
-<g class="skillRow"><g transform="translate(460, 352)"><path d="M-3 -9 C-7 -9 -9 -7 -9 -3 L-9 -1 L-3 -1 L-3 1 C-3 4 -1 6 2 6 L4 6 C7 6 9 4 9 1 L9 -3 C9 -6 7 -8 4 -8 L2 -8 L2 -6 L4 -6 C5 -6 6 -5 6 -3 L6 1 C6 2 5 3 4 3 L2 3 C1 3 0 2 0 1 L0 -1 L-6 -1 C-7 -1 -7 -2 -7 -3 C-7 -5 -6 -6 -4 -6 L-2 -6 L-2 -8 Z" fill="#ff174f" opacity="0.9"/><path d="M3 9 C7 9 9 7 9 3 L9 1 L3 1 L3 -1 C3 -4 1 -6 -2 -6 L-4 -6 C-7 -6 -9 -4 -9 -1 L-9 3 C-9 6 -7 8 -4 8 L-2 8 L-2 6 L-4 6 C-5 6 -6 5 -6 3 L-6 -1 C-6 -2 -5 -3 -4 -3 L-2 -3 C-1 -3 0 -2 0 -1 L0 1 L6 1 C7 1 7 2 7 3 C7 5 6 6 4 6 L2 6 L2 8 Z" fill="#ff174f" opacity="0.5"/></g><text x="490" y="358" class="skill">Python</text></g>
-<g class="skillRow"><g transform="translate(460, 392)"><rect x="-9" y="-9" width="18" height="18" rx="2" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-5 -4 L-5 2 C-5 4 -4 5 -2 5 C0 5 1 4 1 2 L1 -4" stroke="#ff174f" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 5 C3 5 2 4 2 2 C2 1 3 0 5 0 C7 0 8 -1 8 -3 C8 -5 7 -6 5 -6 C3 -6 2 -5 2 -3" stroke="#ff174f" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g><text x="490" y="398" class="skill">JavaScript</text></g>
-<g class="skillRow"><g transform="translate(460, 432)"><path d="M0 -9 L8 -6 L7 4 L0 9 L-7 4 L-8 -6 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/><text x="0" y="3" font-family="Arial" font-size="7" font-weight="900" fill="#ff174f" text-anchor="middle">5</text></g><text x="490" y="438" class="skill">HTML / CSS</text></g>
-<g class="skillRow"><g transform="translate(460, 472)"><circle cx="0" cy="0" r="2.5" fill="#ff174f"/><ellipse cx="0" cy="0" rx="9" ry="3.5" fill="none" stroke="#ff174f" stroke-width="1.2"/><ellipse cx="0" cy="0" rx="9" ry="3.5" fill="none" stroke="#ff174f" stroke-width="1.2" transform="rotate(60)"/><ellipse cx="0" cy="0" rx="9" ry="3.5" fill="none" stroke="#ff174f" stroke-width="1.2" transform="rotate(-60)"/></g><text x="490" y="478" class="skill">React.js</text></g>
-<g class="skillRow"><g transform="translate(460, 512)"><polygon points="0,-9 8,-4.5 8,4.5 0,9 -8,4.5 -8,-4.5" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/><path d="M-3 -4 L-3 3 M-3 -4 L0 0 L3 -4 M3 -4 L3 3" stroke="#ff174f" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g><text x="490" y="518" class="skill">Node.js / Express.js</text></g>
-<g class="skillRow"><g transform="translate(460, 552)"><polygon points="0,-8 8,-4 0,0 -8,-4" fill="#ff174f" opacity="0.8"/><polygon points="0,-3 8,1 0,5 -8,1" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/><polygon points="0,2 8,6 0,10 -8,6" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/></g><text x="490" y="558" class="skill">MERN Stack</text></g>
-<g class="skillRow"><g transform="translate(460, 592)"><path d="M-8 3 C-10 3 -10 -1 -8 -1 C-8 -4 -5 -5 -3 -4 C-1 -7 3 -6 4 -3 C7 -3 8 0 7 2 C8 2 8 3 7 4 L-7 4 C-9 4 -9 3 -8 3 Z" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/><path d="M-2 8 L2 8 M0 6 L0 10" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/></g><text x="490" y="598" class="skill">REST APIs</text></g>
-<g class="skillRow"><g transform="translate(460, 632)"><circle cx="-4" cy="-4" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/><circle cx="4" cy="-4" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/><circle cx="0" cy="4" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/><path d="M-2 -3 L2 -3" stroke="#ff174f" stroke-width="1.2"/><path d="M-3 0 L0 3" stroke="#ff174f" stroke-width="1.2"/><path d="M3 0 L0 3" stroke="#ff174f" stroke-width="1.2"/></g><text x="490" y="638" class="skill">Redux / Tailwind CSS</text></g>
-<g class="skillRow"><g transform="translate(460, 672)"><path d="M-3 -9 L5 -9 L0 -2 L5 -2 L-5 9 L-1 0 L-6 0 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/><path d="M-3 -9 L5 -9 L0 -2 L5 -2 L-5 9 L-1 0 L-6 0 Z" fill="#ff174f" opacity="0.2"/></g><text x="490" y="678" class="skill">Vite</text></g>
+<g class="icons"><g class="skillRow"><g transform="translate(460, 312)"><circle class="sR1" cx="0" cy="0" r="9" fill="none" stroke-width="2"/><path class="sR1" d="M3 -4 A5.5 5.5 0 1 0 3 4" fill="none" stroke-width="2.2" stroke-linecap="round"/></g><text x="490" y="318" class="skill">C / C++</text></g>
+<g class="skillRow"><g transform="translate(460, 352)"><path class="fR1" d="M-3 -9 C-7 -9 -9 -7 -9 -3 L-9 -1 L-3 -1 L-3 1 C-3 4 -1 6 2 6 L4 6 C7 6 9 4 9 1 L9 -3 C9 -6 7 -8 4 -8 L2 -8 L2 -6 L4 -6 C5 -6 6 -5 6 -3 L6 1 C6 2 5 3 4 3 L2 3 C1 3 0 2 0 1 L0 -1 L-6 -1 C-7 -1 -7 -2 -7 -3 C-7 -5 -6 -6 -4 -6 L-2 -6 L-2 -8 Z" opacity="0.9"/><path class="fR1" d="M3 9 C7 9 9 7 9 3 L9 1 L3 1 L3 -1 C3 -4 1 -6 -2 -6 L-4 -6 C-7 -6 -9 -4 -9 -1 L-9 3 C-9 6 -7 8 -4 8 L-2 8 L-2 6 L-4 6 C-5 6 -6 5 -6 3 L-6 -1 C-6 -2 -5 -3 -4 -3 L-2 -3 C-1 -3 0 -2 0 -1 L0 1 L6 1 C7 1 7 2 7 3 C7 5 6 6 4 6 L2 6 L2 8 Z" opacity="0.5"/></g><text x="490" y="358" class="skill">Python</text></g>
+<g class="skillRow"><g transform="translate(460, 392)"><rect class="sR1" x="-9" y="-9" width="18" height="18" rx="2" fill="none" stroke-width="1.8"/><path class="sR1" d="M-5 -4 L-5 2 C-5 4 -4 5 -2 5 C0 5 1 4 1 2 L1 -4" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path class="sR1" d="M5 5 C3 5 2 4 2 2 C2 1 3 0 5 0 C7 0 8 -1 8 -3 C8 -5 7 -6 5 -6 C3 -6 2 -5 2 -3" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g><text x="490" y="398" class="skill">JavaScript</text></g>
+<g class="skillRow"><g transform="translate(460, 432)"><path class="sR1" d="M0 -9 L8 -6 L7 4 L0 9 L-7 4 L-8 -6 Z" fill="none" stroke-width="1.8" stroke-linejoin="round"/><text class="fR1" x="0" y="3" font-family="Arial" font-size="7" font-weight="900" text-anchor="middle">5</text></g><text x="490" y="438" class="skill">HTML / CSS</text></g>
+<g class="skillRow"><g transform="translate(460, 472)"><circle class="fR1" cx="0" cy="0" r="2.5"/><ellipse class="sR1" cx="0" cy="0" rx="9" ry="3.5" fill="none" stroke-width="1.2"/><ellipse class="sR1" cx="0" cy="0" rx="9" ry="3.5" fill="none" stroke-width="1.2" transform="rotate(60)"/><ellipse class="sR1" cx="0" cy="0" rx="9" ry="3.5" fill="none" stroke-width="1.2" transform="rotate(-60)"/></g><text x="490" y="478" class="skill">React.js</text></g>
+<g class="skillRow"><g transform="translate(460, 512)"><polygon class="sR1" points="0,-9 8,-4.5 8,4.5 0,9 -8,4.5 -8,-4.5" fill="none" stroke-width="1.8" stroke-linejoin="round"/><path class="sR1" d="M-3 -4 L-3 3 M-3 -4 L0 0 L3 -4 M3 -4 L3 3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g><text x="490" y="518" class="skill">Node.js / Express.js</text></g>
+<g class="skillRow"><g transform="translate(460, 552)"><polygon class="fR1" points="0,-8 8,-4 0,0 -8,-4" opacity="0.8"/><polygon class="sR1" points="0,-3 8,1 0,5 -8,1" fill="none" stroke-width="1.5" stroke-linejoin="round"/><polygon class="sR1" points="0,2 8,6 0,10 -8,6" fill="none" stroke-width="1.5" stroke-linejoin="round"/></g><text x="490" y="558" class="skill">MERN Stack</text></g>
+<g class="skillRow"><g transform="translate(460, 592)"><path class="sR1" d="M-8 3 C-10 3 -10 -1 -8 -1 C-8 -4 -5 -5 -3 -4 C-1 -7 3 -6 4 -3 C7 -3 8 0 7 2 C8 2 8 3 7 4 L-7 4 C-9 4 -9 3 -8 3 Z" fill="none" stroke-width="1.5" stroke-linejoin="round"/><path class="sR1" d="M-2 8 L2 8 M0 6 L0 10" stroke-width="1.5" stroke-linecap="round"/></g><text x="490" y="598" class="skill">REST APIs</text></g>
+<g class="skillRow"><g transform="translate(460, 632)"><circle class="sR1" cx="-4" cy="-4" r="2.5" fill="none" stroke-width="1.5"/><circle class="sR1" cx="4" cy="-4" r="2.5" fill="none" stroke-width="1.5"/><circle class="sR1" cx="0" cy="4" r="2.5" fill="none" stroke-width="1.5"/><path class="sR1" d="M-2 -3 L2 -3" stroke-width="1.2"/><path class="sR1" d="M-3 0 L0 3" stroke-width="1.2"/><path class="sR1" d="M3 0 L0 3" stroke-width="1.2"/></g><text x="490" y="638" class="skill">Redux / Tailwind CSS</text></g>
+<g class="skillRow"><g transform="translate(460, 672)"><path class="fR1 sR1" d="M-3 -9 L5 -9 L0 -2 L5 -2 L-5 9 L-1 0 L-6 0 Z" fill-opacity="0.2" stroke-width="1.8" stroke-linejoin="round"/></g><text x="490" y="678" class="skill">Vite</text></g>
 </g>
-
-<path d="M430 690 H760" stroke="#ff003c" stroke-width="2" opacity="0.4"/>
-<g class="panel3">
-  <path d="M780 200 L1060 200 L1080 220 L1110 220 L1110 700 L780 700 Z"
-        fill="url(#panelGradient)" stroke="#ff003c" stroke-width="4" filter="url(#glow)"/>
-  <path d="M780 200 L1060 200 L1080 220 L1110 220 L1110 285 L780 285 Z"
-        fill="#11070a" stroke="#ff174f" stroke-width="3"/>
-  <polygon points="1060,200 1080,220 1110,220 1110,285 1060,285" fill="#0a0508" opacity="0.5"/>
+<path class="sR0" d="M430 690 H760" stroke-width="2" opacity="0.4"/>
+<g class="panel3"><path class="sR0" d="M780.0 214.0Q780 200 794.0 200.0L1046.0 200.0Q1060 200 1069.9 209.9L1070.1 210.1Q1080 220 1094.0 220.0L1096.0 220.0Q1110 220 1110.0 234.0L1110.0 686.0Q1110 700 1096.0 700.0L794.0 700.0Q780 700 780.0 686.0Z" fill="url(#panelGradient)" stroke-width="4" filter="url(#glow)"/>
+<path class="fD3 sR1" d="M780.0 210.0Q780 200 790.0 200.0L1050.0 200.0Q1060 200 1067.1 207.1L1072.9 212.9Q1080 220 1090.0 220.0L1100.0 220.0Q1110 220 1110.0 230.0L1110.0 275.0Q1110 285 1100.0 285.0L790.0 285.0Q780 285 780.0 275.0Z" stroke-width="3"/></g>
+<circle class="fR1" cx="812" cy="249" r="7"/>
+<text x="855" y="255" class="section">Databases &amp; Tools</text>
+<g class="icons"><g class="skillRow"><g transform="translate(810, 312)"><ellipse class="sR1" cx="0" cy="-6" rx="8" ry="3" fill="none" stroke-width="1.8"/><path class="sR1" d="M-8 -6 L-8 6 C-8 8 8 8 8 6 L8 -6" fill="none" stroke-width="1.8"/><ellipse class="sR1" cx="0" cy="-1" rx="8" ry="3" fill="none" stroke-width="0.8" opacity="0.6"/><ellipse class="sR1" cx="0" cy="3" rx="8" ry="3" fill="none" stroke-width="0.8" opacity="0.4"/></g><text x="840" y="318" class="skill">SQL</text></g>
+<g class="skillRow"><g transform="translate(810, 352)"><path class="sR1" d="M-7 6 C-7 2 -5 -2 -2 -4 C0 -6 2 -6 3 -4 C4 -3 5 -1 5 1 L5 3 C5 4 4 5 3 4 L3 2 C3 1 4 0 4 -1" fill="none" stroke-width="1.8" stroke-linecap="round"/><circle class="fR1" cx="3" cy="-3" r="0.8"/><path class="sR1" d="M-2 -4 C-4 -5 -6 -4 -7 -2" fill="none" stroke-width="1.2" opacity="0.7"/><path class="sR1" d="M-7 6 L-5 6 M-2 6 L-2 3" stroke-width="1.8" stroke-linecap="round"/></g><text x="840" y="358" class="skill">PostgreSQL</text></g>
+<g class="skillRow"><g transform="translate(810, 392)"><path class="fR1" d="M0 -9 C3 -5 5 -1 4 3 C3 6 0 8 -1 6 C-3 4 -4 1 -3 -2 C-2 -5 -1 -7 0 -9 Z" opacity="0.3"/><path class="sR1" d="M0 -9 C3 -5 5 -1 4 3 C3 6 0 8 -1 6 C-3 4 -4 1 -3 -2 C-2 -5 -1 -7 0 -9 Z" fill="none" stroke-width="1.5"/><path class="sR1" d="M0 -9 L-1 6" stroke-width="1"/></g><text x="840" y="398" class="skill">MongoDB</text></g>
+<g class="skillRow"><g transform="translate(810, 432)"><path class="sR1" d="M-7 2 C-9 2 -9 -2 -7 -2 C-7 -5 -4 -6 -2 -5 C0 -8 4 -7 5 -4 C8 -4 9 -1 8 1 C9 1 9 2 8 3 L-6 3 C-8 3 -8 2 -7 2 Z" fill="none" stroke-width="1.5" stroke-linejoin="round"/><path class="fR1" d="M0 -1 C1 1 1 3 0 4 C-1 3 -1 1 0 -1 Z"/></g><text x="840" y="438" class="skill">MongoDB Atlas</text></g>
+<g class="skillRow"><g transform="translate(810, 472)"><path class="fR1 sR1" d="M0 -9 L-5 -1 L0 -1 L-1 9 L5 1 L0 1 Z" fill-opacity="0.2" stroke-width="1.8" stroke-linejoin="round"/></g><text x="840" y="478" class="skill">Neon</text></g>
+<g class="skillRow"><g transform="translate(810, 512)"><circle class="sR1" cx="-6" cy="6" r="2.5" fill="none" stroke-width="1.5"/><circle class="sR1" cx="6" cy="6" r="2.5" fill="none" stroke-width="1.5"/><circle class="sR1" cx="0" cy="-6" r="2.5" fill="none" stroke-width="1.5"/><path class="sR1" d="M0 -3.5 L0 -1 M0 -1 C0 3 -6 3 -6 6 M0 -1 C0 3 6 3 6 6" stroke-width="1.5" fill="none" stroke-linecap="round"/></g><text x="840" y="518" class="skill">Git / GitHub</text></g>
+<g class="skillRow"><g transform="translate(810, 552)"><path class="sR1" d="M-8 -7 L8 -7 L8 7 L-8 7 Z" fill="none" stroke-width="1.8" stroke-linejoin="round"/><path class="sR1" d="M-5 -4 L0 0 L-5 4" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path class="sR1" d="M5 -4 L2 0 L5 4" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><text x="840" y="558" class="skill">VS Code</text></g>
+<g class="skillRow"><g transform="translate(810, 592)"><circle class="sR1" cx="0" cy="0" r="8" fill="none" stroke-width="1.5"/><circle class="sR1" cx="0" cy="0" r="3" fill="none" stroke-width="1.5"/><circle class="sR1" cx="0" cy="0" r="5.5" fill="none" stroke-width="0.8" opacity="0.6"/><circle class="fR1" cx="0" cy="-5.5" r="1"/><circle class="fR1" cx="0" cy="5.5" r="1"/></g><text x="840" y="598" class="skill">Jupyter Notebook</text></g>
+<g class="skillRow"><g transform="translate(810, 632)"><path class="sR1" d="M-8 0 C-8 -3 -5 -4 -3 -2 L0 0 L3 2 C5 4 8 3 8 0 C8 -3 5 -4 3 -2 L0 0 L-3 2 C-5 4 -8 3 -8 0 Z" fill="none" stroke-width="1.8" stroke-linejoin="round"/><circle class="fR1" cx="-5" cy="0" r="1" opacity="0.7"/><circle class="fR1" cx="5" cy="0" r="1" opacity="0.7"/></g><text x="840" y="638" class="skill">Google Colab</text></g>
+<g class="skillRow"><g transform="translate(810, 672)"><rect class="sR1" x="-8" y="-7" width="16" height="14" rx="2" fill="none" stroke-width="1.8"/><path class="sR1" d="M-5 -3 L-2 0 L-5 3 M1 3 L5 3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g><text x="840" y="678" class="skill">Linux / npm</text></g>
 </g>
-
-<text x="805" y="255" class="skillIcon">●</text>
-<text x="848" y="255" class="section">Databases &amp; Tools</text>
-
-<g class="icons">
-<g class="skillRow"><g transform="translate(810, 312)"><ellipse cx="0" cy="-6" rx="8" ry="3" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-8 -6 L-8 6 C-8 8 8 8 8 6 L8 -6" fill="none" stroke="#ff174f" stroke-width="1.8"/><ellipse cx="0" cy="-1" rx="8" ry="3" fill="none" stroke="#ff174f" stroke-width="0.8" opacity="0.6"/><ellipse cx="0" cy="3" rx="8" ry="3" fill="none" stroke="#ff174f" stroke-width="0.8" opacity="0.4"/></g><text x="840" y="318" class="skill">SQL</text></g>
-<g class="skillRow"><g transform="translate(810, 352)"><path d="M-7 6 C-7 2 -5 -2 -2 -4 C0 -6 2 -6 3 -4 C4 -3 5 -1 5 1 L5 3 C5 4 4 5 3 4 L3 2 C3 1 4 0 4 -1" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linecap="round"/><circle cx="3" cy="-3" r="0.8" fill="#ff174f"/><path d="M-2 -4 C-4 -5 -6 -4 -7 -2" fill="none" stroke="#ff174f" stroke-width="1.2" opacity="0.7"/><path d="M-7 6 L-5 6 M-2 6 L-2 3" stroke="#ff174f" stroke-width="1.8" stroke-linecap="round"/></g><text x="840" y="358" class="skill">PostgreSQL</text></g>
-<g class="skillRow"><g transform="translate(810, 392)"><path d="M0 -9 C3 -5 5 -1 4 3 C3 6 0 8 -1 6 C-3 4 -4 1 -3 -2 C-2 -5 -1 -7 0 -9 Z" fill="#ff174f" opacity="0.3"/><path d="M0 -9 C3 -5 5 -1 4 3 C3 6 0 8 -1 6 C-3 4 -4 1 -3 -2 C-2 -5 -1 -7 0 -9 Z" fill="none" stroke="#ff174f" stroke-width="1.5"/><path d="M0 -9 L-1 6" stroke="#ff174f" stroke-width="1"/></g><text x="840" y="398" class="skill">MongoDB</text></g>
-<g class="skillRow"><g transform="translate(810, 432)"><path d="M-7 2 C-9 2 -9 -2 -7 -2 C-7 -5 -4 -6 -2 -5 C0 -8 4 -7 5 -4 C8 -4 9 -1 8 1 C9 1 9 2 8 3 L-6 3 C-8 3 -8 2 -7 2 Z" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/><path d="M0 -1 C1 1 1 3 0 4 C-1 3 -1 1 0 -1 Z" fill="#ff174f"/></g><text x="840" y="438" class="skill">MongoDB Atlas</text></g>
-<g class="skillRow"><g transform="translate(810, 472)"><path d="M0 -9 L-5 -1 L0 -1 L-1 9 L5 1 L0 1 Z" fill="#ff174f" opacity="0.2"/><path d="M0 -9 L-5 -1 L0 -1 L-1 9 L5 1 L0 1 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/></g><text x="840" y="478" class="skill">Neon</text></g>
-<g class="skillRow"><g transform="translate(810, 512)"><circle cx="-6" cy="6" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/><circle cx="6" cy="6" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/><circle cx="0" cy="-6" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/><path d="M0 -3.5 L0 -1 M0 -1 C0 3 -6 3 -6 6 M0 -1 C0 3 6 3 6 6" stroke="#ff174f" stroke-width="1.5" fill="none" stroke-linecap="round"/></g><text x="840" y="518" class="skill">Git / GitHub</text></g>
-<g class="skillRow"><g transform="translate(810, 552)"><path d="M-8 -7 L8 -7 L8 7 L-8 7 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/><path d="M-5 -4 L0 0 L-5 4" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 -4 L2 0 L5 4" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><text x="840" y="558" class="skill">VS Code</text></g>
-<g class="skillRow"><g transform="translate(810, 592)"><circle cx="0" cy="0" r="8" fill="none" stroke="#ff174f" stroke-width="1.5"/><circle cx="0" cy="0" r="3" fill="none" stroke="#ff174f" stroke-width="1.5"/><circle cx="0" cy="0" r="5.5" fill="none" stroke="#ff174f" stroke-width="0.8" opacity="0.6"/><circle cx="0" cy="-5.5" r="1" fill="#ff174f"/><circle cx="0" cy="5.5" r="1" fill="#ff174f"/></g><text x="840" y="598" class="skill">Jupyter Notebook</text></g>
-<g class="skillRow"><g transform="translate(810, 632)"><path d="M-8 0 C-8 -3 -5 -4 -3 -2 L0 0 L3 2 C5 4 8 3 8 0 C8 -3 5 -4 3 -2 L0 0 L-3 2 C-5 4 -8 3 -8 0 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/><circle cx="-5" cy="0" r="1" fill="#ff174f" opacity="0.7"/><circle cx="5" cy="0" r="1" fill="#ff174f" opacity="0.7"/></g><text x="840" y="638" class="skill">Google Colab</text></g>
-<g class="skillRow"><g transform="translate(810, 672)"><rect x="-8" y="-7" width="16" height="14" rx="2" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-5 -3 L-2 0 L-5 3 M1 3 L5 3" stroke="#ff174f" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g><text x="840" y="678" class="skill">Linux / npm</text></g>
-</g>
-
-<path d="M780 690 H1110" stroke="#ff003c" stroke-width="2" opacity="0.4"/>
-<g class="panel4">
-  <path d="M1130 200 L1450 200 L1470 220 L1540 220 L1560 240 L1560 700 L1130 700 Z"
-        fill="url(#panelGradient)" stroke="#ff003c" stroke-width="4" filter="url(#glow)"/>
-  <path d="M1130 200 L1450 200 L1470 220 L1540 220 L1560 240 L1560 285 L1130 285 Z"
-        fill="#11070a" stroke="#ff174f" stroke-width="3"/>
-  <polygon points="1450,200 1470,220 1540,220 1560,240 1560,285 1450,285" fill="#0a0508" opacity="0.5"/>
-</g>
-
-<text x="1155" y="255" class="skillIcon">▣</text>
+<path class="sR0" d="M780 690 H1110" stroke-width="2" opacity="0.4"/>
+<g class="panel4"><path class="sR0" d="M1130.0 214.0Q1130 200 1144.0 200.0L1436.0 200.0Q1450 200 1459.9 209.9L1460.1 210.1Q1470 220 1484.0 220.0L1526.0 220.0Q1540 220 1549.9 229.9L1550.1 230.1Q1560 240 1560.0 254.0L1560.0 686.0Q1560 700 1546.0 700.0L1144.0 700.0Q1130 700 1130.0 686.0Z" fill="url(#panelGradient)" stroke-width="4" filter="url(#glow)"/>
+<path class="fD3 sR1" d="M1130.0 210.0Q1130 200 1140.0 200.0L1440.0 200.0Q1450 200 1457.1 207.1L1462.9 212.9Q1470 220 1480.0 220.0L1530.0 220.0Q1540 220 1547.1 227.1L1552.9 232.9Q1560 240 1560.0 250.0L1560.0 275.0Q1560 285 1550.0 285.0L1140.0 285.0Q1130 285 1130.0 275.0Z" stroke-width="3"/></g>
+<rect class="sR1" x="1154" y="241" width="16" height="16" rx="3" fill="none" stroke-width="2.5"/><rect class="fR1" x="1158" y="245" width="8" height="8" rx="1.5"/>
 <text x="1205" y="255" class="section">IoT &amp; Technologies</text>
-
-<g class="icons">
-<g class="skillRow"><g transform="translate(1160, 312)"><path d="M-8 0 C-8 -4 -3 -4 -1 -1 L1 1 C3 4 8 4 8 0 C8 -4 3 -4 1 -1 L-1 1 C-3 4 -8 4 -8 0 Z" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-6 -2 L-6 2 M-8 0 L-4 0" stroke="#ff174f" stroke-width="1" stroke-linecap="round"/><path d="M6 -2 L6 2" stroke="#ff174f" stroke-width="1" stroke-linecap="round"/></g><text x="1190" y="318" class="skill">Arduino</text></g>
-<g class="skillRow"><g transform="translate(1160, 352)"><rect x="-7" y="-5" width="14" height="10" rx="1.5" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-4 -5 L-4 -8 M0 -5 L0 -8 M4 -5 L4 -8" stroke="#ff174f" stroke-width="1.2" stroke-linecap="round"/><circle cx="0" cy="0" r="2" fill="#ff174f"/><path d="M-5 5 L-5 8 M5 5 L5 8" stroke="#ff174f" stroke-width="1.2" stroke-linecap="round"/></g><text x="1190" y="358" class="skill">ESP32</text></g>
-<g class="skillRow"><g transform="translate(1160, 392)"><circle cx="0" cy="0" r="2" fill="#ff174f"/><path d="M-5 -5 A7 7 0 0 0 -5 5" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/><path d="M-8 -8 A11 11 0 0 0 -8 8" fill="none" stroke="#ff174f" stroke-width="1.2" opacity="0.6" stroke-linecap="round"/><path d="M5 -5 A7 7 0 0 1 5 5" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/><path d="M8 -8 A11 11 0 0 1 8 8" fill="none" stroke="#ff174f" stroke-width="1.2" opacity="0.6" stroke-linecap="round"/></g><text x="1190" y="398" class="skill">Sensors Integration</text></g>
-<g class="skillRow"><g transform="translate(1160, 432)"><rect x="-8" y="-6" width="16" height="12" rx="1.5" fill="none" stroke="#ff174f" stroke-width="1.8"/><rect x="-3" y="-2" width="6" height="4" fill="#ff174f" opacity="0.7"/><path d="M-8 -3 L-10 -3 M-8 0 L-10 0 M-8 3 L-10 3 M8 -3 L10 -3 M8 0 L10 0 M8 3 L10 3" stroke="#ff174f" stroke-width="1.2" stroke-linecap="round"/></g><text x="1190" y="438" class="skill">Embedded Systems</text></g>
-<g class="skillRow"><g transform="translate(1160, 472)"><circle cx="0" cy="0" r="8" fill="none" stroke="#ff174f" stroke-width="1.5"/><ellipse cx="0" cy="0" rx="8" ry="3" fill="none" stroke="#ff174f" stroke-width="0.8"/><path d="M0 -8 L0 8 M-7 -3 L7 -3 M-7 3 L7 3" stroke="#ff174f" stroke-width="0.8"/><circle cx="6" cy="-5" r="1.5" fill="#ff174f"/><circle cx="-5" cy="5" r="1.5" fill="#ff174f"/><path d="M6 -5 L-5 5" stroke="#ff174f" stroke-width="0.6" opacity="0.5" stroke-dasharray="2 2"/></g><text x="1190" y="478" class="skill">IoT Development</text></g>
-<g class="skillRow"><g transform="translate(1160, 512)"><circle cx="-5" cy="-3" r="3" fill="none" stroke="#ff174f" stroke-width="1.5"/><rect x="1" y="-6" width="6" height="6" fill="none" stroke="#ff174f" stroke-width="1.5"/><polygon points="2,3 6,3 4,7" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/><path d="M-2 -3 L1 -3 M4 0 L4 3" stroke="#ff174f" stroke-width="0.8" opacity="0.6"/></g><text x="1190" y="518" class="skill">Multimodal AI</text></g>
-<g class="skillRow"><g transform="translate(1160, 552)"><path d="M-9 0 Q-4.5 -6 0 -6 Q4.5 -6 9 0 Q4.5 6 0 6 Q-4.5 6 -9 0 Z" fill="none" stroke="#ff174f" stroke-width="1.8"/><circle cx="0" cy="0" r="2.5" fill="#ff174f"/><path d="M-9 -6 L-12 -9 M9 -6 L12 -9 M-9 6 L-12 9 M9 6 L12 9" stroke="#ff174f" stroke-width="1" stroke-linecap="round" opacity="0.7"/></g><text x="1190" y="558" class="skill">LLaVA</text></g>
-<g class="skillRow"><g transform="translate(1160, 592)"><circle cx="-2" cy="-2" r="6" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M2 2 L7 7" stroke="#ff174f" stroke-width="2" stroke-linecap="round"/><path d="M-5 -2 C-4 -4 -2 -4 -1 -2 C0 0 2 0 3 -2" fill="none" stroke="#ff174f" stroke-width="1" opacity="0.7" stroke-linecap="round"/></g><text x="1190" y="598" class="skill">DeepSeek-R1</text></g>
-<g class="skillRow"><g transform="translate(1160, 632)"><path d="M-7 6 C-7 2 -6 -2 -4 -4 C-3 -6 -2 -7 0 -7 C2 -7 3 -6 4 -4 C5 -2 6 -1 6 1 C6 3 5 5 4 6 Z" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/><circle cx="-1" cy="-4" r="0.8" fill="#ff174f"/><circle cx="2" cy="-4" r="0.8" fill="#ff174f"/><path d="M-8 -6 L-8 -2 M8 -6 L8 -2" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/><path d="M-3 6 L-3 9 M3 6 L3 9" stroke="#ff174f" stroke-width="1.2" stroke-linecap="round"/></g><text x="1190" y="638" class="skill">Ollama</text></g>
-<g class="skillRow"><g transform="translate(1160, 672)"><rect x="-8" y="-2" width="2" height="4" rx="1" fill="#ff174f" opacity="0.5"/><rect x="-4" y="-5" width="2" height="10" rx="1" fill="#ff174f" opacity="0.7"/><rect x="0" y="-8" width="2" height="16" rx="1" fill="#ff174f"/><rect x="4" y="-5" width="2" height="10" rx="1" fill="#ff174f" opacity="0.7"/><rect x="8" y="-2" width="2" height="4" rx="1" fill="#ff174f" opacity="0.5"/></g><text x="1190" y="678" class="skill">Whisper</text></g>
+<g class="icons"><g class="skillRow"><g transform="translate(1160, 312)"><path class="sR1" d="M-8 0 C-8 -4 -3 -4 -1 -1 L1 1 C3 4 8 4 8 0 C8 -4 3 -4 1 -1 L-1 1 C-3 4 -8 4 -8 0 Z" fill="none" stroke-width="1.8"/><path class="sR1" d="M-6 -2 L-6 2 M-8 0 L-4 0" stroke-width="1" stroke-linecap="round"/><path class="sR1" d="M6 -2 L6 2" stroke-width="1" stroke-linecap="round"/></g><text x="1190" y="318" class="skill">Arduino</text></g>
+<g class="skillRow"><g transform="translate(1160, 352)"><rect class="sR1" x="-7" y="-5" width="14" height="10" rx="1.5" fill="none" stroke-width="1.8"/><path class="sR1" d="M-4 -5 L-4 -8 M0 -5 L0 -8 M4 -5 L4 -8" stroke-width="1.2" stroke-linecap="round"/><circle class="fR1" cx="0" cy="0" r="2"/><path class="sR1" d="M-5 5 L-5 8 M5 5 L5 8" stroke-width="1.2" stroke-linecap="round"/></g><text x="1190" y="358" class="skill">ESP32</text></g>
+<g class="skillRow"><g transform="translate(1160, 392)"><circle class="fR1" cx="0" cy="0" r="2"/><path class="sR1" d="M-5 -5 A7 7 0 0 0 -5 5" fill="none" stroke-width="1.5" stroke-linecap="round"/><path class="sR1" d="M-8 -8 A11 11 0 0 0 -8 8" fill="none" stroke-width="1.2" opacity="0.6" stroke-linecap="round"/><path class="sR1" d="M5 -5 A7 7 0 0 1 5 5" fill="none" stroke-width="1.5" stroke-linecap="round"/><path class="sR1" d="M8 -8 A11 11 0 0 1 8 8" fill="none" stroke-width="1.2" opacity="0.6" stroke-linecap="round"/></g><text x="1190" y="398" class="skill">Sensors Integration</text></g>
+<g class="skillRow"><g transform="translate(1160, 432)"><rect class="sR1" x="-8" y="-6" width="16" height="12" rx="1.5" fill="none" stroke-width="1.8"/><rect class="fR1" x="-3" y="-2" width="6" height="4" opacity="0.7"/><path class="sR1" d="M-8 -3 L-10 -3 M-8 0 L-10 0 M-8 3 L-10 3 M8 -3 L10 -3 M8 0 L10 0 M8 3 L10 3" stroke-width="1.2" stroke-linecap="round"/></g><text x="1190" y="438" class="skill">Embedded Systems</text></g>
+<g class="skillRow"><g transform="translate(1160, 472)"><circle class="sR1" cx="0" cy="0" r="8" fill="none" stroke-width="1.5"/><ellipse class="sR1" cx="0" cy="0" rx="8" ry="3" fill="none" stroke-width="0.8"/><path class="sR1" d="M0 -8 L0 8 M-7 -3 L7 -3 M-7 3 L7 3" stroke-width="0.8"/><circle class="fR1" cx="6" cy="-5" r="1.5"/><circle class="fR1" cx="-5" cy="5" r="1.5"/><path class="sR1" d="M6 -5 L-5 5" stroke-width="0.6" opacity="0.5" stroke-dasharray="2 2"/></g><text x="1190" y="478" class="skill">IoT Development</text></g>
+<g class="skillRow"><g transform="translate(1160, 512)"><circle class="sR1" cx="-5" cy="-3" r="3" fill="none" stroke-width="1.5"/><rect class="sR1" x="1" y="-6" width="6" height="6" fill="none" stroke-width="1.5"/><polygon class="sR1" points="2,3 6,3 4,7" fill="none" stroke-width="1.5" stroke-linejoin="round"/><path class="sR1" d="M-2 -3 L1 -3 M4 0 L4 3" stroke-width="0.8" opacity="0.6"/></g><text x="1190" y="518" class="skill">Multimodal AI</text></g>
+<g class="skillRow"><g transform="translate(1160, 552)"><path class="sR1" d="M-9 0 Q-4.5 -6 0 -6 Q4.5 -6 9 0 Q4.5 6 0 6 Q-4.5 6 -9 0 Z" fill="none" stroke-width="1.8"/><circle class="fR1" cx="0" cy="0" r="2.5"/><path class="sR1" d="M-9 -6 L-12 -9 M9 -6 L12 -9 M-9 6 L-12 9 M9 6 L12 9" stroke-width="1" stroke-linecap="round" opacity="0.7"/></g><text x="1190" y="558" class="skill">LLaVA</text></g>
+<g class="skillRow"><g transform="translate(1160, 592)"><circle class="sR1" cx="-2" cy="-2" r="6" fill="none" stroke-width="1.8"/><path class="sR1" d="M2 2 L7 7" stroke-width="2" stroke-linecap="round"/><path class="sR1" d="M-5 -2 C-4 -4 -2 -4 -1 -2 C0 0 2 0 3 -2" fill="none" stroke-width="1" opacity="0.7" stroke-linecap="round"/></g><text x="1190" y="598" class="skill">DeepSeek-R1</text></g>
+<g class="skillRow"><g transform="translate(1160, 632)"><path class="sR1" d="M-7 6 C-7 2 -6 -2 -4 -4 C-3 -6 -2 -7 0 -7 C2 -7 3 -6 4 -4 C5 -2 6 -1 6 1 C6 3 5 5 4 6 Z" fill="none" stroke-width="1.5" stroke-linejoin="round"/><circle class="fR1" cx="-1" cy="-4" r="0.8"/><circle class="fR1" cx="2" cy="-4" r="0.8"/><path class="sR1" d="M-8 -6 L-8 -2 M8 -6 L8 -2" stroke-width="1.5" stroke-linecap="round"/><path class="sR1" d="M-3 6 L-3 9 M3 6 L3 9" stroke-width="1.2" stroke-linecap="round"/></g><text x="1190" y="638" class="skill">Ollama</text></g>
+<g class="skillRow"><g transform="translate(1160, 672)"><rect class="fR1" x="-8" y="-2" width="2" height="4" rx="1" opacity="0.5"/><rect class="fR1" x="-4" y="-5" width="2" height="10" rx="1" opacity="0.7"/><rect class="fR1" x="0" y="-8" width="2" height="16" rx="1"/><rect class="fR1" x="4" y="-5" width="2" height="10" rx="1" opacity="0.7"/><rect class="fR1" x="8" y="-2" width="2" height="4" rx="1" opacity="0.5"/></g><text x="1190" y="678" class="skill">Whisper</text></g>
 </g>
+<path class="sR0" d="M1130 690 H1560" stroke-width="2" opacity="0.4"/>
 
-<path d="M1130 690 H1560" stroke="#ff003c" stroke-width="2" opacity="0.4"/>
-<g class="scanAnimation">
-  <rect x="50" y="280" width="1490" height="5" rx="3" fill="url(#scanGradient)" filter="url(#glow)"/>
-  <rect x="50" y="287" width="1490" height="1" fill="#ff174f" opacity=".35"/>
-</g>
+<g class="scanAnimation"><rect x="50" y="280" width="1490" height="5" rx="3" fill="url(#scanGradient)" filter="url(#glow)"/><rect class="fR1" x="50" y="287" width="1490" height="1" opacity=".35"/></g>
 
-<g fill="#ff174f">
-  <circle class="particle1" cx="220" cy="190" r="2"/>
-  <circle class="particle2" cx="350" cy="165" r="2"/>
-  <circle class="particle3" cx="600" cy="188" r="2"/>
-  <circle class="particle1" cx="870" cy="175" r="2"/>
-  <circle class="particle2" cx="1080" cy="190" r="2"/>
-  <circle class="particle3" cx="1360" cy="170" r="2"/>
-  <circle class="particle2" cx="1500" cy="310" r="2"/>
-  <circle class="particle1" cx="70" cy="400" r="2"/>
-</g>
+<g class="fR1">
+<circle class="particle1" cx="220" cy="190" r="2"/><circle class="particle2" cx="350" cy="165" r="2"/><circle class="particle3" cx="600" cy="188" r="2"/><circle class="particle1" cx="870" cy="175" r="2"/>
+<circle class="particle2" cx="1080" cy="190" r="2"/><circle class="particle3" cx="1360" cy="170" r="2"/><circle class="particle2" cx="1500" cy="310" r="2"/><circle class="particle1" cx="70" cy="400" r="2"/></g>
 
-<path class="circuitFlow" d="M50 210 H80 V240" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
-<path class="circuitFlow" d="M1550 210 H1520 V240" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
-<path class="circuitFlow" d="M50 690 H80 V660" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
-<path class="circuitFlow" d="M1550 690 H1520 V660" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
+<path class="sR1 circuitFlow" d="M50 210 H80 V240" fill="none" stroke-width="2" filter="url(#glow)"/>
+<path class="sR1 circuitFlow" d="M1550 210 H1520 V240" fill="none" stroke-width="2" filter="url(#glow)"/>
+<path class="sR1 circuitFlow" d="M50 690 H80 V660" fill="none" stroke-width="2" filter="url(#glow)"/>
+<path class="sR1 circuitFlow" d="M1550 690 H1520 V660" fill="none" stroke-width="2" filter="url(#glow)"/>
+<path class="sR0 circuitFlow" d="M55 710 H1545" fill="none" stroke-width="2" filter="url(#glow)"/>
+<circle class="fR1 node" cx="55" cy="710" r="5"/><circle class="fR1 node" cx="1545" cy="710" r="5"/>
+<path class="sR0 dataStream" d="M430 210 V690" fill="none" stroke-width="1" opacity="0.3"/>
+<path class="sR0 dataStream" d="M780 210 V690" fill="none" stroke-width="1" opacity="0.3"/>
+<path class="sR0 dataStream" d="M1130 210 V690" fill="none" stroke-width="1" opacity="0.3"/>
 
-<path class="circuitFlow" d="M55 710 H1545" fill="none" stroke="#ff003c" stroke-width="2" filter="url(#glow)"/>
-<circle class="node" cx="55" cy="710" r="5" fill="#ff174f"/>
-<circle class="node" cx="1545" cy="710" r="5" fill="#ff174f"/>
-
-<path class="dataStream" d="M430 210 V690" fill="none" stroke="#ff003c" stroke-width="1" stroke-dasharray="15 30" opacity="0.3"/>
-<path class="dataStream" d="M780 210 V690" fill="none" stroke="#ff003c" stroke-width="1" stroke-dasharray="15 30" opacity="0.3"/>
-<path class="dataStream" d="M1130 210 V690" fill="none" stroke="#ff003c" stroke-width="1" stroke-dasharray="15 30" opacity="0.3"/>
-
-<g transform="translate(1380, 50)">
-  <rect x="0" y="-8" width="100" height="16" rx="3" fill="#0a0508" stroke="#ff174f" stroke-width="1.5"/>
-  <circle class="warnBlink" cx="12" cy="0" r="3" fill="#ff174f"/>
-  <text x="22" y="4" font-family="Arial" font-size="9" font-weight="700" fill="#ff6680" letter-spacing="2">ACTIVE</text>
+<g transform="translate(1380, 50)"><rect class="fD2 sR1" x="0" y="-8" width="100" height="16" rx="8" stroke-width="1.5"/><circle class="fR1 warnBlink" cx="12" cy="0" r="3"/>
+<text class="fR2" x="24" y="4" font-family="Arial" font-size="9" font-weight="700" letter-spacing="2">ACTIVE</text></g>
+<g transform="translate(22, 300)"><rect class="fD2 sR1" width="4" height="120" rx="2" stroke-width="1"/><rect class="fR1 barLoad" x="1" y="2" width="2" height="116" opacity="0.7"/></g>
+<g transform="translate(1574, 300)"><rect class="fD2 sR1" width="4" height="120" rx="2" stroke-width="1"/><rect class="fR1 barLoad" x="1" y="2" width="2" height="116" opacity="0.7"/></g>
 </g>
 
-<g transform="translate(22, 300)">
-  <rect width="4" height="120" rx="2" fill="#0a0508" stroke="#ff174f" stroke-width="1"/>
-  <rect class="barLoad" x="1" y="2" width="2" height="116" fill="#ff174f" opacity="0.7"/>
-</g>
-<g transform="translate(1574, 300)">
-  <rect width="4" height="120" rx="2" fill="#0a0508" stroke="#ff174f" stroke-width="1"/>
-  <rect class="barLoad" x="1" y="2" width="2" height="116" fill="#ff174f" opacity="0.7"/>
-</g>
-</g>
-<path class="framePulse"
-      d="M30 90 L90 30 L520 30 L560 70 L1040 70 L1080 30 L1510 30 L1570 90 L1570 690 L1510 750 L1080 750 L1040 710 L560 710 L520 750 L90 750 L30 690 Z"
-      fill="none" stroke="#ff003c" stroke-width="4" filter="url(#strongGlow)"/>
-
-<path d="M90 30 L520 30 L560 70 L1040 70 L1080 30 L1510 30"
-      fill="none" stroke="url(#redFlow)" stroke-width="2" class="edgePulse"/>
-
-<g class="cornerSlide" transform="translate(60, 60)">
-  <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
-</g>
-<g class="cornerSlide" transform="translate(1540, 60)">
-  <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
-</g>
-<g class="cornerSlide" transform="translate(60, 720)">
-  <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
-</g>
-<g class="cornerSlide" transform="translate(1540, 720)">
-  <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
-</g>
-
-<g opacity="0.6">
-  <rect x="14" y="200" width="3" height="30" fill="#ff174f" filter="url(#glow)"/>
-  <rect x="14" y="250" width="3" height="18" fill="#ff174f"/>
-  <rect x="14" y="290" width="3" height="45" fill="#ff174f" filter="url(#glow)"/>
-  <rect x="14" y="360" width="3" height="22" fill="#ff174f"/>
-  <rect x="14" y="410" width="3" height="50" fill="#ff174f" filter="url(#glow)"/>
-  <rect x="14" y="490" width="3" height="28" fill="#ff174f"/>
-  <rect x="14" y="540" width="3" height="40" fill="#ff174f" filter="url(#glow)"/>
-</g>
-
-<g opacity="0.6">
-  <rect x="1583" y="200" width="3" height="35" fill="#ff174f" filter="url(#glow)"/>
-  <rect x="1583" y="260" width="3" height="20" fill="#ff174f"/>
-  <rect x="1583" y="310" width="3" height="42" fill="#ff174f" filter="url(#glow)"/>
-  <rect x="1583" y="380" width="3" height="25" fill="#ff174f"/>
-  <rect x="1583" y="430" width="3" height="48" fill="#ff174f" filter="url(#glow)"/>
-  <rect x="1583" y="510" width="3" height="30" fill="#ff174f"/>
-  <rect x="1583" y="565" width="3" height="38" fill="#ff174f" filter="url(#glow)"/>
-</g>
+<path class="sR0 framePulse" d="M30.0 112.0Q30 90 45.6 74.4L74.4 45.6Q90 30 112.0 30.0L498.0 30.0Q520 30 535.6 45.6L544.4 54.4Q560 70 582.0 70.0L1018.0 70.0Q1040 70 1055.6 54.4L1064.4 45.6Q1080 30 1102.0 30.0L1488.0 30.0Q1510 30 1525.6 45.6L1554.4 74.4Q1570 90 1570.0 112.0L1570.0 668.0Q1570 690 1554.4 705.6L1525.6 734.4Q1510 750 1488.0 750.0L1102.0 750.0Q1080 750 1064.4 734.4L1055.6 725.6Q1040 710 1018.0 710.0L582.0 710.0Q560 710 544.4 725.6L535.6 734.4Q520 750 498.0 750.0L112.0 750.0Q90 750 74.4 734.4L45.6 705.6Q30 690 30.0 668.0Z" fill="none" stroke-width="4" stroke-linejoin="round" filter="url(#strongGlow)"/>
+<path class="edgePulse" d="M90 30 L520 30 L560 70 L1040 70 L1080 30 L1510 30" fill="none" stroke="url(#redFlow)" stroke-width="2" stroke-linejoin="round"/>
+<g transform="translate(60,60)"><g class="cornerSlide"><polygon class="sR1" points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke-width="2" filter="url(#glow)"/></g></g>
+<g transform="translate(1540,60)"><g class="cornerSlide"><polygon class="sR1" points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke-width="2" filter="url(#glow)"/></g></g>
+<g transform="translate(60,720)"><g class="cornerSlide"><polygon class="sR1" points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke-width="2" filter="url(#glow)"/></g></g>
+<g transform="translate(1540,720)"><g class="cornerSlide"><polygon class="sR1" points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke-width="2" filter="url(#glow)"/></g></g>
+<g opacity="0.6"><rect class="fR1" x="14" y="200" width="3" height="30" filter="url(#glow)"/><rect class="fR1" x="14" y="250" width="3" height="18"/><rect class="fR1" x="14" y="290" width="3" height="45" filter="url(#glow)"/><rect class="fR1" x="14" y="360" width="3" height="22"/><rect class="fR1" x="14" y="410" width="3" height="50" filter="url(#glow)"/><rect class="fR1" x="14" y="490" width="3" height="28"/><rect class="fR1" x="14" y="540" width="3" height="40" filter="url(#glow)"/></g><g opacity="0.6"><rect class="fR1" x="1583" y="200" width="3" height="35" filter="url(#glow)"/><rect class="fR1" x="1583" y="260" width="3" height="20"/><rect class="fR1" x="1583" y="310" width="3" height="42" filter="url(#glow)"/><rect class="fR1" x="1583" y="380" width="3" height="25"/><rect class="fR1" x="1583" y="430" width="3" height="48" filter="url(#glow)"/><rect class="fR1" x="1583" y="510" width="3" height="30"/><rect class="fR1" x="1583" y="565" width="3" height="38" filter="url(#glow)"/></g>
 </svg>

@@ -15,5 +15,5 @@
 </div>
 
 <div align="center">
-  <img src="./assets/technical-skills.svg" width="100%" alt="Technical Skills" style="border-radius: 10px;">
+  <img src="./assets/technical-skills.svg" width="100%" alt="Technical Skills">
 </div>
