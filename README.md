@@ -3,18 +3,18 @@
 <br>
 
 <span style="display:inline-block; width:25%; text-align:center;">
-  <img src="./assets/connect.png" width="240" alt="Connect">
+  <img src="./assets/connect.png" width="180" alt="Connect">
 </span><span style="display:inline-block; width:25%; text-align:center;">
   <a href="mailto:bholushubhankaranokha@gmail.com">
-    <img src="./assets/email.png" width="240" alt="Email">
+    <img src="./assets/email.png" width="180" alt="Email">
   </a>
 </span><span style="display:inline-block; width:25%; text-align:center;">
   <a href="https://www.linkedin.com/in/bholushubhankaranokha/">
-    <img src="./assets/linkedIn.png" width="240" alt="LinkedIn">
+    <img src="./assets/linkedIn.png" width="180" alt="LinkedIn">
   </a>
 </span><span style="display:inline-block; width:25%; text-align:center;">
   <a href="YOUR_PORTFOLIO_URL">
-    <img src="./assets/portfolio.png" width="240" alt="Portfolio">
+    <img src="./assets/portfolio.png" width="180" alt="Portfolio">
   </a>
 </span>
 
