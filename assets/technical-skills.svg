@@ -12,7 +12,7 @@
 <animate attributeName="x1" values="0;1600" dur="6s" repeatCount="indefinite"/><animate attributeName="x2" values="800;2400" dur="6s" repeatCount="indefinite"/></linearGradient>
 
 <linearGradient id="panelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop class="cP1" offset="0%" stop-opacity="0.94"/><stop class="cP2" offset="50%" stop-opacity="0.92"/><stop class="cP3" offset="100%" stop-opacity="0.94"/></linearGradient>
+<stop class="cP1" offset="0%"/><stop class="cP2" offset="50%"/><stop class="cP3" offset="100%"/></linearGradient>
 <linearGradient id="scanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
 <stop class="cR0" offset="0%" stop-opacity="0"/><stop class="cR1" offset="25%" stop-opacity="0.5"/><stop class="cR2" offset="50%" stop-opacity="1"/><stop class="cR1" offset="75%" stop-opacity="0.5"/><stop class="cR0" offset="100%" stop-opacity="0"/></linearGradient>
 <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%"><stop class="cR1" offset="0%" stop-opacity="0.5"/><stop class="cR1" offset="50%" stop-opacity="0.15"/><stop class="cR0" offset="100%" stop-opacity="0"/></radialGradient>
@@ -29,7 +29,7 @@
 .fR2{fill:#ff6680}.sR2{stroke:#ff6680}.cR2{stop-color:#ff6680}
 .fW{fill:#eeeeee}.sW{stroke:#eeeeee}.fWH{fill:#ffffff}
 .fD1{fill:#05070a}.fD2{fill:#0a0508}.fD3{fill:#11070a}.sD1{stroke:#05070a}
-.cP1{stop-color:#0c0e13}.cP2{stop-color:#050609}.cP3{stop-color:#010204}
+.cP1{stop-color:#0c0e13;stop-opacity:.94}.cP2{stop-color:#050609;stop-opacity:.92}.cP3{stop-color:#010204;stop-opacity:.94}
 .cardBase{fill:#05070a;fill-opacity:.55}
 .section,.sectionSmall{fill:#ff6680}.skill{fill:#eeeeee}.skillIcon{fill:#ff3159}
 @media (prefers-color-scheme: light){
@@ -38,8 +38,9 @@
 .fR2{fill:#ff4d6d}.sR2{stroke:#ff4d6d}.cR2{stop-color:#ff4d6d}
 .fW{fill:#1f2328}.sW{stroke:#1f2328}.fWH{fill:#ffd6de}
 .fD1{fill:#fff0f3}.fD2{fill:#ffe3e9}.fD3{fill:#ffd9e1}.sD1{stroke:#fff0f3}
-.cP1{stop-color:#fff8f9}.cP2{stop-color:#fff1f4}.cP3{stop-color:#ffe8ed}
-.cardBase{fill:#fff4f6;fill-opacity:.85}
+.cP1{stop-color:#120207;stop-opacity:.28}.cP2{stop-color:#08080a;stop-opacity:.12}.cP3{stop-color:#160309;stop-opacity:.28}
+.fD1{fill:#120207;fill-opacity:.12}.fD2{fill:#08080a;fill-opacity:.08}.fD3{fill:#160309;fill-opacity:.16}
+.cardBase{fill:url(#panelGradient);fill-opacity:1}
 .section,.sectionSmall{fill:#b3002a}.skill{fill:#1f2328}.skillIcon{fill:#d6002f}
 }
 .title{font-family:Arial,Helvetica,sans-serif;font-size:56px;font-weight:700;letter-spacing:1px}
