@@ -1,68 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="1600"
-     height="780"
-     viewBox="0 0 1600 780">
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="780" viewBox="0 0 1600 780">
 <defs>
 
-  <!-- ====================================================== -->
-  <!-- CARD CLIP -->
-  <!-- ====================================================== -->
-
   <clipPath id="cardClip">
-    <path d="
-      M30 90
-      L90 30
-      L520 30
-      L560 70
-      L1040 70
-      L1080 30
-      L1510 30
-      L1570 90
-      L1570 690
-      L1510 750
-      L1080 750
-      L1040 710
-      L560 710
-      L520 750
-      L90 750
-      L30 690
-      Z
-    "/>
+    <path d="M30 90 L90 30 L520 30 L560 70 L1040 70 L1080 30 L1510 30 L1570 90 L1570 690 L1510 750 L1080 750 L1040 710 L560 710 L520 750 L90 750 L30 690 Z"/>
   </clipPath>
 
-
-  <!-- ====================================================== -->
-  <!-- BLUR FILTERS (REDUCED INTENSITY) -->
-  <!-- ====================================================== -->
-
+  <!-- Blur filters (reduced intensity) -->
   <filter id="bgBlur" x="-20%" y="-20%" width="140%" height="140%">
     <feGaussianBlur stdDeviation="4"/>
   </filter>
-
   <filter id="bgBlurSoft" x="-20%" y="-20%" width="140%" height="140%">
     <feGaussianBlur stdDeviation="2"/>
   </filter>
-
   <filter id="redBlurTransition" x="-50%" y="-50%" width="200%" height="200%">
     <feGaussianBlur stdDeviation="12"/>
   </filter>
-
   <filter id="redBlurSoftTransition" x="-50%" y="-50%" width="200%" height="200%">
     <feGaussianBlur stdDeviation="7"/>
   </filter>
-
   <filter id="redBlurUltra" x="-80%" y="-80%" width="260%" height="260%">
     <feGaussianBlur stdDeviation="18"/>
   </filter>
 
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="9" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="ultraGlow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="16" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
 
-  <!-- ====================================================== -->
-  <!-- GRADIENTS -->
-  <!-- ====================================================== -->
-
-  <linearGradient id="redFlow"
-                  x1="0%" y1="0%" x2="100%" y2="0%">
+  <linearGradient id="redFlow" x1="0%" y1="0%" x2="100%" y2="0%">
     <stop offset="0%" stop-color="#ff003c"/>
     <stop offset="50%" stop-color="#ff6680"/>
     <stop offset="100%" stop-color="#ff003c"/>
@@ -70,17 +43,13 @@
     <animate attributeName="x2" values="100%;0%;100%" dur="5s" repeatCount="indefinite"/>
   </linearGradient>
 
-
-  <linearGradient id="panelGradient"
-                  x1="0%" y1="0%" x2="100%" y2="100%">
+  <linearGradient id="panelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
     <stop offset="0%" stop-color="#0c0e13" stop-opacity="0.98"/>
     <stop offset="50%" stop-color="#050609" stop-opacity="0.97"/>
     <stop offset="100%" stop-color="#010204" stop-opacity="0.98"/>
   </linearGradient>
 
-
-  <linearGradient id="scanGradient"
-                  x1="0%" y1="0%" x2="100%" y2="0%">
+  <linearGradient id="scanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
     <stop offset="0%" stop-color="#ff003c" stop-opacity="0"/>
     <stop offset="25%" stop-color="#ff174f" stop-opacity="0.5"/>
     <stop offset="50%" stop-color="#ff6680" stop-opacity="1"/>
@@ -88,18 +57,13 @@
     <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
   </linearGradient>
 
-
-  <radialGradient id="coreGlow"
-                  cx="50%" cy="50%" r="50%">
+  <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
     <stop offset="0%" stop-color="#ff174f" stop-opacity="0.5"/>
     <stop offset="50%" stop-color="#ff174f" stop-opacity="0.15"/>
     <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
   </radialGradient>
 
-
-  <!-- Blurry red transition gradients -->
-  <radialGradient id="redTransition1"
-                  cx="20%" cy="30%" r="60%">
+  <radialGradient id="redTransition1" cx="20%" cy="30%" r="60%">
     <stop offset="0%" stop-color="#ff003c" stop-opacity="0.3"/>
     <stop offset="40%" stop-color="#ff174f" stop-opacity="0.12"/>
     <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
@@ -107,8 +71,7 @@
     <animate attributeName="cy" values="30%;70%;30%" dur="10s" repeatCount="indefinite"/>
   </radialGradient>
 
-  <radialGradient id="redTransition2"
-                  cx="80%" cy="70%" r="55%">
+  <radialGradient id="redTransition2" cx="80%" cy="70%" r="55%">
     <stop offset="0%" stop-color="#ff6680" stop-opacity="0.25"/>
     <stop offset="50%" stop-color="#ff003c" stop-opacity="0.08"/>
     <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
@@ -116,16 +79,14 @@
     <animate attributeName="cy" values="70%;30%;70%" dur="12s" repeatCount="indefinite"/>
   </radialGradient>
 
-  <radialGradient id="redTransition3"
-                  cx="50%" cy="50%" r="70%">
+  <radialGradient id="redTransition3" cx="50%" cy="50%" r="70%">
     <stop offset="0%" stop-color="#ff174f" stop-opacity="0.2"/>
     <stop offset="60%" stop-color="#ff6680" stop-opacity="0.06"/>
     <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
     <animate attributeName="r" values="50%;80%;50%" dur="8s" repeatCount="indefinite"/>
   </radialGradient>
 
-  <linearGradient id="redHorizontalSweep"
-                  x1="0%" y1="0%" x2="100%" y2="0%">
+  <linearGradient id="redHorizontalSweep" x1="0%" y1="0%" x2="100%" y2="0%">
     <stop offset="0%" stop-color="#ff003c" stop-opacity="0"/>
     <stop offset="50%" stop-color="#ff174f" stop-opacity="0.3"/>
     <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
@@ -133,49 +94,13 @@
     <animate attributeName="x2" values="0%;200%;0%" dur="14s" repeatCount="indefinite"/>
   </linearGradient>
 
-  <linearGradient id="redVerticalTransition"
-                  x1="0%" y1="0%" x2="0%" y2="100%">
+  <linearGradient id="redVerticalTransition" x1="0%" y1="0%" x2="0%" y2="100%">
     <stop offset="0%" stop-color="#ff003c" stop-opacity="0.25"/>
     <stop offset="50%" stop-color="#ff6680" stop-opacity="0.08"/>
     <stop offset="100%" stop-color="#ff003c" stop-opacity="0.2"/>
     <animate attributeName="y1" values="0%;100%;0%" dur="9s" repeatCount="indefinite"/>
     <animate attributeName="y2" values="100%;0%;100%" dur="9s" repeatCount="indefinite"/>
   </linearGradient>
-
-
-  <!-- ====================================================== -->
-  <!-- GLOWS -->
-  <!-- ====================================================== -->
-
-  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-    <feGaussianBlur stdDeviation="4" result="blur"/>
-    <feMerge>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-  </filter>
-
-  <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
-    <feGaussianBlur stdDeviation="9" result="blur"/>
-    <feMerge>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-  </filter>
-
-  <filter id="ultraGlow" x="-80%" y="-80%" width="260%" height="260%">
-    <feGaussianBlur stdDeviation="16" result="blur"/>
-    <feMerge>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-  </filter>
-
-
-  <!-- ====================================================== -->
-  <!-- GRID PATTERNS -->
-  <!-- ====================================================== -->
 
   <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
     <path d="M40 0H0V40" fill="none" stroke="#ff003c" stroke-width="0.5" opacity="0.09"/>
@@ -185,206 +110,63 @@
     <circle cx="12" cy="12" r="1" fill="#ff003c" opacity="0.15"/>
   </pattern>
 
-
-  <!-- ====================================================== -->
-  <!-- TYPOGRAPHY -->
-  <!-- ====================================================== -->
-
   <style>
+    .title { font-family: Arial, Helvetica, sans-serif; font-size: 56px; font-weight: 700; letter-spacing: 1px; }
+    .section { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 700; fill: #ff6680; }
+    .sectionSmall { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #ff6680; }
+    .skill { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 500; fill: #eeeeee; }
+    .skillIcon { font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; fill: #ff3159; }
 
-    .title {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 56px;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
+    .framePulse { animation: framePulse 4s ease-in-out infinite; }
+    @keyframes framePulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
 
-    .section {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      fill: #ff6680;
-    }
-
-    .sectionSmall {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      fill: #ff6680;
-    }
-
-    .skill {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 17px;
-      font-weight: 500;
-      fill: #eeeeee;
-    }
-
-    .skillIcon {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      fill: #ff3159;
-    }
-
-
-    /* Frame pulse */
-    .framePulse {
-      animation: framePulse 4s ease-in-out infinite;
-    }
-
-    @keyframes framePulse {
-      0%,100% { opacity: 0.55; }
-      50% { opacity: 1; }
-    }
-
-
-    /* Panel pulse */
     .panel1 { animation: panelPulse1 3.2s ease-in-out infinite; }
     .panel2 { animation: panelPulse2 4s ease-in-out infinite; }
     .panel3 { animation: panelPulse3 3.6s ease-in-out infinite; }
     .panel4 { animation: panelPulse4 4.4s ease-in-out infinite; }
+    @keyframes panelPulse1 { 0%,100% { opacity: .65; } 50% { opacity: 1; } }
+    @keyframes panelPulse2 { 0%,100% { opacity: .75; } 50% { opacity: 1; } }
+    @keyframes panelPulse3 { 0%,100% { opacity: .60; } 50% { opacity: 1; } }
+    @keyframes panelPulse4 { 0%,100% { opacity: .70; } 50% { opacity: 1; } }
 
-    @keyframes panelPulse1 {
-      0%,100% { opacity: .65; }
-      50% { opacity: 1; }
-    }
-    @keyframes panelPulse2 {
-      0%,100% { opacity: .75; }
-      50% { opacity: 1; }
-    }
-    @keyframes panelPulse3 {
-      0%,100% { opacity: .60; }
-      50% { opacity: 1; }
-    }
-    @keyframes panelPulse4 {
-      0%,100% { opacity: .70; }
-      50% { opacity: 1; }
-    }
+    .circuitFlow { stroke-dasharray: 90 25; animation: circuitFlow 2.5s linear infinite; }
+    @keyframes circuitFlow { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -345; } }
 
-
-    /* Circuit flow */
-    .circuitFlow {
-      stroke-dasharray: 90 25;
-      animation: circuitFlow 2.5s linear infinite;
-    }
-
-    @keyframes circuitFlow {
-      from { stroke-dashoffset: 0; }
-      to { stroke-dashoffset: -345; }
-    }
-
-
-    /* Scan */
-    .scanAnimation {
-      animation: scanAnimation 4.5s linear infinite;
-    }
-
+    .scanAnimation { animation: scanAnimation 4.5s linear infinite; }
     @keyframes scanAnimation {
       0% { transform: translateY(-40px); opacity: 0; }
-      15% { opacity: .8; }
-      50% { opacity: 1; }
-      85% { opacity: .8; }
+      15% { opacity: .8; } 50% { opacity: 1; } 85% { opacity: .8; }
       100% { transform: translateY(600px); opacity: 0; }
     }
 
+    .titleLogo { transform-box: fill-box; transform-origin: center; animation: titleLogoSpin 12s linear infinite; }
+    @keyframes titleLogoSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .titleLogoInner { transform-box: fill-box; transform-origin: center; animation: titleLogoSpinReverse 8s linear infinite; }
+    @keyframes titleLogoSpinReverse { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
 
-    /* Rotating title logo */
-    .titleLogo {
-      transform-box: fill-box;
-      transform-origin: center;
-      animation: titleLogoSpin 12s linear infinite;
-    }
+    .gear { transform-box: fill-box; transform-origin: center; animation: rotateGear 10s linear infinite; }
+    @keyframes rotateGear { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
-    @keyframes titleLogoSpin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    .titleLogoInner {
-      transform-box: fill-box;
-      transform-origin: center;
-      animation: titleLogoSpinReverse 8s linear infinite;
-    }
-
-    @keyframes titleLogoSpinReverse {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(-360deg); }
-    }
-
-
-    /* Gear */
-    .gear {
-      transform-box: fill-box;
-      transform-origin: center;
-      animation: rotateGear 10s linear infinite;
-    }
-
-    @keyframes rotateGear {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-
-    /* Nodes */
-    .node {
-      transform-box: fill-box;
-      transform-origin: center;
-      animation: nodePulse 1.8s ease-in-out infinite;
-    }
-
+    .node { transform-box: fill-box; transform-origin: center; animation: nodePulse 1.8s ease-in-out infinite; }
     @keyframes nodePulse {
       0%,100% { opacity: .3; transform: scale(.7); }
       50% { opacity: 1; transform: scale(1.25); }
     }
 
-
-    /* Particles */
     .particle1 { animation: particle1 4s ease-in-out infinite; }
     .particle2 { animation: particle2 5s ease-in-out infinite; }
     .particle3 { animation: particle3 6s ease-in-out infinite; }
+    @keyframes particle1 { 0%,100% { opacity: .15; transform: translateY(0); } 50% { opacity: .9; transform: translateY(-15px); } }
+    @keyframes particle2 { 0%,100% { opacity: .1; transform: translateY(0); } 50% { opacity: .8; transform: translateY(12px); } }
+    @keyframes particle3 { 0%,100% { opacity: .2; transform: translateY(0); } 50% { opacity: 1; transform: translateY(-20px); } }
 
-    @keyframes particle1 {
-      0%,100% { opacity: .15; transform: translateY(0); }
-      50% { opacity: .9; transform: translateY(-15px); }
-    }
-    @keyframes particle2 {
-      0%,100% { opacity: .1; transform: translateY(0); }
-      50% { opacity: .8; transform: translateY(12px); }
-    }
-    @keyframes particle3 {
-      0%,100% { opacity: .2; transform: translateY(0); }
-      50% { opacity: 1; transform: translateY(-20px); }
-    }
+    .icons { animation: iconPulse 2.8s ease-in-out infinite; }
+    @keyframes iconPulse { 0%,100% { opacity: .65; } 50% { opacity: 1; } }
 
+    .movingGrid { animation: gridMove 12s linear infinite; }
+    @keyframes gridMove { from { transform: translateX(0); } to { transform: translateX(40px); } }
 
-    /* Icon pulse */
-    .icons {
-      animation: iconPulse 2.8s ease-in-out infinite;
-    }
-
-    @keyframes iconPulse {
-      0%,100% { opacity: .65; }
-      50% { opacity: 1; }
-    }
-
-
-    /* Grid movement */
-    .movingGrid {
-      animation: gridMove 12s linear infinite;
-    }
-
-    @keyframes gridMove {
-      from { transform: translateX(0); }
-      to { transform: translateX(40px); }
-    }
-
-
-    /* Skill row fade */
-    .skillRow {
-      animation: skillRowFade 3s ease-in-out infinite;
-    }
-
+    .skillRow { animation: skillRowFade 3s ease-in-out infinite; }
     .skillRow:nth-child(1) { animation-delay: 0s; }
     .skillRow:nth-child(2) { animation-delay: 0.2s; }
     .skillRow:nth-child(3) { animation-delay: 0.4s; }
@@ -395,18 +177,9 @@
     .skillRow:nth-child(8) { animation-delay: 1.4s; }
     .skillRow:nth-child(9) { animation-delay: 1.6s; }
     .skillRow:nth-child(10) { animation-delay: 1.8s; }
+    @keyframes skillRowFade { 0%, 100% { opacity: 0.75; } 50% { opacity: 1; } }
 
-    @keyframes skillRowFade {
-      0%, 100% { opacity: 0.75; }
-      50% { opacity: 1; }
-    }
-
-
-    /* Title glitch */
-    .titleGlitch {
-      animation: titleGlitch 4s ease-in-out infinite;
-    }
-
+    .titleGlitch { animation: titleGlitch 4s ease-in-out infinite; }
     @keyframes titleGlitch {
       0%, 88%, 100% { transform: translate(0, 0); }
       90% { transform: translate(-2px, 1px); }
@@ -415,117 +188,38 @@
       96% { transform: translate(1px, 2px); }
     }
 
+    .edgePulse { animation: edgePulse 2s ease-in-out infinite; }
+    @keyframes edgePulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
 
-    /* Edge pulse */
-    .edgePulse {
-      animation: edgePulse 2s ease-in-out infinite;
-    }
+    .warnBlink { animation: warnBlink 1s step-end infinite; }
+    @keyframes warnBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
 
-    @keyframes edgePulse {
-      0%, 100% { opacity: 0.5; }
-      50% { opacity: 1; }
-    }
+    .barLoad { animation: barLoad 3s ease-in-out infinite; }
+    @keyframes barLoad { 0%, 100% { transform: scaleX(0.3); transform-origin: left; } 50% { transform: scaleX(1); transform-origin: left; } }
 
+    .dataStream { animation: dataStream 2s linear infinite; }
+    @keyframes dataStream { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -200; } }
 
-    /* Warning blink */
-    .warnBlink {
-      animation: warnBlink 1s step-end infinite;
-    }
-
-    @keyframes warnBlink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.2; }
-    }
-
-
-    /* Bar load */
-    .barLoad {
-      animation: barLoad 3s ease-in-out infinite;
-    }
-
-    @keyframes barLoad {
-      0%, 100% { transform: scaleX(0.3); transform-origin: left; }
-      50% { transform: scaleX(1); transform-origin: left; }
-    }
-
-
-    /* Data stream */
-    .dataStream {
-      animation: dataStream 2s linear infinite;
-    }
-
-    @keyframes dataStream {
-      from { stroke-dashoffset: 0; }
-      to { stroke-dashoffset: -200; }
-    }
-
-
-    /* Corner slide */
-    .cornerSlide {
-      animation: cornerSlide 3s ease-in-out infinite;
-    }
-
+    .cornerSlide { animation: cornerSlide 3s ease-in-out infinite; }
     @keyframes cornerSlide {
       0%, 100% { opacity: 0.4; transform: translate(0, 0); }
       50% { opacity: 1; transform: translate(2px, -2px); }
     }
 
+    .transitionPulse1 { animation: transitionPulse1 8s ease-in-out infinite; }
+    @keyframes transitionPulse1 { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+    .transitionPulse2 { animation: transitionPulse2 11s ease-in-out infinite; }
+    @keyframes transitionPulse2 { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.9; } }
+    .transitionPulse3 { animation: transitionPulse3 7s ease-in-out infinite; }
+    @keyframes transitionPulse3 { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
 
-    /* Transition pulses */
-    .transitionPulse1 {
-      animation: transitionPulse1 8s ease-in-out infinite;
-    }
-
-    @keyframes transitionPulse1 {
-      0%, 100% { opacity: 0.5; }
-      50% { opacity: 1; }
-    }
-
-    .transitionPulse2 {
-      animation: transitionPulse2 11s ease-in-out infinite;
-    }
-
-    @keyframes transitionPulse2 {
-      0%, 100% { opacity: 0.35; }
-      50% { opacity: 0.9; }
-    }
-
-    .transitionPulse3 {
-      animation: transitionPulse3 7s ease-in-out infinite;
-    }
-
-    @keyframes transitionPulse3 {
-      0%, 100% { opacity: 0.6; }
-      50% { opacity: 1; }
-    }
-
-    .transitionDrift {
-      animation: transitionDrift 15s ease-in-out infinite alternate;
-    }
-
-    @keyframes transitionDrift {
-      0% { transform: translate(0, 0) scale(1); }
-      100% { transform: translate(30px, -20px) scale(1.08); }
-    }
-
-    .transitionDriftReverse {
-      animation: transitionDriftReverse 18s ease-in-out infinite alternate;
-    }
-
-    @keyframes transitionDriftReverse {
-      0% { transform: translate(0, 0) scale(1); }
-      100% { transform: translate(-35px, 25px) scale(1.1); }
-    }
-
+    .transitionDrift { animation: transitionDrift 15s ease-in-out infinite alternate; }
+    @keyframes transitionDrift { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(30px, -20px) scale(1.08); } }
+    .transitionDriftReverse { animation: transitionDriftReverse 18s ease-in-out infinite alternate; }
+    @keyframes transitionDriftReverse { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(-35px, 25px) scale(1.1); } }
   </style>
 
 </defs>
-
-
-<!-- ====================================================== -->
-<!-- BACKGROUND -->
-<!-- ====================================================== -->
-
 <rect width="1600" height="780" fill="#020408"/>
 
 <g filter="url(#bgBlur)">
@@ -542,942 +236,245 @@
 
 <rect x="0" y="0" width="1600" height="780" fill="url(#dotPattern)" opacity="0.6"/>
 
-
-<!-- ====================================================== -->
-<!-- BLURRY RED GRADIENT TRANSITION LAYERS (REDUCED) -->
-<!-- ====================================================== -->
-
+<!-- Blurry red gradient transition layers -->
 <g filter="url(#redBlurUltra)">
-  <ellipse class="transitionPulse1 transitionDrift"
-           cx="300" cy="200" rx="450" ry="280"
-           fill="url(#redTransition1)"/>
+  <ellipse class="transitionPulse1 transitionDrift" cx="300" cy="200" rx="450" ry="280" fill="url(#redTransition1)"/>
 </g>
-
 <g filter="url(#redBlurUltra)">
-  <ellipse class="transitionPulse2 transitionDriftReverse"
-           cx="1300" cy="580" rx="500" ry="300"
-           fill="url(#redTransition2)"/>
+  <ellipse class="transitionPulse2 transitionDriftReverse" cx="1300" cy="580" rx="500" ry="300" fill="url(#redTransition2)"/>
 </g>
-
 <g filter="url(#redBlurTransition)">
-  <ellipse class="transitionPulse3 transitionDrift"
-           cx="800" cy="390" rx="600" ry="320"
-           fill="url(#redTransition3)"/>
+  <ellipse class="transitionPulse3 transitionDrift" cx="800" cy="390" rx="600" ry="320" fill="url(#redTransition3)"/>
 </g>
-
 <g filter="url(#redBlurSoftTransition)">
-  <rect class="transitionPulse1"
-        x="0" y="280" width="1600" height="200"
-        fill="url(#redHorizontalSweep)"/>
+  <rect class="transitionPulse1" x="0" y="280" width="1600" height="200" fill="url(#redHorizontalSweep)"/>
 </g>
-
 <g filter="url(#redBlurTransition)">
-  <rect class="transitionPulse2"
-        x="0" y="0" width="1600" height="780"
-        fill="url(#redVerticalTransition)" opacity="0.5"/>
+  <rect class="transitionPulse2" x="0" y="0" width="1600" height="780" fill="url(#redVerticalTransition)" opacity="0.5"/>
 </g>
-
 <g filter="url(#redBlurTransition)">
-  <circle class="transitionPulse3 transitionDriftReverse"
-          cx="500" cy="600" r="180"
-          fill="#ff003c" opacity="0.06"/>
+  <circle class="transitionPulse3 transitionDriftReverse" cx="500" cy="600" r="180" fill="#ff003c" opacity="0.06"/>
 </g>
-
 <g filter="url(#redBlurTransition)">
-  <circle class="transitionPulse1 transitionDrift"
-          cx="1100" cy="250" r="200"
-          fill="#ff174f" opacity="0.05"/>
+  <circle class="transitionPulse1 transitionDrift" cx="1100" cy="250" r="200" fill="#ff174f" opacity="0.05"/>
 </g>
-
-
-<!-- ====================================================== -->
-<!-- EVERYTHING INSIDE CLIP -->
-<!-- ====================================================== -->
-
 <g clip-path="url(#cardClip)">
+<rect class="movingGrid" x="-40" y="0" width="1680" height="780" fill="url(#gridPattern)"/>
+<rect x="30" y="30" width="1540" height="720" fill="none" stroke="#ff003c" stroke-width="35" opacity="0.025" filter="url(#strongGlow)"/>
+<g filter="url(#redBlurUltra)" opacity="0.6"><ellipse class="transitionPulse1 transitionDrift" cx="300" cy="250" rx="400" ry="250" fill="url(#redTransition1)"/></g>
+<g filter="url(#redBlurTransition)" opacity="0.4"><ellipse class="transitionPulse2 transitionDriftReverse" cx="1300" cy="500" rx="450" ry="280" fill="url(#redTransition2)"/></g>
+<g filter="url(#redBlurSoftTransition)" opacity="0.35"><rect class="transitionPulse3" x="0" y="350" width="1600" height="150" fill="url(#redHorizontalSweep)"/></g>
+<path d="M30 90 L90 30 L520 30 L560 70 L1040 70 L1080 30 L1510 30 L1570 90 L1570 160 L1080 160 L1040 195 L560 195 L520 160 L30 160 Z"
+      fill="#05070a" stroke="url(#redFlow)" stroke-width="4" filter="url(#glow)"/>
 
-  <rect class="movingGrid" x="-40" y="0" width="1680" height="780" fill="url(#gridPattern)"/>
-
-  <rect x="30" y="30" width="1540" height="720" fill="none"
-        stroke="#ff003c" stroke-width="35" opacity="0.025" filter="url(#strongGlow)"/>
-
-  <!-- Blurry red transition inside card -->
-  <g filter="url(#redBlurUltra)" opacity="0.6">
-    <ellipse class="transitionPulse1 transitionDrift"
-             cx="300" cy="250" rx="400" ry="250"
-             fill="url(#redTransition1)"/>
+<g transform="translate(115, 95)">
+  <g class="titleLogo">
+    <polygon points="0,-48 42,-24 42,24 0,48 -42,24 -42,-24" fill="none" stroke="#ff174f" stroke-width="2.5" stroke-dasharray="18 8" opacity="0.8" filter="url(#glow)"/>
   </g>
-
-  <g filter="url(#redBlurTransition)" opacity="0.4">
-    <ellipse class="transitionPulse2 transitionDriftReverse"
-             cx="1300" cy="500" rx="450" ry="280"
-             fill="url(#redTransition2)"/>
+  <g class="titleLogoInner">
+    <polygon points="0,-36 31,-18 31,18 0,36 -31,18 -31,-18" fill="none" stroke="#ff6680" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6" filter="url(#glow)"/>
   </g>
-
-  <g filter="url(#redBlurSoftTransition)" opacity="0.35">
-    <rect class="transitionPulse3"
-          x="0" y="350" width="1600" height="150"
-          fill="url(#redHorizontalSweep)"/>
+  <circle cx="0" cy="0" r="26" fill="url(#coreGlow)" filter="url(#ultraGlow)"/>
+  <g class="gear">
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#ff365e" stroke-width="6"/>
+    <circle cx="0" cy="0" r="7" fill="#ff365e"/>
+    <path d="M0 -24V-11 M0 11V24 M-24 0H-11 M11 0H24 M-17 -17L-8 -8 M8 8L17 17 M17 -17L8 -8 M-8 8L-17 17" stroke="#ff365e" stroke-width="5" stroke-linecap="round"/>
   </g>
-
-
-  <!-- ==================================================== -->
-  <!-- HEADER -->
-  <!-- ==================================================== -->
-
-  <path d="
-    M30 90
-    L90 30
-    L520 30
-    L560 70
-    L1040 70
-    L1080 30
-    L1510 30
-    L1570 90
-    L1570 160
-    L1080 160
-    L1040 195
-    L560 195
-    L520 160
-    L30 160
-    Z
-  "
-  fill="#05070a"
-  stroke="url(#redFlow)"
-  stroke-width="4"
-  filter="url(#glow)"/>
-
-
-  <!-- ==================================================== -->
-  <!-- ROTATING TITLE LOGO -->
-  <!-- ==================================================== -->
-
-  <g transform="translate(115, 95)">
-
-    <g class="titleLogo">
-      <polygon points="0,-48 42,-24 42,24 0,48 -42,24 -42,-24"
-               fill="none" stroke="#ff174f" stroke-width="2.5"
-               stroke-dasharray="18 8" opacity="0.8" filter="url(#glow)"/>
-    </g>
-
-    <g class="titleLogoInner">
-      <polygon points="0,-36 31,-18 31,18 0,36 -31,18 -31,-18"
-               fill="none" stroke="#ff6680" stroke-width="1.5"
-               stroke-dasharray="8 6" opacity="0.6" filter="url(#glow)"/>
-    </g>
-
-    <circle cx="0" cy="0" r="26" fill="url(#coreGlow)" filter="url(#ultraGlow)"/>
-
-    <g class="gear">
-      <circle cx="0" cy="0" r="18" fill="none" stroke="#ff365e" stroke-width="6"/>
-      <circle cx="0" cy="0" r="7" fill="#ff365e"/>
-      <path d="
-        M0 -24V-11 M0 11V24 M-24 0H-11 M11 0H24
-        M-17 -17L-8 -8 M8 8L17 17 M17 -17L8 -8 M-8 8L-17 17
-      " stroke="#ff365e" stroke-width="5" stroke-linecap="round"/>
-    </g>
-
-    <circle r="3" fill="#ff174f" filter="url(#glow)">
-      <animateTransform attributeName="transform" type="rotate"
-                        from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="55;0;-55;0;55" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="0;55;0;-55;0" dur="4s" repeatCount="indefinite"/>
-    </circle>
-
-    <circle r="2.5" fill="#ff6680" filter="url(#glow)">
-      <animateTransform attributeName="transform" type="rotate"
-                        from="360 0 0" to="0 0 0" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="70;0;-70;0;70" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="0;70;0;-70;0" dur="6s" repeatCount="indefinite"/>
-    </circle>
-
-  </g>
-
-
-  <!-- ==================================================== -->
-  <!-- TITLE -->
-  <!-- ==================================================== -->
-
-  <g class="titleGlitch">
-    <text x="185" y="130" class="title" fill="#eeeeee">Technical</text>
-    <text x="460" y="130" class="title" fill="#ff174f">Skills</text>
-  </g>
-
-
-  <!-- ==================================================== -->
-  <!-- HEADER CIRCUITS -->
-  <!-- ==================================================== -->
-
-  <path class="circuitFlow" d="M620 125 H820"
-        fill="none" stroke="#ff174f" stroke-width="4" filter="url(#glow)"/>
-  <path class="circuitFlow" d="M880 125 H1180"
-        fill="none" stroke="#ff174f" stroke-width="4" filter="url(#glow)"/>
-  <path class="circuitFlow" d="M1240 125 H1500"
-        fill="none" stroke="#ff174f" stroke-width="4" filter="url(#glow)"/>
-
-  <g>
-    <polygon points="850,125 870,110 890,125 870,140"
-             fill="#05070a" stroke="#ff174f" stroke-width="3" filter="url(#glow)"/>
-    <circle class="node" cx="870" cy="125" r="5" fill="#ff174f"/>
-  </g>
-
-  <g>
-    <polygon points="1210,125 1230,110 1250,125 1230,140"
-             fill="#05070a" stroke="#ff174f" stroke-width="3" filter="url(#glow)"/>
-    <circle class="node" cx="1230" cy="125" r="5" fill="#ff174f"/>
-  </g>
-
-  <circle cx="1500" cy="125" r="18" fill="#05070a" stroke="#ff174f" stroke-width="4"/>
-  <circle class="node" cx="1500" cy="125" r="7" fill="#ff174f" filter="url(#glow)"/>
-
-
-  <!-- ==================================================== -->
-  <!-- PANEL 1 - AI / ML / Data Science -->
-  <!-- ==================================================== -->
-
-  <g class="panel1">
-    <path d="M40 220 L90 220 L110 200 L390 200 L410 220 L410 700 L40 700 Z"
-          fill="url(#panelGradient)" stroke="#ff003c" stroke-width="4" filter="url(#glow)"/>
-    <path d="M40 220 L90 220 L110 200 L390 200 L410 220 L410 285 L110 285 L90 265 L40 265 Z"
-          fill="#11070a" stroke="#ff174f" stroke-width="3"/>
-    <polygon points="390,200 410,220 410,285 390,285" fill="#0a0508" opacity="0.5"/>
-  </g>
-
-  <text x="65" y="255" class="skillIcon">◉</text>
-  <text x="105" y="255" class="section">AI / ML / Data Science</text>
-
-  <g class="icons">
-
-    <!-- Artificial Intelligence - Neural network -->
-    <g class="skillRow">
-      <g transform="translate(70, 312)">
-        <circle cx="-7" cy="-6" r="2" fill="#ff174f"/>
-        <circle cx="-7" cy="6" r="2" fill="#ff174f"/>
-        <circle cx="0" cy="-6" r="2" fill="#ff174f"/>
-        <circle cx="0" cy="6" r="2" fill="#ff174f"/>
-        <circle cx="7" cy="-6" r="2" fill="#ff174f"/>
-        <circle cx="7" cy="6" r="2" fill="#ff174f"/>
-        <path d="M-7 -6 L0 -6 M-7 6 L0 6 M0 -6 L7 -6 M0 6 L7 6
-                 M-7 -6 L0 6 M-7 6 L0 -6 M0 -6 L7 6 M0 6 L7 -6"
-              stroke="#ff174f" stroke-width="0.8" opacity="0.7"/>
-      </g>
-      <text x="95" y="318" class="skill">Artificial Intelligence</text>
-    </g>
-
-    <!-- Machine Learning - Line chart with dots -->
-    <g class="skillRow">
-      <g transform="translate(70, 352)">
-        <path d="M-9 7 L-3 -3 L3 3 L9 -7"
-              stroke="#ff174f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="-9" cy="7" r="2" fill="#ff174f"/>
-        <circle cx="9" cy="-7" r="2" fill="#ff174f"/>
-        <circle cx="-3" cy="-3" r="1.5" fill="#ff174f" opacity="0.7"/>
-        <circle cx="3" cy="3" r="1.5" fill="#ff174f" opacity="0.7"/>
-      </g>
-      <text x="95" y="358" class="skill">Machine Learning</text>
-    </g>
-
-    <!-- Deep Learning - Multi-layer neural network -->
-    <g class="skillRow">
-      <g transform="translate(70, 392)">
-        <circle cx="-8" cy="-6" r="1.8" fill="#ff174f"/>
-        <circle cx="-8" cy="0" r="1.8" fill="#ff174f"/>
-        <circle cx="-8" cy="6" r="1.8" fill="#ff174f"/>
-        <circle cx="0" cy="-6" r="1.8" fill="#ff174f"/>
-        <circle cx="0" cy="0" r="1.8" fill="#ff174f"/>
-        <circle cx="0" cy="6" r="1.8" fill="#ff174f"/>
-        <circle cx="8" cy="-3" r="1.8" fill="#ff174f"/>
-        <circle cx="8" cy="3" r="1.8" fill="#ff174f"/>
-        <path d="M-8 -6 L0 -6 M-8 0 L0 0 M-8 6 L0 6
-                 M-8 -6 L0 0 M-8 0 L0 -6 M-8 0 L0 6 M-8 6 L0 0
-                 M0 -6 L8 -3 M0 0 L8 -3 M0 0 L8 3 M0 6 L8 3"
-              stroke="#ff174f" stroke-width="0.5" opacity="0.5"/>
-      </g>
-      <text x="95" y="398" class="skill">Deep Learning</text>
-    </g>
-
-    <!-- Computer Vision - Eye with pupil -->
-    <g class="skillRow">
-      <g transform="translate(70, 432)">
-        <path d="M-10 0 Q-5 -7 0 -7 Q5 -7 10 0 Q5 7 0 7 Q-5 7 -10 0 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <circle cx="0" cy="0" r="3" fill="#ff174f"/>
-        <circle cx="0" cy="0" r="1" fill="#ffffff" opacity="0.8"/>
-      </g>
-      <text x="95" y="438" class="skill">Computer Vision</text>
-    </g>
-
-    <!-- Data Science - Bar chart -->
-    <g class="skillRow">
-      <g transform="translate(70, 472)">
-        <rect x="-8" y="2" width="3" height="6" fill="#ff174f" opacity="0.5"/>
-        <rect x="-3" y="-2" width="3" height="10" fill="#ff174f" opacity="0.7"/>
-        <rect x="2" y="-5" width="3" height="13" fill="#ff174f"/>
-        <rect x="7" y="0" width="3" height="8" fill="#ff174f" opacity="0.6"/>
-        <path d="M-9 8 L10 8" stroke="#ff174f" stroke-width="1" opacity="0.5"/>
-      </g>
-      <text x="95" y="478" class="skill">Data Science</text>
-    </g>
-
-    <!-- NLP & Generative AI - Speech bubble with text -->
-    <g class="skillRow">
-      <g transform="translate(70, 512)">
-        <rect x="-9" y="-7" width="18" height="12" rx="4"
-              fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <path d="M-4 5 L-2 9 L2 5" fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <path d="M-5 -1 L-3 -1 M-1 -1 L1 -1 M3 -1 L5 -1"
-              stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/>
-      </g>
-      <text x="95" y="518" class="skill">NLP &amp; Generative AI</text>
-    </g>
-
-    <!-- TensorFlow - Real TF logo shape -->
-    <g class="skillRow">
-      <g transform="translate(70, 552)">
-        <path d="M-8 -7 L0 -11 L8 -7 L8 3 L0 7 L-8 3 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/>
-        <path d="M0 -11 L0 7" stroke="#ff174f" stroke-width="1.2"/>
-        <path d="M-8 -7 L0 -3 L8 -7" stroke="#ff174f" stroke-width="1.2"/>
-        <path d="M-4 -5 L-4 5 M4 -5 L4 5" stroke="#ff174f" stroke-width="1.2" opacity="0.6"/>
-      </g>
-      <text x="95" y="558" class="skill">TensorFlow / Keras</text>
-    </g>
-
-    <!-- PyTorch - Flame logo -->
-    <g class="skillRow">
-      <g transform="translate(70, 592)">
-        <path d="M0 -9 C-2 -6 -5 -2 -5 2 C-5 6 -2 9 0 9 C2 9 5 6 5 2 C5 -2 2 -6 0 -9 Z"
-              fill="#ff174f" opacity="0.3"/>
-        <path d="M0 -9 C-2 -6 -5 -2 -5 2 C-5 6 -2 9 0 9 C2 9 5 6 5 2 C5 -2 2 -6 0 -9 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <circle cx="0" cy="3" r="2.5" fill="#ff174f"/>
-        <circle cx="0" cy="3" r="1" fill="#ffffff" opacity="0.6"/>
-      </g>
-      <text x="95" y="598" class="skill">PyTorch / Scikit-learn</text>
-    </g>
-
-    <!-- OpenCV - Camera aperture -->
-    <g class="skillRow">
-      <g transform="translate(70, 632)">
-        <circle cx="0" cy="0" r="9" fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <circle cx="0" cy="0" r="4" fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <path d="M0 -9 L0 -4 M0 4 L0 9 M-9 0 L-4 0 M4 0 L9 0"
-              stroke="#ff174f" stroke-width="1.5"/>
-        <path d="M-6 -6 L-3 -3 M6 -6 L3 -3 M-6 6 L-3 3 M6 6 L3 3"
-              stroke="#ff174f" stroke-width="1.2" opacity="0.7"/>
-      </g>
-      <text x="95" y="638" class="skill">OpenCV / YOLO / SAHI</text>
-    </g>
-
-    <!-- LLMs - Brain/chip hybrid -->
-    <g class="skillRow">
-      <g transform="translate(70, 672)">
-        <rect x="-7" y="-7" width="14" height="14" rx="3"
-              fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <circle cx="-3" cy="-3" r="1.5" fill="#ff174f"/>
-        <circle cx="3" cy="-3" r="1.5" fill="#ff174f"/>
-        <circle cx="-3" cy="3" r="1.5" fill="#ff174f"/>
-        <circle cx="3" cy="3" r="1.5" fill="#ff174f"/>
-        <path d="M-3 -3 L3 -3 M-3 3 L3 3 M-3 -3 L-3 3 M3 -3 L3 3"
-              stroke="#ff174f" stroke-width="0.8" opacity="0.6"/>
-        <path d="M-7 -4 L-10 -4 M-7 0 L-10 0 M-7 4 L-10 4
-                 M7 -4 L10 -4 M7 0 L10 0 M7 4 L10 4"
-              stroke="#ff174f" stroke-width="1.2"/>
-      </g>
-      <text x="95" y="678" class="skill">LLMs / RAG / AI Agents</text>
-    </g>
-
-  </g>
-
-  <path d="M40 690 H410" stroke="#ff003c" stroke-width="2" opacity="0.4"/>
-
-
-  <!-- ==================================================== -->
-  <!-- PANEL 2 - Programming & Development -->
-  <!-- ==================================================== -->
-
-  <g class="panel2">
-    <path d="M430 200 L710 200 L730 220 L760 220 L760 700 L430 700 Z"
-          fill="url(#panelGradient)" stroke="#ff003c" stroke-width="4" filter="url(#glow)"/>
-    <path d="M430 200 L710 200 L730 220 L760 220 L760 290 L430 290 Z"
-          fill="#11070a" stroke="#ff174f" stroke-width="3"/>
-    <polygon points="710,200 730,220 760,220 760,290 710,290"
-             fill="#0a0508" opacity="0.5"/>
-  </g>
-
-  <text x="455" y="255" class="skillIcon">&lt;/&gt;</text>
-  <text x="510" y="255" class="sectionSmall">Programming &amp; Development</text>
-
-  <g class="icons">
-
-    <!-- C / C++ - Correct C logo -->
-    <g class="skillRow">
-      <g transform="translate(462, 312)">
-        <circle cx="0" cy="0" r="9" fill="none" stroke="#ff174f" stroke-width="2"/>
-        <path d="M3 -4 A5.5 5.5 0 1 0 3 4" fill="none" stroke="#ff174f" stroke-width="2.2" stroke-linecap="round"/>
-      </g>
-      <text x="485" y="318" class="skill">C / C++</text>
-    </g>
-
-    <!-- Python - Correct Python logo (two interlocking snakes) -->
-    <g class="skillRow">
-      <g transform="translate(462, 352)">
-        <!-- Top snake (blue-ish) -->
-        <path d="M-3 -9 C-7 -9 -9 -7 -9 -3 L-9 -1 L-3 -1 L-3 1 C-3 4 -1 6 2 6 L4 6 C7 6 9 4 9 1 L9 -3 C9 -6 7 -8 4 -8 L2 -8 L2 -6 L4 -6 C5 -6 6 -5 6 -3 L6 1 C6 2 5 3 4 3 L2 3 C1 3 0 2 0 1 L0 -1 L-6 -1 C-7 -1 -7 -2 -7 -3 C-7 -5 -6 -6 -4 -6 L-2 -6 L-2 -8 Z"
-              fill="#ff174f" opacity="0.9"/>
-        <!-- Bottom snake (yellow-ish) -->
-        <path d="M3 9 C7 9 9 7 9 3 L9 1 L3 1 L3 -1 C3 -4 1 -6 -2 -6 L-4 -6 C-7 -6 -9 -4 -9 -1 L-9 3 C-9 6 -7 8 -4 8 L-2 8 L-2 6 L-4 6 C-5 6 -6 5 -6 3 L-6 -1 C-6 -2 -5 -3 -4 -3 L-2 -3 C-1 -3 0 -2 0 -1 L0 1 L6 1 C7 1 7 2 7 3 C7 5 6 6 4 6 L2 6 L2 8 Z"
-              fill="#ff174f" opacity="0.5"/>
-      </g>
-      <text x="485" y="358" class="skill">Python</text>
-    </g>
-
-    <!-- JavaScript - JS square logo -->
-    <g class="skillRow">
-      <g transform="translate(462, 392)">
-        <rect x="-9" y="-9" width="18" height="18" rx="2"
-              fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <path d="M-5 -4 L-5 2 C-5 4 -4 5 -2 5 C0 5 1 4 1 2 L1 -4"
-              stroke="#ff174f" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M5 5 C3 5 2 4 2 2 C2 1 3 0 5 0 C7 0 8 -1 8 -3 C8 -5 7 -6 5 -6 C3 -6 2 -5 2 -3"
-              stroke="#ff174f" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      </g>
-      <text x="485" y="398" class="skill">JavaScript</text>
-    </g>
-
-    <!-- HTML/CSS - Shield with 5 -->
-    <g class="skillRow">
-      <g transform="translate(462, 432)">
-        <path d="M0 -9 L8 -6 L7 4 L0 9 L-7 4 L-8 -6 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/>
-        <text x="0" y="3" font-family="Arial" font-size="7" font-weight="900"
-              fill="#ff174f" text-anchor="middle">5</text>
-      </g>
-      <text x="485" y="438" class="skill">HTML / CSS</text>
-    </g>
-
-    <!-- React - Correct React atom logo -->
-    <g class="skillRow">
-      <g transform="translate(462, 472)">
-        <circle cx="0" cy="0" r="2.5" fill="#ff174f"/>
-        <ellipse cx="0" cy="0" rx="9" ry="3.5"
-                 fill="none" stroke="#ff174f" stroke-width="1.2"/>
-        <ellipse cx="0" cy="0" rx="9" ry="3.5"
-                 fill="none" stroke="#ff174f" stroke-width="1.2"
-                 transform="rotate(60)"/>
-        <ellipse cx="0" cy="0" rx="9" ry="3.5"
-                 fill="none" stroke="#ff174f" stroke-width="1.2"
-                 transform="rotate(-60)"/>
-      </g>
-      <text x="485" y="478" class="skill">React.js</text>
-    </g>
-
-    <!-- Node.js - Correct Node hexagon with N -->
-    <g class="skillRow">
-      <g transform="translate(462, 512)">
-        <polygon points="0,-9 8,-4.5 8,4.5 0,9 -8,4.5 -8,-4.5"
-                 fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/>
-        <path d="M-3 -4 L-3 3 M-3 -4 L0 0 L3 -4 M3 -4 L3 3"
-              stroke="#ff174f" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      </g>
-      <text x="485" y="518" class="skill">Node.js / Express.js</text>
-    </g>
-
-    <!-- MERN Stack - Stacked layers -->
-    <g class="skillRow">
-      <g transform="translate(462, 552)">
-        <polygon points="0,-8 8,-4 0,0 -8,-4" fill="#ff174f" opacity="0.8"/>
-        <polygon points="0,-3 8,1 0,5 -8,1" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/>
-        <polygon points="0,2 8,6 0,10 -8,6" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/>
-      </g>
-      <text x="485" y="558" class="skill">MERN Stack</text>
-    </g>
-
-    <!-- REST APIs - Cloud with arrows -->
-    <g class="skillRow">
-      <g transform="translate(462, 592)">
-        <path d="M-8 3 C-10 3 -10 -1 -8 -1 C-8 -4 -5 -5 -3 -4 C-1 -7 3 -6 4 -3 C7 -3 8 0 7 2 C8 2 8 3 7 4 L-7 4 C-9 4 -9 3 -8 3 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/>
-        <path d="M-2 8 L2 8 M0 6 L0 10" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/>
-      </g>
-      <text x="485" y="598" class="skill">REST APIs</text>
-    </g>
-
-    <!-- Redux - Correct Redux logo (three circles with arrows) -->
-    <g class="skillRow">
-      <g transform="translate(462, 632)">
-        <circle cx="-4" cy="-4" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <circle cx="4" cy="-4" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <circle cx="0" cy="4" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <path d="M-2 -3 L2 -3" stroke="#ff174f" stroke-width="1.2"/>
-        <path d="M-3 0 L0 3" stroke="#ff174f" stroke-width="1.2"/>
-        <path d="M3 0 L0 3" stroke="#ff174f" stroke-width="1.2"/>
-      </g>
-      <text x="485" y="638" class="skill">Redux / Tailwind CSS</text>
-    </g>
-
-    <!-- Vite - Lightning bolt -->
-    <g class="skillRow">
-      <g transform="translate(462, 672)">
-        <path d="M-3 -9 L5 -9 L0 -2 L5 -2 L-5 9 L-1 0 L-6 0 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/>
-        <path d="M-3 -9 L5 -9 L0 -2 L5 -2 L-5 9 L-1 0 L-6 0 Z"
-              fill="#ff174f" opacity="0.2"/>
-      </g>
-      <text x="485" y="678" class="skill">Vite</text>
-    </g>
-
-  </g>
-
-  <path d="M430 690 H760" stroke="#ff003c" stroke-width="2" opacity="0.4"/>
-
-
-  <!-- ==================================================== -->
-  <!-- PANEL 3 - Databases & Tools -->
-  <!-- ==================================================== -->
-
-  <g class="panel3">
-    <path d="M780 200 L1060 200 L1080 220 L1110 220 L1110 700 L780 700 Z"
-          fill="url(#panelGradient)" stroke="#ff003c" stroke-width="4" filter="url(#glow)"/>
-    <path d="M780 200 L1060 200 L1080 220 L1110 220 L1110 285 L780 285 Z"
-          fill="#11070a" stroke="#ff174f" stroke-width="3"/>
-    <polygon points="1060,200 1080,220 1110,220 1110,285 1060,285"
-             fill="#0a0508" opacity="0.5"/>
-  </g>
-
-  <text x="805" y="255" class="skillIcon">●</text>
-  <text x="848" y="255" class="section">Databases &amp; Tools</text>
-
-  <g class="icons">
-
-    <!-- SQL - Database cylinder -->
-    <g class="skillRow">
-      <g transform="translate(812, 312)">
-        <ellipse cx="0" cy="-6" rx="8" ry="3"
-                 fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <path d="M-8 -6 L-8 6 C-8 8 8 8 8 6 L8 -6"
-              fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <ellipse cx="0" cy="-1" rx="8" ry="3"
-                 fill="none" stroke="#ff174f" stroke-width="0.8" opacity="0.6"/>
-        <ellipse cx="0" cy="3" rx="8" ry="3"
-                 fill="none" stroke="#ff174f" stroke-width="0.8" opacity="0.4"/>
-      </g>
-      <text x="835" y="318" class="skill">SQL</text>
-    </g>
-
-    <!-- PostgreSQL - Correct elephant logo -->
-    <g class="skillRow">
-      <g transform="translate(812, 352)">
-        <!-- Elephant head shape -->
-        <path d="M-7 6 C-7 2 -5 -2 -2 -4 C0 -6 2 -6 3 -4 C4 -3 5 -1 5 1 L5 3 C5 4 4 5 3 4 L3 2 C3 1 4 0 4 -1"
-              fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linecap="round"/>
-        <!-- Eye -->
-        <circle cx="3" cy="-3" r="0.8" fill="#ff174f"/>
-        <!-- Ear -->
-        <path d="M-2 -4 C-4 -5 -6 -4 -7 -2" fill="none" stroke="#ff174f" stroke-width="1.2" opacity="0.7"/>
-        <!-- Tusks -->
-        <path d="M-7 6 L-5 6 M-2 6 L-2 3" stroke="#ff174f" stroke-width="1.8" stroke-linecap="round"/>
-      </g>
-      <text x="835" y="358" class="skill">PostgreSQL</text>
-    </g>
-
-    <!-- MongoDB - Correct leaf logo -->
-    <g class="skillRow">
-      <g transform="translate(812, 392)">
-        <path d="M0 -9 C3 -5 5 -1 4 3 C3 6 0 8 -1 6 C-3 4 -4 1 -3 -2 C-2 -5 -1 -7 0 -9 Z"
-              fill="#ff174f" opacity="0.3"/>
-        <path d="M0 -9 C3 -5 5 -1 4 3 C3 6 0 8 -1 6 C-3 4 -4 1 -3 -2 C-2 -5 -1 -7 0 -9 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <path d="M0 -9 L-1 6" stroke="#ff174f" stroke-width="1"/>
-      </g>
-      <text x="835" y="398" class="skill">MongoDB</text>
-    </g>
-
-    <!-- MongoDB Atlas - Cloud with leaf -->
-    <g class="skillRow">
-      <g transform="translate(812, 432)">
-        <path d="M-7 2 C-9 2 -9 -2 -7 -2 C-7 -5 -4 -6 -2 -5 C0 -8 4 -7 5 -4 C8 -4 9 -1 8 1 C9 1 9 2 8 3 L-6 3 C-8 3 -8 2 -7 2 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/>
-        <path d="M0 -1 C1 1 1 3 0 4 C-1 3 -1 1 0 -1 Z" fill="#ff174f"/>
-      </g>
-      <text x="835" y="438" class="skill">MongoDB Atlas</text>
-    </g>
-
-    <!-- Neon - Lightning with N -->
-    <g class="skillRow">
-      <g transform="translate(812, 472)">
-        <path d="M0 -9 L-5 -1 L0 -1 L-1 9 L5 1 L0 1 Z"
-              fill="#ff174f" opacity="0.2"/>
-        <path d="M0 -9 L-5 -1 L0 -1 L-1 9 L5 1 L0 1 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/>
-      </g>
-      <text x="835" y="478" class="skill">Neon</text>
-    </g>
-
-    <!-- Git - Correct Git branch logo -->
-    <g class="skillRow">
-      <g transform="translate(812, 512)">
-        <circle cx="-6" cy="6" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <circle cx="6" cy="6" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <circle cx="0" cy="-6" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <path d="M0 -3.5 L0 -1 M0 -1 C0 3 -6 3 -6 6 M0 -1 C0 3 6 3 6 6"
-              stroke="#ff174f" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-      </g>
-      <text x="835" y="518" class="skill">Git / GitHub</text>
-    </g>
-
-    <!-- VS Code - Correct VS Code logo -->
-    <g class="skillRow">
-      <g transform="translate(812, 552)">
-        <path d="M-8 -7 L8 -7 L8 7 L-8 7 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/>
-        <path d="M-5 -4 L0 0 L-5 4" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M5 -4 L2 0 L5 4" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </g>
-      <text x="835" y="558" class="skill">VS Code</text>
-    </g>
-
-    <!-- Jupyter - Correct Jupyter logo -->
-    <g class="skillRow">
-      <g transform="translate(812, 592)">
-        <circle cx="0" cy="0" r="8" fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <circle cx="0" cy="0" r="3" fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <circle cx="0" cy="0" r="5.5" fill="none" stroke="#ff174f" stroke-width="0.8" opacity="0.6"/>
-        <circle cx="0" cy="-5.5" r="1" fill="#ff174f"/>
-        <circle cx="0" cy="5.5" r="1" fill="#ff174f"/>
-      </g>
-      <text x="835" y="598" class="skill">Jupyter Notebook</text>
-    </g>
-
-    <!-- Google Colab - Correct infinity logo -->
-    <g class="skillRow">
-      <g transform="translate(812, 632)">
-        <path d="M-8 0 C-8 -3 -5 -4 -3 -2 L0 0 L3 2 C5 4 8 3 8 0 C8 -3 5 -4 3 -2 L0 0 L-3 2 C-5 4 -8 3 -8 0 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/>
-        <circle cx="-5" cy="0" r="1" fill="#ff174f" opacity="0.7"/>
-        <circle cx="5" cy="0" r="1" fill="#ff174f" opacity="0.7"/>
-      </g>
-      <text x="835" y="638" class="skill">Google Colab</text>
-    </g>
-
-    <!-- Linux - Correct terminal prompt -->
-    <g class="skillRow">
-      <g transform="translate(812, 672)">
-        <rect x="-8" y="-7" width="16" height="14" rx="2"
-              fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <path d="M-5 -3 L-2 0 L-5 3 M1 3 L5 3"
-              stroke="#ff174f" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      </g>
-      <text x="835" y="678" class="skill">Linux / npm</text>
-    </g>
-
-  </g>
-
-  <path d="M780 690 H1110" stroke="#ff003c" stroke-width="2" opacity="0.4"/>
-
-
-  <!-- ==================================================== -->
-  <!-- PANEL 4 - IoT & Technologies -->
-  <!-- ==================================================== -->
-
-  <g class="panel4">
-    <path d="M1130 200 L1450 200 L1470 220 L1540 220 L1560 240 L1560 700 L1130 700 Z"
-          fill="url(#panelGradient)" stroke="#ff003c" stroke-width="4" filter="url(#glow)"/>
-    <path d="M1130 200 L1450 200 L1470 220 L1540 220 L1560 240 L1560 285 L1130 285 Z"
-          fill="#11070a" stroke="#ff174f" stroke-width="3"/>
-    <polygon points="1450,200 1470,220 1540,220 1560,240 1560,285 1450,285"
-             fill="#0a0508" opacity="0.5"/>
-  </g>
-
-  <text x="1155" y="255" class="skillIcon">▣</text>
-  <text x="1205" y="255" class="section">IoT &amp; Technologies</text>
-
-  <g class="icons">
-
-    <!-- Arduino - Correct Arduino logo (infinity with + and -) -->
-    <g class="skillRow">
-      <g transform="translate(1162, 312)">
-        <path d="M-8 0 C-8 -4 -3 -4 -1 -1 L1 1 C3 4 8 4 8 0 C8 -4 3 -4 1 -1 L-1 1 C-3 4 -8 4 -8 0 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <path d="M-6 -2 L-6 2 M-8 0 L-4 0" stroke="#ff174f" stroke-width="1" stroke-linecap="round"/>
-        <path d="M6 -2 L6 2" stroke="#ff174f" stroke-width="1" stroke-linecap="round"/>
-      </g>
-      <text x="1185" y="318" class="skill">Arduino</text>
-    </g>
-
-    <!-- ESP32 - Chip with WiFi antenna -->
-    <g class="skillRow">
-      <g transform="translate(1162, 352)">
-        <rect x="-7" y="-5" width="14" height="10" rx="1.5"
-              fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <path d="M-4 -5 L-4 -8 M0 -5 L0 -8 M4 -5 L4 -8"
-              stroke="#ff174f" stroke-width="1.2" stroke-linecap="round"/>
-        <circle cx="0" cy="0" r="2" fill="#ff174f"/>
-        <path d="M-5 5 L-5 8 M5 5 L5 8" stroke="#ff174f" stroke-width="1.2" stroke-linecap="round"/>
-      </g>
-      <text x="1185" y="358" class="skill">ESP32</text>
-    </g>
-
-    <!-- Sensors - Correct wave/signal icon -->
-    <g class="skillRow">
-      <g transform="translate(1162, 392)">
-        <circle cx="0" cy="0" r="2" fill="#ff174f"/>
-        <path d="M-5 -5 A7 7 0 0 0 -5 5" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M-8 -8 A11 11 0 0 0 -8 8" fill="none" stroke="#ff174f" stroke-width="1.2" opacity="0.6" stroke-linecap="round"/>
-        <path d="M5 -5 A7 7 0 0 1 5 5" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M8 -8 A11 11 0 0 1 8 8" fill="none" stroke="#ff174f" stroke-width="1.2" opacity="0.6" stroke-linecap="round"/>
-      </g>
-      <text x="1185" y="398" class="skill">Sensors Integration</text>
-    </g>
-
-    <!-- Embedded Systems - Chip with pins -->
-    <g class="skillRow">
-      <g transform="translate(1162, 432)">
-        <rect x="-8" y="-6" width="16" height="12" rx="1.5"
-              fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <rect x="-3" y="-2" width="6" height="4" fill="#ff174f" opacity="0.7"/>
-        <path d="M-8 -3 L-10 -3 M-8 0 L-10 0 M-8 3 L-10 3
-                 M8 -3 L10 -3 M8 0 L10 0 M8 3 L10 3"
-              stroke="#ff174f" stroke-width="1.2" stroke-linecap="round"/>
-      </g>
-      <text x="1185" y="438" class="skill">Embedded Systems</text>
-    </g>
-
-    <!-- IoT Development - Globe with connections -->
-    <g class="skillRow">
-      <g transform="translate(1162, 472)">
-        <circle cx="0" cy="0" r="8" fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <ellipse cx="0" cy="0" rx="8" ry="3" fill="none" stroke="#ff174f" stroke-width="0.8"/>
-        <path d="M0 -8 L0 8 M-7 -3 L7 -3 M-7 3 L7 3"
-              stroke="#ff174f" stroke-width="0.8"/>
-        <circle cx="6" cy="-5" r="1.5" fill="#ff174f"/>
-        <circle cx="-5" cy="5" r="1.5" fill="#ff174f"/>
-        <path d="M6 -5 L-5 5" stroke="#ff174f" stroke-width="0.6" opacity="0.5" stroke-dasharray="2 2"/>
-      </g>
-      <text x="1185" y="478" class="skill">IoT Development</text>
-    </g>
-
-    <!-- Multimodal AI - Multiple shapes combined -->
-    <g class="skillRow">
-      <g transform="translate(1162, 512)">
-        <circle cx="-5" cy="-3" r="3" fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <rect x="1" y="-6" width="6" height="6" fill="none" stroke="#ff174f" stroke-width="1.5"/>
-        <polygon points="2,3 6,3 4,7" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/>
-        <path d="M-2 -3 L1 -3 M4 0 L4 3" stroke="#ff174f" stroke-width="0.8" opacity="0.6"/>
-      </g>
-      <text x="1185" y="518" class="skill">Multimodal AI</text>
-    </g>
-
-    <!-- LLaVA - Eye with vision rays -->
-    <g class="skillRow">
-      <g transform="translate(1162, 552)">
-        <path d="M-9 0 Q-4.5 -6 0 -6 Q4.5 -6 9 0 Q4.5 6 0 6 Q-4.5 6 -9 0 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <circle cx="0" cy="0" r="2.5" fill="#ff174f"/>
-        <path d="M-9 -6 L-12 -9 M9 -6 L12 -9 M-9 6 L-12 9 M9 6 L12 9"
-              stroke="#ff174f" stroke-width="1" stroke-linecap="round" opacity="0.7"/>
-      </g>
-      <text x="1185" y="558" class="skill">LLaVA</text>
-    </g>
-
-    <!-- DeepSeek - Magnifying glass with wave -->
-    <g class="skillRow">
-      <g transform="translate(1162, 592)">
-        <circle cx="-2" cy="-2" r="6" fill="none" stroke="#ff174f" stroke-width="1.8"/>
-        <path d="M2 2 L7 7" stroke="#ff174f" stroke-width="2" stroke-linecap="round"/>
-        <path d="M-5 -2 C-4 -4 -2 -4 -1 -2 C0 0 2 0 3 -2"
-              fill="none" stroke="#ff174f" stroke-width="1" opacity="0.7" stroke-linecap="round"/>
-      </g>
-      <text x="1185" y="598" class="skill">DeepSeek-R1</text>
-    </g>
-
-    <!-- Ollama - Llama silhouette -->
-    <g class="skillRow">
-      <g transform="translate(1162, 632)">
-        <path d="M-7 6 C-7 2 -6 -2 -4 -4 C-3 -6 -2 -7 0 -7 C2 -7 3 -6 4 -4 C5 -2 6 -1 6 1 C6 3 5 5 4 6 Z"
-              fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/>
-        <circle cx="-1" cy="-4" r="0.8" fill="#ff174f"/>
-        <circle cx="2" cy="-4" r="0.8" fill="#ff174f"/>
-        <path d="M-8 -6 L-8 -2 M8 -6 L8 -2" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M-3 6 L-3 9 M3 6 L3 9" stroke="#ff174f" stroke-width="1.2" stroke-linecap="round"/>
-      </g>
-      <text x="1185" y="638" class="skill">Ollama</text>
-    </g>
-
-    <!-- Whisper - Sound waveform -->
-    <g class="skillRow">
-      <g transform="translate(1162, 672)">
-        <rect x="-8" y="-2" width="2" height="4" rx="1" fill="#ff174f" opacity="0.5"/>
-        <rect x="-4" y="-5" width="2" height="10" rx="1" fill="#ff174f" opacity="0.7"/>
-        <rect x="0" y="-8" width="2" height="16" rx="1" fill="#ff174f"/>
-        <rect x="4" y="-5" width="2" height="10" rx="1" fill="#ff174f" opacity="0.7"/>
-        <rect x="8" y="-2" width="2" height="4" rx="1" fill="#ff174f" opacity="0.5"/>
-      </g>
-      <text x="1185" y="678" class="skill">Whisper</text>
-    </g>
-
-  </g>
-
-  <path d="M1130 690 H1560" stroke="#ff003c" stroke-width="2" opacity="0.4"/>
-
-
-  <!-- ==================================================== -->
-  <!-- SCAN LINE -->
-  <!-- ==================================================== -->
-
-  <g class="scanAnimation">
-    <rect x="50" y="280" width="1490" height="5" rx="3"
-          fill="url(#scanGradient)" filter="url(#glow)"/>
-    <rect x="50" y="287" width="1490" height="1" fill="#ff174f" opacity=".35"/>
-  </g>
-
-
-  <!-- ==================================================== -->
-  <!-- FLOATING PARTICLES -->
-  <!-- ==================================================== -->
-
-  <g fill="#ff174f">
-    <circle class="particle1" cx="220" cy="190" r="2"/>
-    <circle class="particle2" cx="350" cy="165" r="2"/>
-    <circle class="particle3" cx="600" cy="188" r="2"/>
-    <circle class="particle1" cx="870" cy="175" r="2"/>
-    <circle class="particle2" cx="1080" cy="190" r="2"/>
-    <circle class="particle3" cx="1360" cy="170" r="2"/>
-    <circle class="particle2" cx="1500" cy="310" r="2"/>
-    <circle class="particle1" cx="70" cy="400" r="2"/>
-  </g>
-
-
-  <!-- ==================================================== -->
-  <!-- INTERNAL CORNER CIRCUITS -->
-  <!-- ==================================================== -->
-
-  <path class="circuitFlow" d="M50 210 H80 V240"
-        fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
-  <path class="circuitFlow" d="M1550 210 H1520 V240"
-        fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
-  <path class="circuitFlow" d="M50 690 H80 V660"
-        fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
-  <path class="circuitFlow" d="M1550 690 H1520 V660"
-        fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
-
-
-  <!-- ==================================================== -->
-  <!-- BOTTOM ENERGY LINE -->
-  <!-- ==================================================== -->
-
-  <path class="circuitFlow" d="M55 710 H1545"
-        fill="none" stroke="#ff003c" stroke-width="2" filter="url(#glow)"/>
-
-  <circle class="node" cx="55" cy="710" r="5" fill="#ff174f"/>
-  <circle class="node" cx="1545" cy="710" r="5" fill="#ff174f"/>
-
-
-  <!-- ==================================================== -->
-  <!-- DATA STREAM LINES -->
-  <!-- ==================================================== -->
-
-  <path class="dataStream" d="M430 210 V690"
-        fill="none" stroke="#ff003c" stroke-width="1"
-        stroke-dasharray="15 30" opacity="0.3"/>
-  <path class="dataStream" d="M780 210 V690"
-        fill="none" stroke="#ff003c" stroke-width="1"
-        stroke-dasharray="15 30" opacity="0.3"/>
-  <path class="dataStream" d="M1130 210 V690"
-        fill="none" stroke="#ff003c" stroke-width="1"
-        stroke-dasharray="15 30" opacity="0.3"/>
-
-
-  <!-- ==================================================== -->
-  <!-- TOP WARNING STRIP -->
-  <!-- ==================================================== -->
-
-  <g transform="translate(1380, 50)">
-    <rect x="0" y="-8" width="100" height="16" rx="3"
-          fill="#0a0508" stroke="#ff174f" stroke-width="1.5"/>
-    <circle class="warnBlink" cx="12" cy="0" r="3" fill="#ff174f"/>
-    <text x="22" y="4" font-family="Arial" font-size="9"
-          font-weight="700" fill="#ff6680" letter-spacing="2">ACTIVE</text>
-  </g>
-
-
-  <!-- ==================================================== -->
-  <!-- SIDE BAR INDICATORS -->
-  <!-- ==================================================== -->
-
-  <g transform="translate(22, 300)">
-    <rect width="4" height="120" rx="2" fill="#0a0508" stroke="#ff174f" stroke-width="1"/>
-    <rect class="barLoad" x="1" y="2" width="2" height="116" fill="#ff174f" opacity="0.7"/>
-  </g>
-
-  <g transform="translate(1574, 300)">
-    <rect width="4" height="120" rx="2" fill="#0a0508" stroke="#ff174f" stroke-width="1"/>
-    <rect class="barLoad" x="1" y="2" width="2" height="116" fill="#ff174f" opacity="0.7"/>
-  </g>
-
+  <circle r="3" fill="#ff174f" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="55;0;-55;0;55" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="0;55;0;-55;0" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2.5" fill="#ff6680" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="70;0;-70;0;70" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="0;70;0;-70;0" dur="6s" repeatCount="indefinite"/>
+  </circle>
 </g>
 
+<g class="titleGlitch">
+  <text x="185" y="130" class="title" fill="#eeeeee">Technical</text>
+  <text x="460" y="130" class="title" fill="#ff174f">Skills</text>
+</g>
 
-<!-- ====================================================== -->
-<!-- OUTER FRAME -->
-<!-- ====================================================== -->
+<path class="circuitFlow" d="M620 125 H820" fill="none" stroke="#ff174f" stroke-width="4" filter="url(#glow)"/>
+<path class="circuitFlow" d="M880 125 H1180" fill="none" stroke="#ff174f" stroke-width="4" filter="url(#glow)"/>
+<path class="circuitFlow" d="M1240 125 H1500" fill="none" stroke="#ff174f" stroke-width="4" filter="url(#glow)"/>
 
+<g>
+  <polygon points="850,125 870,110 890,125 870,140" fill="#05070a" stroke="#ff174f" stroke-width="3" filter="url(#glow)"/>
+  <circle class="node" cx="870" cy="125" r="5" fill="#ff174f"/>
+</g>
+<g>
+  <polygon points="1210,125 1230,110 1250,125 1230,140" fill="#05070a" stroke="#ff174f" stroke-width="3" filter="url(#glow)"/>
+  <circle class="node" cx="1230" cy="125" r="5" fill="#ff174f"/>
+</g>
+
+<circle cx="1500" cy="125" r="18" fill="#05070a" stroke="#ff174f" stroke-width="4"/>
+<circle class="node" cx="1500" cy="125" r="7" fill="#ff174f" filter="url(#glow)"/>
+<g class="panel1">
+  <path d="M40 220 L90 220 L110 200 L390 200 L410 220 L410 700 L40 700 Z"
+        fill="url(#panelGradient)" stroke="#ff003c" stroke-width="4" filter="url(#glow)"/>
+  <path d="M40 220 L90 220 L110 200 L390 200 L410 220 L410 285 L110 285 L90 265 L40 265 Z"
+        fill="#11070a" stroke="#ff174f" stroke-width="3"/>
+  <polygon points="390,200 410,220 410,285 390,285" fill="#0a0508" opacity="0.5"/>
+</g>
+
+<text x="65" y="255" class="skillIcon">◉</text>
+<text x="105" y="255" class="section">AI / ML / Data Science</text>
+
+<g class="icons">
+<g class="skillRow"><g transform="translate(70, 312)"><line x1="-7" y1="-6" x2="0" y2="-6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="-7" y1="6" x2="0" y2="6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="0" y1="-6" x2="7" y2="-6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="0" y1="6" x2="7" y2="6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="-7" y1="-6" x2="0" y2="6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="-7" y1="6" x2="0" y2="-6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="0" y1="-6" x2="7" y2="6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><line x1="0" y1="6" x2="7" y2="-6" stroke="#ff174f" stroke-width="0.8" opacity="0.7"/><circle cx="-7" cy="-6" r="2" fill="#ff174f"/><circle cx="-7" cy="6" r="2" fill="#ff174f"/><circle cx="0" cy="-6" r="2" fill="#ff174f"/><circle cx="0" cy="6" r="2" fill="#ff174f"/><circle cx="7" cy="-6" r="2" fill="#ff174f"/><circle cx="7" cy="6" r="2" fill="#ff174f"/></g><text x="100" y="318" class="skill">Artificial Intelligence</text></g>
+<g class="skillRow"><g transform="translate(70, 352)"><path d="M-9 7 L-3 -3 L3 3 L9 -7" stroke="#ff174f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="-9" cy="7" r="2" fill="#ff174f"/><circle cx="9" cy="-7" r="2" fill="#ff174f"/><circle cx="-3" cy="-3" r="1.5" fill="#ff174f" opacity="0.7"/><circle cx="3" cy="3" r="1.5" fill="#ff174f" opacity="0.7"/></g><text x="100" y="358" class="skill">Machine Learning</text></g>
+<g class="skillRow"><g transform="translate(70, 392)"><circle cx="-8" cy="-6" r="1.8" fill="#ff174f"/><circle cx="-8" cy="0" r="1.8" fill="#ff174f"/><circle cx="-8" cy="6" r="1.8" fill="#ff174f"/><circle cx="0" cy="-6" r="1.8" fill="#ff174f"/><circle cx="0" cy="0" r="1.8" fill="#ff174f"/><circle cx="0" cy="6" r="1.8" fill="#ff174f"/><circle cx="8" cy="-3" r="1.8" fill="#ff174f"/><circle cx="8" cy="3" r="1.8" fill="#ff174f"/><line x1="-8" y1="-6" x2="0" y2="-6" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="-6" x2="0" y2="0" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="-6" x2="0" y2="6" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="0" x2="0" y2="-6" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="0" x2="0" y2="0" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="0" x2="0" y2="6" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="6" x2="0" y2="-6" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="6" x2="0" y2="0" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="-8" y1="6" x2="0" y2="6" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="0" y1="-6" x2="8" y2="-3" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="0" y1="-6" x2="8" y2="3" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="0" y1="0" x2="8" y2="-3" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="0" y1="0" x2="8" y2="3" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="0" y1="6" x2="8" y2="-3" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/><line x1="0" y1="6" x2="8" y2="3" stroke="#ff174f" stroke-width="0.5" opacity="0.5"/></g><text x="100" y="398" class="skill">Deep Learning</text></g>
+<g class="skillRow"><g transform="translate(70, 432)"><path d="M-10 0 Q-5 -7 0 -7 Q5 -7 10 0 Q5 7 0 7 Q-5 7 -10 0 Z" fill="none" stroke="#ff174f" stroke-width="1.8"/><circle cx="0" cy="0" r="3" fill="#ff174f"/><circle cx="0" cy="0" r="1" fill="#ffffff" opacity="0.8"/></g><text x="100" y="438" class="skill">Computer Vision</text></g>
+<g class="skillRow"><g transform="translate(70, 472)"><rect x="-8" y="2" width="3" height="6" fill="#ff174f" opacity="0.5"/><rect x="-3" y="-2" width="3" height="10" fill="#ff174f" opacity="0.7"/><rect x="2" y="-5" width="3" height="13" fill="#ff174f"/><rect x="7" y="0" width="3" height="8" fill="#ff174f" opacity="0.6"/><path d="M-9 8 L10 8" stroke="#ff174f" stroke-width="1" opacity="0.5"/></g><text x="100" y="478" class="skill">Data Science</text></g>
+<g class="skillRow"><g transform="translate(70, 512)"><rect x="-9" y="-7" width="18" height="12" rx="4" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-4 5 L-2 9 L2 5" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-5 -1 L-3 -1 M-1 -1 L1 -1 M3 -1 L5 -1" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/></g><text x="100" y="518" class="skill">NLP &amp; Generative AI</text></g>
+<g class="skillRow"><g transform="translate(70, 552)"><path d="M-8 -7 L0 -11 L8 -7 L8 3 L0 7 L-8 3 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/><path d="M0 -11 L0 7" stroke="#ff174f" stroke-width="1.2"/><path d="M-8 -7 L0 -3 L8 -7" stroke="#ff174f" stroke-width="1.2"/><path d="M-4 -5 L-4 5 M4 -5 L4 5" stroke="#ff174f" stroke-width="1.2" opacity="0.6"/></g><text x="100" y="558" class="skill">TensorFlow / Keras</text></g>
+<g class="skillRow"><g transform="translate(70, 592)"><path d="M0 -9 C-2 -6 -5 -2 -5 2 C-5 6 -2 9 0 9 C2 9 5 6 5 2 C5 -2 2 -6 0 -9 Z" fill="#ff174f" opacity="0.3"/><path d="M0 -9 C-2 -6 -5 -2 -5 2 C-5 6 -2 9 0 9 C2 9 5 6 5 2 C5 -2 2 -6 0 -9 Z" fill="none" stroke="#ff174f" stroke-width="1.8"/><circle cx="0" cy="3" r="2.5" fill="#ff174f"/><circle cx="0" cy="3" r="1" fill="#ffffff" opacity="0.6"/></g><text x="100" y="598" class="skill">PyTorch / Scikit-learn</text></g>
+<g class="skillRow"><g transform="translate(70, 632)"><circle cx="0" cy="0" r="9" fill="none" stroke="#ff174f" stroke-width="1.8"/><circle cx="0" cy="0" r="4" fill="none" stroke="#ff174f" stroke-width="1.5"/><path d="M0 -9 L0 -4 M0 4 L0 9 M-9 0 L-4 0 M4 0 L9 0" stroke="#ff174f" stroke-width="1.5"/><path d="M-6 -6 L-3 -3 M6 -6 L3 -3 M-6 6 L-3 3 M6 6 L3 3" stroke="#ff174f" stroke-width="1.2" opacity="0.7"/></g><text x="100" y="638" class="skill">OpenCV / YOLO / SAHI</text></g>
+<g class="skillRow"><g transform="translate(70, 672)"><rect x="-7" y="-7" width="14" height="14" rx="3" fill="none" stroke="#ff174f" stroke-width="1.8"/><circle cx="-3" cy="-3" r="1.5" fill="#ff174f"/><circle cx="3" cy="-3" r="1.5" fill="#ff174f"/><circle cx="-3" cy="3" r="1.5" fill="#ff174f"/><circle cx="3" cy="3" r="1.5" fill="#ff174f"/><path d="M-3 -3 L3 -3 M-3 3 L3 3 M-3 -3 L-3 3 M3 -3 L3 3" stroke="#ff174f" stroke-width="0.8" opacity="0.6"/><path d="M-7 -4 L-10 -4 M-7 0 L-10 0 M-7 4 L-10 4 M7 -4 L10 -4 M7 0 L10 0 M7 4 L10 4" stroke="#ff174f" stroke-width="1.2"/></g><text x="100" y="678" class="skill">LLMs / RAG / AI Agents</text></g>
+</g>
+
+<path d="M40 690 H410" stroke="#ff003c" stroke-width="2" opacity="0.4"/>
+<g class="panel2">
+  <path d="M430 200 L710 200 L730 220 L760 220 L760 700 L430 700 Z"
+        fill="url(#panelGradient)" stroke="#ff003c" stroke-width="4" filter="url(#glow)"/>
+  <path d="M430 200 L710 200 L730 220 L760 220 L760 290 L430 290 Z"
+        fill="#11070a" stroke="#ff174f" stroke-width="3"/>
+  <polygon points="710,200 730,220 760,220 760,290 710,290" fill="#0a0508" opacity="0.5"/>
+</g>
+
+<text x="455" y="255" class="skillIcon">&lt;/&gt;</text>
+<text x="510" y="255" class="sectionSmall">Programming &amp; Development</text>
+
+<g class="icons">
+<g class="skillRow"><g transform="translate(460, 312)"><circle cx="0" cy="0" r="9" fill="none" stroke="#ff174f" stroke-width="2"/><path d="M3 -4 A5.5 5.5 0 1 0 3 4" fill="none" stroke="#ff174f" stroke-width="2.2" stroke-linecap="round"/></g><text x="490" y="318" class="skill">C / C++</text></g>
+<g class="skillRow"><g transform="translate(460, 352)"><path d="M-3 -9 C-7 -9 -9 -7 -9 -3 L-9 -1 L-3 -1 L-3 1 C-3 4 -1 6 2 6 L4 6 C7 6 9 4 9 1 L9 -3 C9 -6 7 -8 4 -8 L2 -8 L2 -6 L4 -6 C5 -6 6 -5 6 -3 L6 1 C6 2 5 3 4 3 L2 3 C1 3 0 2 0 1 L0 -1 L-6 -1 C-7 -1 -7 -2 -7 -3 C-7 -5 -6 -6 -4 -6 L-2 -6 L-2 -8 Z" fill="#ff174f" opacity="0.9"/><path d="M3 9 C7 9 9 7 9 3 L9 1 L3 1 L3 -1 C3 -4 1 -6 -2 -6 L-4 -6 C-7 -6 -9 -4 -9 -1 L-9 3 C-9 6 -7 8 -4 8 L-2 8 L-2 6 L-4 6 C-5 6 -6 5 -6 3 L-6 -1 C-6 -2 -5 -3 -4 -3 L-2 -3 C-1 -3 0 -2 0 -1 L0 1 L6 1 C7 1 7 2 7 3 C7 5 6 6 4 6 L2 6 L2 8 Z" fill="#ff174f" opacity="0.5"/></g><text x="490" y="358" class="skill">Python</text></g>
+<g class="skillRow"><g transform="translate(460, 392)"><rect x="-9" y="-9" width="18" height="18" rx="2" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-5 -4 L-5 2 C-5 4 -4 5 -2 5 C0 5 1 4 1 2 L1 -4" stroke="#ff174f" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 5 C3 5 2 4 2 2 C2 1 3 0 5 0 C7 0 8 -1 8 -3 C8 -5 7 -6 5 -6 C3 -6 2 -5 2 -3" stroke="#ff174f" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g><text x="490" y="398" class="skill">JavaScript</text></g>
+<g class="skillRow"><g transform="translate(460, 432)"><path d="M0 -9 L8 -6 L7 4 L0 9 L-7 4 L-8 -6 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/><text x="0" y="3" font-family="Arial" font-size="7" font-weight="900" fill="#ff174f" text-anchor="middle">5</text></g><text x="490" y="438" class="skill">HTML / CSS</text></g>
+<g class="skillRow"><g transform="translate(460, 472)"><circle cx="0" cy="0" r="2.5" fill="#ff174f"/><ellipse cx="0" cy="0" rx="9" ry="3.5" fill="none" stroke="#ff174f" stroke-width="1.2"/><ellipse cx="0" cy="0" rx="9" ry="3.5" fill="none" stroke="#ff174f" stroke-width="1.2" transform="rotate(60)"/><ellipse cx="0" cy="0" rx="9" ry="3.5" fill="none" stroke="#ff174f" stroke-width="1.2" transform="rotate(-60)"/></g><text x="490" y="478" class="skill">React.js</text></g>
+<g class="skillRow"><g transform="translate(460, 512)"><polygon points="0,-9 8,-4.5 8,4.5 0,9 -8,4.5 -8,-4.5" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/><path d="M-3 -4 L-3 3 M-3 -4 L0 0 L3 -4 M3 -4 L3 3" stroke="#ff174f" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g><text x="490" y="518" class="skill">Node.js / Express.js</text></g>
+<g class="skillRow"><g transform="translate(460, 552)"><polygon points="0,-8 8,-4 0,0 -8,-4" fill="#ff174f" opacity="0.8"/><polygon points="0,-3 8,1 0,5 -8,1" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/><polygon points="0,2 8,6 0,10 -8,6" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/></g><text x="490" y="558" class="skill">MERN Stack</text></g>
+<g class="skillRow"><g transform="translate(460, 592)"><path d="M-8 3 C-10 3 -10 -1 -8 -1 C-8 -4 -5 -5 -3 -4 C-1 -7 3 -6 4 -3 C7 -3 8 0 7 2 C8 2 8 3 7 4 L-7 4 C-9 4 -9 3 -8 3 Z" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/><path d="M-2 8 L2 8 M0 6 L0 10" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/></g><text x="490" y="598" class="skill">REST APIs</text></g>
+<g class="skillRow"><g transform="translate(460, 632)"><circle cx="-4" cy="-4" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/><circle cx="4" cy="-4" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/><circle cx="0" cy="4" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/><path d="M-2 -3 L2 -3" stroke="#ff174f" stroke-width="1.2"/><path d="M-3 0 L0 3" stroke="#ff174f" stroke-width="1.2"/><path d="M3 0 L0 3" stroke="#ff174f" stroke-width="1.2"/></g><text x="490" y="638" class="skill">Redux / Tailwind CSS</text></g>
+<g class="skillRow"><g transform="translate(460, 672)"><path d="M-3 -9 L5 -9 L0 -2 L5 -2 L-5 9 L-1 0 L-6 0 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/><path d="M-3 -9 L5 -9 L0 -2 L5 -2 L-5 9 L-1 0 L-6 0 Z" fill="#ff174f" opacity="0.2"/></g><text x="490" y="678" class="skill">Vite</text></g>
+</g>
+
+<path d="M430 690 H760" stroke="#ff003c" stroke-width="2" opacity="0.4"/>
+<g class="panel3">
+  <path d="M780 200 L1060 200 L1080 220 L1110 220 L1110 700 L780 700 Z"
+        fill="url(#panelGradient)" stroke="#ff003c" stroke-width="4" filter="url(#glow)"/>
+  <path d="M780 200 L1060 200 L1080 220 L1110 220 L1110 285 L780 285 Z"
+        fill="#11070a" stroke="#ff174f" stroke-width="3"/>
+  <polygon points="1060,200 1080,220 1110,220 1110,285 1060,285" fill="#0a0508" opacity="0.5"/>
+</g>
+
+<text x="805" y="255" class="skillIcon">●</text>
+<text x="848" y="255" class="section">Databases &amp; Tools</text>
+
+<g class="icons">
+<g class="skillRow"><g transform="translate(810, 312)"><ellipse cx="0" cy="-6" rx="8" ry="3" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-8 -6 L-8 6 C-8 8 8 8 8 6 L8 -6" fill="none" stroke="#ff174f" stroke-width="1.8"/><ellipse cx="0" cy="-1" rx="8" ry="3" fill="none" stroke="#ff174f" stroke-width="0.8" opacity="0.6"/><ellipse cx="0" cy="3" rx="8" ry="3" fill="none" stroke="#ff174f" stroke-width="0.8" opacity="0.4"/></g><text x="840" y="318" class="skill">SQL</text></g>
+<g class="skillRow"><g transform="translate(810, 352)"><path d="M-7 6 C-7 2 -5 -2 -2 -4 C0 -6 2 -6 3 -4 C4 -3 5 -1 5 1 L5 3 C5 4 4 5 3 4 L3 2 C3 1 4 0 4 -1" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linecap="round"/><circle cx="3" cy="-3" r="0.8" fill="#ff174f"/><path d="M-2 -4 C-4 -5 -6 -4 -7 -2" fill="none" stroke="#ff174f" stroke-width="1.2" opacity="0.7"/><path d="M-7 6 L-5 6 M-2 6 L-2 3" stroke="#ff174f" stroke-width="1.8" stroke-linecap="round"/></g><text x="840" y="358" class="skill">PostgreSQL</text></g>
+<g class="skillRow"><g transform="translate(810, 392)"><path d="M0 -9 C3 -5 5 -1 4 3 C3 6 0 8 -1 6 C-3 4 -4 1 -3 -2 C-2 -5 -1 -7 0 -9 Z" fill="#ff174f" opacity="0.3"/><path d="M0 -9 C3 -5 5 -1 4 3 C3 6 0 8 -1 6 C-3 4 -4 1 -3 -2 C-2 -5 -1 -7 0 -9 Z" fill="none" stroke="#ff174f" stroke-width="1.5"/><path d="M0 -9 L-1 6" stroke="#ff174f" stroke-width="1"/></g><text x="840" y="398" class="skill">MongoDB</text></g>
+<g class="skillRow"><g transform="translate(810, 432)"><path d="M-7 2 C-9 2 -9 -2 -7 -2 C-7 -5 -4 -6 -2 -5 C0 -8 4 -7 5 -4 C8 -4 9 -1 8 1 C9 1 9 2 8 3 L-6 3 C-8 3 -8 2 -7 2 Z" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/><path d="M0 -1 C1 1 1 3 0 4 C-1 3 -1 1 0 -1 Z" fill="#ff174f"/></g><text x="840" y="438" class="skill">MongoDB Atlas</text></g>
+<g class="skillRow"><g transform="translate(810, 472)"><path d="M0 -9 L-5 -1 L0 -1 L-1 9 L5 1 L0 1 Z" fill="#ff174f" opacity="0.2"/><path d="M0 -9 L-5 -1 L0 -1 L-1 9 L5 1 L0 1 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/></g><text x="840" y="478" class="skill">Neon</text></g>
+<g class="skillRow"><g transform="translate(810, 512)"><circle cx="-6" cy="6" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/><circle cx="6" cy="6" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/><circle cx="0" cy="-6" r="2.5" fill="none" stroke="#ff174f" stroke-width="1.5"/><path d="M0 -3.5 L0 -1 M0 -1 C0 3 -6 3 -6 6 M0 -1 C0 3 6 3 6 6" stroke="#ff174f" stroke-width="1.5" fill="none" stroke-linecap="round"/></g><text x="840" y="518" class="skill">Git / GitHub</text></g>
+<g class="skillRow"><g transform="translate(810, 552)"><path d="M-8 -7 L8 -7 L8 7 L-8 7 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/><path d="M-5 -4 L0 0 L-5 4" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 -4 L2 0 L5 4" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><text x="840" y="558" class="skill">VS Code</text></g>
+<g class="skillRow"><g transform="translate(810, 592)"><circle cx="0" cy="0" r="8" fill="none" stroke="#ff174f" stroke-width="1.5"/><circle cx="0" cy="0" r="3" fill="none" stroke="#ff174f" stroke-width="1.5"/><circle cx="0" cy="0" r="5.5" fill="none" stroke="#ff174f" stroke-width="0.8" opacity="0.6"/><circle cx="0" cy="-5.5" r="1" fill="#ff174f"/><circle cx="0" cy="5.5" r="1" fill="#ff174f"/></g><text x="840" y="598" class="skill">Jupyter Notebook</text></g>
+<g class="skillRow"><g transform="translate(810, 632)"><path d="M-8 0 C-8 -3 -5 -4 -3 -2 L0 0 L3 2 C5 4 8 3 8 0 C8 -3 5 -4 3 -2 L0 0 L-3 2 C-5 4 -8 3 -8 0 Z" fill="none" stroke="#ff174f" stroke-width="1.8" stroke-linejoin="round"/><circle cx="-5" cy="0" r="1" fill="#ff174f" opacity="0.7"/><circle cx="5" cy="0" r="1" fill="#ff174f" opacity="0.7"/></g><text x="840" y="638" class="skill">Google Colab</text></g>
+<g class="skillRow"><g transform="translate(810, 672)"><rect x="-8" y="-7" width="16" height="14" rx="2" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-5 -3 L-2 0 L-5 3 M1 3 L5 3" stroke="#ff174f" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g><text x="840" y="678" class="skill">Linux / npm</text></g>
+</g>
+
+<path d="M780 690 H1110" stroke="#ff003c" stroke-width="2" opacity="0.4"/>
+<g class="panel4">
+  <path d="M1130 200 L1450 200 L1470 220 L1540 220 L1560 240 L1560 700 L1130 700 Z"
+        fill="url(#panelGradient)" stroke="#ff003c" stroke-width="4" filter="url(#glow)"/>
+  <path d="M1130 200 L1450 200 L1470 220 L1540 220 L1560 240 L1560 285 L1130 285 Z"
+        fill="#11070a" stroke="#ff174f" stroke-width="3"/>
+  <polygon points="1450,200 1470,220 1540,220 1560,240 1560,285 1450,285" fill="#0a0508" opacity="0.5"/>
+</g>
+
+<text x="1155" y="255" class="skillIcon">▣</text>
+<text x="1205" y="255" class="section">IoT &amp; Technologies</text>
+
+<g class="icons">
+<g class="skillRow"><g transform="translate(1160, 312)"><path d="M-8 0 C-8 -4 -3 -4 -1 -1 L1 1 C3 4 8 4 8 0 C8 -4 3 -4 1 -1 L-1 1 C-3 4 -8 4 -8 0 Z" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-6 -2 L-6 2 M-8 0 L-4 0" stroke="#ff174f" stroke-width="1" stroke-linecap="round"/><path d="M6 -2 L6 2" stroke="#ff174f" stroke-width="1" stroke-linecap="round"/></g><text x="1190" y="318" class="skill">Arduino</text></g>
+<g class="skillRow"><g transform="translate(1160, 352)"><rect x="-7" y="-5" width="14" height="10" rx="1.5" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M-4 -5 L-4 -8 M0 -5 L0 -8 M4 -5 L4 -8" stroke="#ff174f" stroke-width="1.2" stroke-linecap="round"/><circle cx="0" cy="0" r="2" fill="#ff174f"/><path d="M-5 5 L-5 8 M5 5 L5 8" stroke="#ff174f" stroke-width="1.2" stroke-linecap="round"/></g><text x="1190" y="358" class="skill">ESP32</text></g>
+<g class="skillRow"><g transform="translate(1160, 392)"><circle cx="0" cy="0" r="2" fill="#ff174f"/><path d="M-5 -5 A7 7 0 0 0 -5 5" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/><path d="M-8 -8 A11 11 0 0 0 -8 8" fill="none" stroke="#ff174f" stroke-width="1.2" opacity="0.6" stroke-linecap="round"/><path d="M5 -5 A7 7 0 0 1 5 5" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/><path d="M8 -8 A11 11 0 0 1 8 8" fill="none" stroke="#ff174f" stroke-width="1.2" opacity="0.6" stroke-linecap="round"/></g><text x="1190" y="398" class="skill">Sensors Integration</text></g>
+<g class="skillRow"><g transform="translate(1160, 432)"><rect x="-8" y="-6" width="16" height="12" rx="1.5" fill="none" stroke="#ff174f" stroke-width="1.8"/><rect x="-3" y="-2" width="6" height="4" fill="#ff174f" opacity="0.7"/><path d="M-8 -3 L-10 -3 M-8 0 L-10 0 M-8 3 L-10 3 M8 -3 L10 -3 M8 0 L10 0 M8 3 L10 3" stroke="#ff174f" stroke-width="1.2" stroke-linecap="round"/></g><text x="1190" y="438" class="skill">Embedded Systems</text></g>
+<g class="skillRow"><g transform="translate(1160, 472)"><circle cx="0" cy="0" r="8" fill="none" stroke="#ff174f" stroke-width="1.5"/><ellipse cx="0" cy="0" rx="8" ry="3" fill="none" stroke="#ff174f" stroke-width="0.8"/><path d="M0 -8 L0 8 M-7 -3 L7 -3 M-7 3 L7 3" stroke="#ff174f" stroke-width="0.8"/><circle cx="6" cy="-5" r="1.5" fill="#ff174f"/><circle cx="-5" cy="5" r="1.5" fill="#ff174f"/><path d="M6 -5 L-5 5" stroke="#ff174f" stroke-width="0.6" opacity="0.5" stroke-dasharray="2 2"/></g><text x="1190" y="478" class="skill">IoT Development</text></g>
+<g class="skillRow"><g transform="translate(1160, 512)"><circle cx="-5" cy="-3" r="3" fill="none" stroke="#ff174f" stroke-width="1.5"/><rect x="1" y="-6" width="6" height="6" fill="none" stroke="#ff174f" stroke-width="1.5"/><polygon points="2,3 6,3 4,7" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/><path d="M-2 -3 L1 -3 M4 0 L4 3" stroke="#ff174f" stroke-width="0.8" opacity="0.6"/></g><text x="1190" y="518" class="skill">Multimodal AI</text></g>
+<g class="skillRow"><g transform="translate(1160, 552)"><path d="M-9 0 Q-4.5 -6 0 -6 Q4.5 -6 9 0 Q4.5 6 0 6 Q-4.5 6 -9 0 Z" fill="none" stroke="#ff174f" stroke-width="1.8"/><circle cx="0" cy="0" r="2.5" fill="#ff174f"/><path d="M-9 -6 L-12 -9 M9 -6 L12 -9 M-9 6 L-12 9 M9 6 L12 9" stroke="#ff174f" stroke-width="1" stroke-linecap="round" opacity="0.7"/></g><text x="1190" y="558" class="skill">LLaVA</text></g>
+<g class="skillRow"><g transform="translate(1160, 592)"><circle cx="-2" cy="-2" r="6" fill="none" stroke="#ff174f" stroke-width="1.8"/><path d="M2 2 L7 7" stroke="#ff174f" stroke-width="2" stroke-linecap="round"/><path d="M-5 -2 C-4 -4 -2 -4 -1 -2 C0 0 2 0 3 -2" fill="none" stroke="#ff174f" stroke-width="1" opacity="0.7" stroke-linecap="round"/></g><text x="1190" y="598" class="skill">DeepSeek-R1</text></g>
+<g class="skillRow"><g transform="translate(1160, 632)"><path d="M-7 6 C-7 2 -6 -2 -4 -4 C-3 -6 -2 -7 0 -7 C2 -7 3 -6 4 -4 C5 -2 6 -1 6 1 C6 3 5 5 4 6 Z" fill="none" stroke="#ff174f" stroke-width="1.5" stroke-linejoin="round"/><circle cx="-1" cy="-4" r="0.8" fill="#ff174f"/><circle cx="2" cy="-4" r="0.8" fill="#ff174f"/><path d="M-8 -6 L-8 -2 M8 -6 L8 -2" stroke="#ff174f" stroke-width="1.5" stroke-linecap="round"/><path d="M-3 6 L-3 9 M3 6 L3 9" stroke="#ff174f" stroke-width="1.2" stroke-linecap="round"/></g><text x="1190" y="638" class="skill">Ollama</text></g>
+<g class="skillRow"><g transform="translate(1160, 672)"><rect x="-8" y="-2" width="2" height="4" rx="1" fill="#ff174f" opacity="0.5"/><rect x="-4" y="-5" width="2" height="10" rx="1" fill="#ff174f" opacity="0.7"/><rect x="0" y="-8" width="2" height="16" rx="1" fill="#ff174f"/><rect x="4" y="-5" width="2" height="10" rx="1" fill="#ff174f" opacity="0.7"/><rect x="8" y="-2" width="2" height="4" rx="1" fill="#ff174f" opacity="0.5"/></g><text x="1190" y="678" class="skill">Whisper</text></g>
+</g>
+
+<path d="M1130 690 H1560" stroke="#ff003c" stroke-width="2" opacity="0.4"/>
+<g class="scanAnimation">
+  <rect x="50" y="280" width="1490" height="5" rx="3" fill="url(#scanGradient)" filter="url(#glow)"/>
+  <rect x="50" y="287" width="1490" height="1" fill="#ff174f" opacity=".35"/>
+</g>
+
+<g fill="#ff174f">
+  <circle class="particle1" cx="220" cy="190" r="2"/>
+  <circle class="particle2" cx="350" cy="165" r="2"/>
+  <circle class="particle3" cx="600" cy="188" r="2"/>
+  <circle class="particle1" cx="870" cy="175" r="2"/>
+  <circle class="particle2" cx="1080" cy="190" r="2"/>
+  <circle class="particle3" cx="1360" cy="170" r="2"/>
+  <circle class="particle2" cx="1500" cy="310" r="2"/>
+  <circle class="particle1" cx="70" cy="400" r="2"/>
+</g>
+
+<path class="circuitFlow" d="M50 210 H80 V240" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
+<path class="circuitFlow" d="M1550 210 H1520 V240" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
+<path class="circuitFlow" d="M50 690 H80 V660" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
+<path class="circuitFlow" d="M1550 690 H1520 V660" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
+
+<path class="circuitFlow" d="M55 710 H1545" fill="none" stroke="#ff003c" stroke-width="2" filter="url(#glow)"/>
+<circle class="node" cx="55" cy="710" r="5" fill="#ff174f"/>
+<circle class="node" cx="1545" cy="710" r="5" fill="#ff174f"/>
+
+<path class="dataStream" d="M430 210 V690" fill="none" stroke="#ff003c" stroke-width="1" stroke-dasharray="15 30" opacity="0.3"/>
+<path class="dataStream" d="M780 210 V690" fill="none" stroke="#ff003c" stroke-width="1" stroke-dasharray="15 30" opacity="0.3"/>
+<path class="dataStream" d="M1130 210 V690" fill="none" stroke="#ff003c" stroke-width="1" stroke-dasharray="15 30" opacity="0.3"/>
+
+<g transform="translate(1380, 50)">
+  <rect x="0" y="-8" width="100" height="16" rx="3" fill="#0a0508" stroke="#ff174f" stroke-width="1.5"/>
+  <circle class="warnBlink" cx="12" cy="0" r="3" fill="#ff174f"/>
+  <text x="22" y="4" font-family="Arial" font-size="9" font-weight="700" fill="#ff6680" letter-spacing="2">ACTIVE</text>
+</g>
+
+<g transform="translate(22, 300)">
+  <rect width="4" height="120" rx="2" fill="#0a0508" stroke="#ff174f" stroke-width="1"/>
+  <rect class="barLoad" x="1" y="2" width="2" height="116" fill="#ff174f" opacity="0.7"/>
+</g>
+<g transform="translate(1574, 300)">
+  <rect width="4" height="120" rx="2" fill="#0a0508" stroke="#ff174f" stroke-width="1"/>
+  <rect class="barLoad" x="1" y="2" width="2" height="116" fill="#ff174f" opacity="0.7"/>
+</g>
+</g>
 <path class="framePulse"
-      d="
-        M30 90
-        L90 30
-        L520 30
-        L560 70
-        L1040 70
-        L1080 30
-        L1510 30
-        L1570 90
-        L1570 690
-        L1510 750
-        L1080 750
-        L1040 710
-        L560 710
-        L520 750
-        L90 750
-        L30 690
-        Z
-      "
+      d="M30 90 L90 30 L520 30 L560 70 L1040 70 L1080 30 L1510 30 L1570 90 L1570 690 L1510 750 L1080 750 L1040 710 L560 710 L520 750 L90 750 L30 690 Z"
       fill="none" stroke="#ff003c" stroke-width="4" filter="url(#strongGlow)"/>
 
-
-<path d="
-  M90 30 L520 30 L560 70 L1040 70 L1080 30 L1510 30
-"
-fill="none" stroke="url(#redFlow)" stroke-width="2" class="edgePulse"/>
-
-
-<!-- ====================================================== -->
-<!-- CORNER HEXAGON MARKERS -->
-<!-- ====================================================== -->
+<path d="M90 30 L520 30 L560 70 L1040 70 L1080 30 L1510 30"
+      fill="none" stroke="url(#redFlow)" stroke-width="2" class="edgePulse"/>
 
 <g class="cornerSlide" transform="translate(60, 60)">
-  <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7"
-           fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
+  <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
 </g>
-
 <g class="cornerSlide" transform="translate(1540, 60)">
-  <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7"
-           fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
+  <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
 </g>
-
 <g class="cornerSlide" transform="translate(60, 720)">
-  <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7"
-           fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
+  <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
 </g>
-
 <g class="cornerSlide" transform="translate(1540, 720)">
-  <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7"
-           fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
+  <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="none" stroke="#ff174f" stroke-width="2" filter="url(#glow)"/>
 </g>
-
-
-<!-- ====================================================== -->
-<!-- SIDE VERTICAL MARKERS -->
-<!-- ====================================================== -->
 
 <g opacity="0.6">
   <rect x="14" y="200" width="3" height="30" fill="#ff174f" filter="url(#glow)"/>
@@ -1498,6 +495,4 @@ fill="none" stroke="url(#redFlow)" stroke-width="2" class="edgePulse"/>
   <rect x="1583" y="510" width="3" height="30" fill="#ff174f"/>
   <rect x="1583" y="565" width="3" height="38" fill="#ff174f" filter="url(#glow)"/>
 </g>
-
-
 </svg>
