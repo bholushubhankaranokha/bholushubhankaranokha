@@ -52,3 +52,9 @@
   <img width="33%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bholushubhankaranokha&layout=compact&hide_border=true&bg_color=00000000&title_color=ff1744&text_color=808080" alt="Top Languages" />
   <img width="33%" src="https://streak-stats.demolab.com?user=bholushubhankaranokha&hide_border=true&background=00000000&ring=ff1744&fire=ff416c&currStreakLabel=ff1744&sideLabels=808080&dates=808080&currStreakNum=ff1744&sideNums=ff416c" alt="GitHub Streak" />
 </div>
+
+<div align="center">
+
+<img src="./assets/footer-full.svg" width="100%" alt="Footer">
+
+</div>
