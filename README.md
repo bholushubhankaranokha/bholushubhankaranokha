@@ -25,3 +25,11 @@
 </p>
 
  <p align="center"><a href="https://github.com/bholushubhankaranokha?tab=repositories"><img src="./assets/RescueAI.png" width="33.33%" alt="RescueAI" align="top"><a href="https://github.com/bholushubhankaranokha/LogiEdge"><img src="./assets/LogiEdge.png" width="33.33%" alt="LogiEdge" align="top"></a></a><a href="https://github.com/bholushubhankaranokha/Razorpay-Clone"><img src="./assets/Razorpay Clone.png" width="33.33%" alt="Razorpay Clone" align="top"></a></p>
+
+ ## 📊 GitHub Analytics
+
+<div align="center">
+  <img width="33%" src="https://github-readme-stats.vercel.app/api?username=bholushubhankaranokha&show_icons=true&hide_border=true&bg_color=00000000&title_color=ff1744&icon_color=ff416c&text_color=808080&ring_color=ff1744" alt="GitHub Stats" />
+  <img width="33%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bholushubhankaranokha&layout=compact&hide_border=true&bg_color=00000000&title_color=ff1744&text_color=808080" alt="Top Languages" />
+  <img width="33%" src="https://streak-stats.demolab.com?user=bholushubhankaranokha&hide_border=true&background=00000000&ring=ff1744&fire=ff416c&currStreakLabel=ff1744&sideLabels=808080&dates=808080&currStreakNum=ff1744&sideNums=ff416c" alt="GitHub Streak" />
+</div>
