@@ -20,6 +20,8 @@
 
 <p align="center">
   <picture>
-    <img alt="Projects" src="assets/projects.png" width="100%">
+    <img alt="Projects" src="assets/projects.png" width="100%" href="https://github.com/bholushubhankaranokha?tab=repositories">
   </picture>
 </p>
+
+ <p align="center"><a href="https://github.com/bholushubhankaranokha?tab=repositories"><img src="./assets/RescueAI.png" width="33.33%" alt="RescueAI" align="top"><a href="https://github.com/bholushubhankaranokha/LogiEdge"><img src="./assets/LogiEdge.png" width="33.33%" alt="LogiEdge" align="top"></a></a><a href="https://github.com/bholushubhankaranokha/Razorpay-Clone"><img src="./assets/Razorpay Clone.png" width="33.33%" alt="Razorpay Clone" align="top"></a></p>
