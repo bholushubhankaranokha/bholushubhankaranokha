@@ -17,3 +17,9 @@
 <div align="center">
   <img src="./assets/technical-skills.svg" width="100%" alt="Technical Skills">
 </div>
+
+<p align="center">
+  <picture>
+    <img alt="Projects" src="assets/projects.png" width="100%">
+  </picture>
+</p>
