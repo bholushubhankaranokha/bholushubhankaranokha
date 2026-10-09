@@ -26,15 +26,26 @@
 
  <p align="center"><a href="https://github.com/bholushubhankaranokha?tab=repositories"><img src="./assets/RescueAI.png" width="33.33%" alt="RescueAI" align="top"><a href="https://github.com/bholushubhankaranokha/LogiEdge"><img src="./assets/LogiEdge.png" width="33.33%" alt="LogiEdge" align="top"></a></a><a href="https://github.com/bholushubhankaranokha/Razorpay-Clone"><img src="./assets/Razorpay Clone.png" width="33.33%" alt="Razorpay Clone" align="top"></a></p>
 
- ## 📊 GitHub Analytics
 
-<div align="center">
+<p align="center" style="margin: 0; padding: 0; line-height: 0;">
+  <img
+    src="assets/github-analytics-header-slim.svg"
+    width="100%"
+    alt="GitHub Analytics"
+    style="display: block; margin: 0; padding: 0;"
+  />
+</p>
+
+<!-- GitHub Contribution Snake -->
+<p align="center" style="margin: 0; padding: 0; line-height: 0;">
   <img
     src="https://raw.githubusercontent.com/bholushubhankaranokha/bholushubhankaranokha/output/github-contribution-grid-snake.svg"
-    alt="GitHub Contribution Snake"
     width="100%"
+    alt="GitHub Contribution Snake"
+    style="display: block; margin: 0; padding: 0;"
   />
-</div>
+</p>
+
 
 <div align="center">
   <img width="33%" src="https://github-readme-stats.vercel.app/api?username=bholushubhankaranokha&show_icons=true&hide_border=true&bg_color=00000000&title_color=ff1744&icon_color=ff416c&text_color=808080&ring_color=ff1744" alt="GitHub Stats" />
